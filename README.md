@@ -10,6 +10,7 @@
 | -------- | ------------------------ |
 |  Access  | [View](Access/notes.md)  |
 |  Carrier | [View](Carrier/notes.md) |
+|  Chaos   | [View](Chaos/notes.md)   |
 |   ...    |                          |
 |  Teacher | [View](Teacher/notes.md) |
 
