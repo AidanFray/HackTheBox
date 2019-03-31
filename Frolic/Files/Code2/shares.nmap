@@ -1,0 +1,30 @@
+# Nmap 7.70 scan initiated Fri Feb 15 16:35:10 2019 as: nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=admin,smbpass=imnothuman -p445,139 10.10.10.111
+Nmap scan report for 10.10.10.111
+Host is up (0.057s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: admin
+|   \\10.10.10.111\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (frolic server (Samba, Ubuntu))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.10.111\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|_    Current user access: <none>
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Feb 15 16:35:16 2019 -- 1 IP address (1 host up) scanned in 6.36 seconds

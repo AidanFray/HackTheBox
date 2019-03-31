@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html data-host="chaos.htb:10000" data-hostname="chaos" data-title-initial="Webmin 1.890 on chaos (Ubuntu Linux 18.10)" data-debug="0" data-session="1" data-script-name="/" data-background-style="gainsboro" data-night-mode="0" data-high-contrast="0" data-navigation-collapsed="0" data-slider-fixed="0" data-sestatus="0" data-shell="1" data-webmin="1" data-usermin="0" data-navigation="1" data-status="1" data-package-updates="1" data-csf="0" data-theme="blue" data-default-theme="blue" data-theme-version="19.19" data-theme-mversion="11"  data-level="0" data-user-home="/root" data-user-id="0" data-user="root" data-dashboard="1" data-ltr="1" data-language="en" data-language-full="en" data-charset="UTF-8" data-notice="0" data-redirect="" data-initial-wizard="1" data-webprefix="" data-current-product="webmin" data-module="" data-uri="/" data-progress="1" data-product="webmin" data-access-level="0">
+ <head>
+ <noscript> <style> html[data-background-style="gainsboro"] { background-color: #d6d6d6; } html[data-background-style="nightRider"] { background-color: #1a1c20; } html[data-background-style="nightRider"] div[data-noscript] { color: #979ba080; } html[data-slider-fixed='1'] { margin-right: 0 !important; } body > div[data-noscript] ~ * { display: none !important; } div[data-noscript] { visibility: hidden; animation: 2s noscript-fadein; animation-delay: 1s; text-align: center; animation-fill-mode: forwards; } @keyframes noscript-fadein { 0% { opacity: 0; } 100% { visibility: visible; opacity: 1; } } </style> <div data-noscript> <div class="fa fa-3x fa-exclamation-triangle margined-top-20 text-danger"></div> <h2>JavaScript is disabled</h2> <p>Please enable javascript and refresh the page</p> </div> </noscript>
+ <meta charset="UTF-8">
+ <title>Webmin 1.890 on chaos (Ubuntu Linux 18.10)</title>
+ <link rel="shortcut icon" href="/images/favicon-webmin.ico">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="/unauthenticated/css/bundle.min.css?1919999999999911" rel="stylesheet">
+ <link href="/unauthenticated/css/fonts-roboto.min.css?1919999999999911" rel="stylesheet">
+ <script src="/unauthenticated/js/bundle.min.js?1919999999999911"></script>
+</head>
+<body data-uri="/">
+<div class="visible-xs mobile-menu-toggler" style="position: fixed; -webkit-filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1); filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1);"><button type="button" class="btn btn-primary btn-menu-toggler" style="padding-left: 6px; padding-right: 5px;">
+<i class="fa fa-fw fa-lg fa-bars"></i>
+</button>
+</div>
+<aside style="-webkit-filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1); filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1);" id="sidebar" class="hidden-xs">
+<div class="switch-toggle switch-2 switch-mins"><input class="dynamic" id="open_webmin" name="product-switcher" type="radio" checked>
+        <label data-container="body" data-placement="auto bottom" data-toggle="tooltip" data-html="false" data-title="Webmin (Alt+W)" for="open_webmin">
+                <i class="wbm-webmin wbm-sm"></i><span>Webmin</span></label><input class="dynamic" id="open_dashboard" name="product-switcher" type="radio">
+          <label data-container="body" data-placement="auto right" data-toggle="tooltip" data-html="false" data-title="Dashboard (Alt+I)" for="open_dashboard" style="padding-top: 1px;">
+          <i class="fa fa-stack fa-dashboard"></i><span>Dashboard</span></label><a></a>
+            </div><br style="line-height:4.4"><ul class="navigation">
+<li class="menu-container search-form-container"><form id="webmin_search_form" action="/webmin_search.cgi" role="search">
+<div class="form-group">
+<i class="fa fa-search"></i><input type="text" class="form-control sidebar-search" name="search" placeholder="Search">
+</div>
+</form></li>
+<li class="has-sub">
+<a data-has-sub-link href="#webmin"><i class="fa fa-cog fa-fw"></i> <span>Webmin</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="webmin">
+<li data-linked>
+<a href="/backup-config/"> Backup Configuration Files</a>
+</li>
+<li data-linked>
+<a href="/change-user/"> Change Language and Theme</a>
+</li>
+<li data-linked>
+<a href="/webminlog/"> Webmin Actions Log</a>
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/webmin/edit_themes.cgi"> Authentic Theme Configuration</a>
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/settings-editor_read.cgi"> Authentic Theme Extensions Editor</a>
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/settings-upload.cgi"> Authentic Theme Logo Control</a>
+</li>
+<li data-linked>
+<a href="/webmin/"> Webmin Configuration</a>
+</li>
+<li data-linked>
+<a href="/servers/"> Webmin Servers Index</a>
+</li>
+<li data-linked>
+<a href="/acl/"> Webmin Users</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#system"><i class="fa fa-wrench fa-fw"></i> <span>System</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="system">
+<li data-linked>
+<a href="/init/"> Bootup and Shutdown</a>
+</li>
+<li data-linked>
+<a href="/passwd/"> Change Passwords</a>
+</li>
+<li data-linked>
+<a href="/mount/"> Disk and Network Filesystems</a>
+</li>
+<li data-linked>
+<a href="/fsdump/"> Filesystem Backup</a>
+</li>
+<li data-linked>
+<a href="/logrotate/"> Log File Rotation</a>
+</li>
+<li data-linked>
+<a href="/mailcap/"> MIME Type Programs</a>
+</li>
+<li data-linked>
+<a href="/pam/"> PAM Authentication</a>
+</li>
+<li data-linked>
+<a href="/proc/"> Running Processes</a>
+</li>
+<li data-linked>
+<a href="/at/"> Scheduled Commands</a>
+</li>
+<li data-linked>
+<a href="/cron/"> Scheduled Cron Jobs</a>
+</li>
+<li data-linked>
+<a href="/package-updates/"> Software Package Updates</a>
+</li>
+<li data-linked>
+<a href="/software/"> Software Packages</a>
+</li>
+<li data-linked>
+<a href="/man/"> System Documentation</a>
+</li>
+<li data-linked>
+<a href="/syslog/"> System Logs</a>
+</li>
+<li data-linked>
+<a href="/useradmin/"> Users and Groups</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#servers"><i class="fa fa-rocket fa-fw"></i> <span>Servers</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="servers">
+<li data-linked>
+<a href="/apache/"> Apache Webserver</a>
+</li>
+<li data-linked>
+<a href="/dovecot/"> Dovecot IMAP/POP3 Server</a>
+</li>
+<li data-linked>
+<a href="/mysql/"> MySQL Database Server</a>
+</li>
+<li data-linked>
+<a href="/postfix/"> Postfix Mail Server</a>
+</li>
+<li data-linked>
+<a href="/mailboxes/"> Read User Mail</a>
+</li>
+<li data-linked>
+<a href="/sshd/"> SSH Server</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#other"><i class="fa fa-gavel fa-fw"></i> <span>Others</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="other">
+<li data-linked>
+<a href="/shell/"> Command Shell</a>
+</li>
+<li data-linked>
+<a href="/custom/"> Custom Commands</a>
+</li>
+<li data-linked>
+<a href="/filemin/index.cgi?path=/"> File Manager</a>
+</li>
+<li data-linked>
+<a href="/tunnel/"> HTTP Tunnel</a>
+</li>
+<li data-linked>
+<a href="/file/"> Java File Manager</a>
+</li>
+<li data-linked>
+<a href="/cpan/"> Perl Modules</a>
+</li>
+<li data-linked>
+<a href="/phpini/"> PHP Configuration</a>
+</li>
+<li data-linked>
+<a href="/htaccess-htpasswd/"> Protected Web Directories</a>
+</li>
+<li data-linked>
+<a href="/telnet/"> SSH Login</a>
+</li>
+<li data-linked>
+<a href="/status/"> System and Server Status</a>
+</li>
+<li data-linked>
+<a href="/ajaxterm/"> Text Login</a>
+</li>
+<li data-linked>
+<a href="/updown/"> Upload and Download</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#net"><i class="fa fa-shield fa-fw"></i> <span>Networking</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="net">
+<li data-linked>
+<a href="/bandwidth/"> Bandwidth Monitoring</a>
+</li>
+<li data-linked>
+<a href="/firewall/"> Linux Firewall</a>
+</li>
+<li data-linked>
+<a href="/firewall6/"> Linux IPv6 Firewall</a>
+</li>
+<li data-linked>
+<a href="/net/"> Network Configuration</a>
+</li>
+<li data-linked>
+<a href="/nis/"> NIS Client and Server</a>
+</li>
+<li data-linked>
+<a href="/tcpwrappers/"> TCP Wrappers</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#hardware"><i class="fa fa-hdd-o fa-fw"></i> <span>Hardware</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="hardware">
+<li data-linked>
+<a href="/iscsi-client/"> iSCSI Client</a>
+</li>
+<li data-linked>
+<a href="/raid/"> Linux RAID</a>
+</li>
+<li data-linked>
+<a href="/lvm/"> Logical Volume Management</a>
+</li>
+<li data-linked>
+<a href="/fdisk/"> Partitions on Local Disks</a>
+</li>
+<li data-linked>
+<a href="/lpadmin/"> Printer Administration</a>
+</li>
+<li data-linked>
+<a href="/time/"> System Time</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#cluster"><i class="fa fa-power-off fa-fw"></i> <span>Cluster</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="cluster">
+<li data-linked>
+<a href="/cluster-passwd/"> Cluster Change Passwords</a>
+</li>
+<li data-linked>
+<a href="/cluster-copy/"> Cluster Copy Files</a>
+</li>
+<li data-linked>
+<a href="/cluster-cron/"> Cluster Cron Jobs</a>
+</li>
+<li data-linked>
+<a href="/cluster-shell/"> Cluster Shell Commands</a>
+</li>
+<li data-linked>
+<a href="/cluster-software/"> Cluster Software Packages</a>
+</li>
+<li data-linked>
+<a href="/cluster-usermin/"> Cluster Usermin Servers</a>
+</li>
+<li data-linked>
+<a href="/cluster-useradmin/"> Cluster Users and Groups</a>
+</li>
+<li data-linked>
+<a href="/cluster-webmin/"> Cluster Webmin Servers</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#unused"><i class="fa fa-puzzle-piece fa-fw"></i> <span>Un-used Modules</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="unused">
+<li data-linked>
+<a href="/adsl-client/"> ADSL Client</a>
+</li>
+<li data-linked>
+<a href="/bacula-backup/"> Bacula Backup System</a>
+</li>
+<li data-linked>
+<a href="/bind8/"> BIND DNS Server</a>
+</li>
+<li data-linked>
+<a href="/burner/"> CD Burner</a>
+</li>
+<li data-linked>
+<a href="/dhcpd/"> DHCP Server</a>
+</li>
+<li data-linked>
+<a href="/quota/"> Disk Quotas</a>
+</li>
+<li data-linked>
+<a href="/fail2ban/"> Fail2Ban Intrusion Detector</a>
+</li>
+<li data-linked>
+<a href="/fetchmail/"> Fetchmail Mail Retrieval</a>
+</li>
+<li data-linked>
+<a href="/firewalld/"> FirewallD</a>
+</li>
+<li data-linked>
+<a href="/grub/"> GRUB Boot Loader</a>
+</li>
+<li data-linked>
+<a href="/heartbeat/"> Heartbeat Monitor</a>
+</li>
+<li data-linked>
+<a href="/idmapd/"> idmapd daemon</a>
+</li>
+<li data-linked>
+<a href="/ipsec/"> IPsec VPN Configuration</a>
+</li>
+<li data-linked>
+<a href="/iscsi-server/"> iSCSI Server</a>
+</li>
+<li data-linked>
+<a href="/iscsi-target/"> iSCSI Target</a>
+</li>
+<li data-linked>
+<a href="/iscsi-tgtd/"> iSCSI TGTd</a>
+</li>
+<li data-linked>
+<a href="/jabber/"> Jabber IM Server</a>
+</li>
+<li data-linked>
+<a href="/krb5/"> Kerberos5</a>
+</li>
+<li data-linked>
+<a href="/ldap-client/"> LDAP Client</a>
+</li>
+<li data-linked>
+<a href="/ldap-server/"> LDAP Server</a>
+</li>
+<li data-linked>
+<a href="/ldap-useradmin/"> LDAP Users and Groups</a>
+</li>
+<li data-linked>
+<a href="/mon/"> MON Service Monitor</a>
+</li>
+<li data-linked>
+<a href="/xinetd/"> Network Services</a>
+</li>
+<li data-linked>
+<a href="/inetd/"> Network Services and Protocols</a>
+</li>
+<li data-linked>
+<a href="/exports/"> NFS Exports</a>
+</li>
+<li data-linked>
+<a href="/openslp/"> OpenSLP Server</a>
+</li>
+<li data-linked>
+<a href="/postgresql/"> PostgreSQL Database Server</a>
+</li>
+<li data-linked>
+<a href="/pap/"> PPP Dialin Server</a>
+</li>
+<li data-linked>
+<a href="/ppp-client/"> PPP Dialup Client</a>
+</li>
+<li data-linked>
+<a href="/pptp-client/"> PPTP VPN Client</a>
+</li>
+<li data-linked>
+<a href="/pptp-server/"> PPTP VPN Server</a>
+</li>
+<li data-linked>
+<a href="/procmail/"> Procmail Mail Filter</a>
+</li>
+<li data-linked>
+<a href="/proftpd/"> ProFTPD Server</a>
+</li>
+<li data-linked>
+<a href="/qmailadmin/"> QMail Mail Server</a>
+</li>
+<li data-linked>
+<a href="/samba/"> Samba Windows File Sharing</a>
+</li>
+<li data-linked>
+<a href="/sendmail/"> Sendmail Mail Server</a>
+</li>
+<li data-linked>
+<a href="/shorewall/"> Shoreline Firewall</a>
+</li>
+<li data-linked>
+<a href="/shorewall6/"> Shorewall6 Firewall</a>
+</li>
+<li data-linked>
+<a href="/smart-status/"> SMART Drive Status</a>
+</li>
+<li data-linked>
+<a href="/spam/"> SpamAssassin Mail Filter</a>
+</li>
+<li data-linked>
+<a href="/squid/"> Squid Proxy Server</a>
+</li>
+<li data-linked>
+<a href="/sarg/"> Squid Report Generator</a>
+</li>
+<li data-linked>
+<a href="/stunnel/"> SSL Tunnels</a>
+</li>
+<li data-linked>
+<a href="/syslog-ng/"> System Logs NG</a>
+</li>
+<li data-linked>
+<a href="/usermin/"> Usermin Configuration</a>
+</li>
+<li data-linked>
+<a href="/vgetty/"> Voicemail Server</a>
+</li>
+<li data-linked>
+<a href="/webalizer/"> Webalizer Logfile Analysis</a>
+</li>
+<li data-linked>
+<a href="/wuftpd/"> WU-FTP Server</a>
+</li>
+</ul></li>
+<li data-linked><a href="/webmin/refresh_modules.cgi" class="navigation_module_trigger"><i class="fa fa-fw fa-refresh"></i> <span>Refresh Modules</span></a></li>
+</ul>
+<br><br><ul class="user-links"><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Day/night mode toggle (Alt+L)" class="user-link palette-toggle cursor-pointer"><span><i class="fa fa-fw fa-moon"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Terminal (Alt+K)" class="user-link ported-console cursor-pointer"><span><i class="fa fa-fw fa-terminal"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Favorites (Alt+F)" class="user-link favorites cursor-pointer"><span><i class="fa fa-fw fa-star"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Theme Configuration" class="user-link theme-options cursor-pointer"><a class="menu-exclude-link" href="/webmin/edit_themes.cgi" data-href="/webmin/edit_themes.cgi"><i class="fa fa-fw fa-cogs"></i></a></li><li class="user-link"><a data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Edit user" class="menu-exclude-link" data-href="/acl/edit_user.cgi" href="/acl/edit_user.cgi?user=root"><i class="fa fa-fw fa-user"></i>&nbsp;<span>root</span></a></li><li class="user-link __logout-link"><a data-nref data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Sign out" class="menu-exclude-link" href="/session_login.cgi?logout=1"><i class="fa fa-fw fa-sign-out text-danger"></i></a></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Refresh (Alt+R)" class="user-link hidden"><a class="menu-exclude-link" data-refresh="true" style="cursor: pointer"><i class="fa fa-fw fa-refresh"></i></a></li></ul><ul class="user-html"><li class="user-html-string"></li></ul></aside>
+<div id="favorites-menu">
+    <div class="favorites-menu-outer">
+      <nav class="favorites-menu">
+          <ul class="favorites-menu-content ui-sortable">
+              <li class="menu-exclude exclude favorites-title">
+                <h1><i class="fa fa-star-o"></i>&nbsp;&nbsp;Favorites<sup style="position: absolute; margin: 25px 0 0 -10px;" class="hidden">&nbsp;&nbsp;<small class="text-white"> <a href="/settings-editor_read.cgi?file=/etc/webmin/authentic-theme/favorites.json" class="fa fa-pencil-square-o hidden" style="display: inline; font-size: 1em;"></a></small></sup></h1>
+              </li>
+              <li class="menu-exclude exclude favorites-no-message">
+                    <span>There were no favorites added yet...</span>
+              </li>
+        
+        </ul>
+      </nav>
+    </div>
+    <a class="favorites-menu-close">
+      <div class="favorites-menu-icon">
+        <div class="favorites-menu-bar"></div>
+        <div class="favorites-menu-bar"></div>
+      </div>
+    </a>
+</div><div id="content" class="__page">
+ <div class="container-fluid col-lg-10 col-lg-offset-1" data-dcontainer="1"></div>
+</div>
+<div data-autocomplete="1" class="-shell-port-">
+  <div class="-shell-port-container">
+    <div data-shell-config><i class="fa fa-lg fa-cogs"></i></div>
+    <div class="-shell-port-close"></div>
+    <div data-output="true"><pre data-xconsole></pre></div>
+    <div class="-shell-port-cmd">
+      <span class="-shell-port-prompt"><span class="-shell-port-type">[root@chaos <span class="-shell-port-pwd" data-home="/root" data-pwd="/root">~</span>]#</span></span><input type="text" data-command="true" autocomplete="off" spellcheck="false"><span class="-shell-port-cursor">&nbsp;</span>
+    </div>
+  </div>
+</div>
+<div class="top-aprogress"></div>
+</body>
+</html>
+Äã¾^0D      \Š7\Š7@$ÎN           :https://chaos.htb:10000/ necko:classified 1 strongly-framed 0 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeBAgAAgAAAAAAAAAAAAAAAAAAAAEAMQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAN7MIIDdzCCAl+gAwIBAgIUCtTGOhStF/XeR7W+K1TCUAKjtSAwDQYJKoZIhvcNAQELBQAwSzEiMCAGA1UECgwZV2VibWluIFdlYnNlcnZlciBvbiBjaGFvczEKMAgGA1UEAwwBKjEZMBcGCSqGSIb3DQEJARYKcm9vdEBjaGFvczAeFw0xODEwMjgxMjQ1MjhaFw0yMzEwMjcxMjQ1MjhaMEsxIjAgBgNVBAoMGVdlYm1pbiBXZWJzZXJ2ZXIgb24gY2hhb3MxCjAIBgNVBAMMASoxGTAXBgkqhkiG9w0BCQEWCnJvb3RAY2hhb3MwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCYmipTUcfOc7P8PvO4jVbwd74qzIXw1QsO8W/Pj0O4o/+hfSzvATBWyE1r9NcEKzS9sq3oyqlj/EzZbrwzketZCay+G+lkegtfRI1dlUGAncZW7UAAToc4sb+mCp+fz7ujjiZ4nb3XJK+cRXyrh5L9+FtcOB8Xw87YmvxS24wXugXpzAU9HDprByjHFf5ZBMGWmbhxGazbYVG5ioXhd7BNw6ZrGmNKQfD71WgMz0Kw6Tv4loW6X68FpnVTzB05Za+bsELTuYOuNLEvvr5f2kL/oI5HRsbRXZU0PQqQQRO6DUY5RDuuXrLxAI16zUSZeszql2fQmor5F1rpLZPm7DWlAgMBAAGjUzBRMB0GA1UdDgQWBBSlUxvsFmE5NEivkfWc5BNo5rSXEzAfBgNVHSMEGDAWgBSlUxvsFmE5NEivkfWc5BNo5rSXEzAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAQrfSqA/w0qmu0szI7BUGDxL+tzOj7W40xyoaY+zMQ2xvhB1bpnlGoHD1D7yOtx/HGlvtTVDiUtit3Q3W4ax6vlV8Wlw/qMcibPSqvgdISQr0Hd57KlWFQzecurShfWkFHp79wRMFLtcfLPi77doDy5X7JoWI1JiLTIOzvXML+whBTZni3QK8FgBnrRk5zyB3NV0ttb4GNUTVFQkNQau2CTCgsA6b2Z+36iILMIM193dVDvzU9T2uHFl2sCeg/7icb4ArmbU0E9+TyDJLYq3PR44pmzXi9SPyMYfRto4VpviiTQYiD0XZlpHEf9ARIWHf5buIxTZx6HcyPlzxqp45YEwIABAEAAQABAQEAAAAAAAZ4MjU1MTkAAAAOUlNBLVBTUy1TSEEyNTYAAA== request-method GET response-head HTTP/1.0 200 Document follows
+Date: Thu, 14 Mar 2019 11:07:22 GMT
+Server: MiniServ/1.890
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'
+Content-type: text/html; Charset=UTF-8
+ original-response-headers Date: Thu, 14 Mar 2019 11:07:22 GMT
+Server: MiniServ/1.890
+Connection: close
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'
+Content-type: text/html; Charset=UTF-8
+ uncompressed-len 0 predictor::resource-count 4 predictor::https://chaos.htb:10000/unauthenticated/css/bundle.min.css?1919999999999911 1,1,1552561944,4096 predictor::https://chaos.htb:10000/unauthenticated/css/fonts-roboto.min.css?1919999999999911 1,1,1552561944,4096 predictor::https://chaos.htb:10000/unauthenticated/js/bundle.min.js?1919999999999911 1,1,1552561944,4096 net-response-time-onstart 245 net-response-time-onstop 804 predictor::https://chaos.htb:10000/images/favicon-webmin.ico 1,1,1552561944,4096   CL

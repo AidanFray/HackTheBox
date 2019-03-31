@@ -1,0 +1,16 @@
+1 	Closed 	Welcome to Lyghtspeed's lightweight telco support system!
+
+2 	Closed 	Rx / Mr. White. Says he can't get to "the interwebz". Cleared cache/cookie, etc., rebooted PC. Pb fixed.
+
+3 	Open 	Rx / Jeremy Paxton. Customer complaining about "choke" and "lags" with BoogleGrounds gaming application. Ticket opened with field services to check DSL line. Update 2018/05/30: DSL line checks out OK, sending to IP Core team for further investigation.
+
+4 	Escalated 	Rx / Cust #642. Need help setting up Outlook Express on Windows 98. Told customer this platform is no longer supported. Customer has requested an escalation to my manager.
+
+5 	Closed 	Rx / LoneWolf7653. User called in to report what is according to him a "critical security issue" in our demarc equipment. Mentioned something about a CVE (??). Request contact info and sent to legal for further action.
+
+6 	Closed 	Rx / CastCom. IP Engineering team from one of our upstream ISP called to report a problem with some of their routes being leaked again due to a misconfiguration on our end. Update 2018/06/13: Pb solved: Junior Net Engineer Mike D. was terminated yesterday. Updated: 2018/06/15: CastCom. still reporting issues with 3 networks: 10.120.15,10.120.16,10.120.17/24's, one of their VIP is having issues connecting by FTP to an important server in the 10.120.15.0/24 network, investigating... Updated 2018/06/16: No prbl. found, suspect they had stuck routes after the leak and cleared them manually.
+
+7 	Closed 	Rx / Pam Dubois. Customer is inquiring about multiple emails received from a "Nigerian Prince". 
+Upselled customer our email security mgmt solution.
+
+8 	Open 	Rx / Roger (from CastCom): wants to schedule a test of their route filtering policy, asked us to inject one of their routes from our side. He's insisted we tag the route correctly so it is not readvertised to other BGP AS'es. 

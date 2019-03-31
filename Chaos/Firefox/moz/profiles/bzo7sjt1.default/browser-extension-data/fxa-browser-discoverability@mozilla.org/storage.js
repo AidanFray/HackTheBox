@@ -1,0 +1,1 @@
+{"studyInfo":{"activeExperimentName":"fxa-browser-discoverability@mozilla.org","isFirstRun":true,"firstRunTimestamp":1552561906090,"variation":{"name":"treatment2","weight":1},"shieldId":"","delayInMinutes":43199.9999}}

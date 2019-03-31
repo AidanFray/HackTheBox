@@ -1,0 +1,1 @@
+curl -s http://chaos.htb/J00_w1ll_f1Nd_n07H1n9_H3r3/compile/test.txt | base64 -d

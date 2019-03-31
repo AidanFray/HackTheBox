@@ -1,0 +1,5 @@
+# Nmap 7.70 scan initiated Fri Feb 15 16:35:10 2019 as: nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=admin,smbpass=imnothuman -p445,139 10.10.10.111
+# Ports scanned: TCP(2;139,445) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.111 ()	Status: Up
+Host: 10.10.10.111 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+# Nmap done at Fri Feb 15 16:35:16 2019 -- 1 IP address (1 host up) scanned in 6.36 seconds

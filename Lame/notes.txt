@@ -1,0 +1,3 @@
+10.10.10.3
+
+# Just using a samba exploit you gain reverse shell as root

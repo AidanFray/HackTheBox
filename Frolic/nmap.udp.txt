@@ -1,0 +1,8 @@
+Nmap scan report for 10.10.10.111
+Host is up (0.17s latency).
+Not shown: 998 closed ports
+PORT    STATE         SERVICE
+137/udp open          netbios-ns
+138/udp open|filtered netbios-dgm
+
+Nmap done: 1 IP address (1 host up) scanned in 1089.62 seconds
