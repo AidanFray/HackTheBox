@@ -2,9 +2,9 @@
 
 ## Boxes
 
-|   Name   | Walkthrough Doc |
-| -------- | --------------- |
-|  Access  | [View](Access/notes/)
+|   Name   |     Walkthrough Doc     |
+| -------- | ----------------------- |
+|  Access  | [View](Access/notes.md) |
 
 
 # TODO - Flags
