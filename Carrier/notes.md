@@ -11,7 +11,7 @@ PHP Version 7.0.30-0ubuntu0.16.04.1
 
 A login page with "Lyghtspeed"
 
-### GoButser
+### GoBuster
 ```
 /img
 /tools
