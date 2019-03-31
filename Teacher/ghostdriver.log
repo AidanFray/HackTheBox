@@ -1,0 +1,25 @@
+[INFO  - 2019-03-31T15:04:53.139Z] GhostDriver - Main - running on port 41567
+[INFO  - 2019-03-31T15:04:53.902Z] Session [56f3f790-53c6-11e9-98c3-33e3d628d461] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-31T15:04:53.902Z] Session [56f3f790-53c6-11e9-98c3-33e3d628d461] - page.customHeaders:  - {}
+[INFO  - 2019-03-31T15:04:53.902Z] Session [56f3f790-53c6-11e9-98c3-33e3d628d461] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-31T15:04:53.903Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 56f3f790-53c6-11e9-98c3-33e3d628d461
+[ERROR - 2019-03-31T15:04:55.689Z] Session [56f3f790-53c6-11e9-98c3-33e3d628d461] - page.onError - msg: Error: Script error for "jquery", needed by: core/first
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-31T15:04:55.690Z] Session [56f3f790-53c6-11e9-98c3-33e3d628d461] - page.onError - stack:
+  defaultOnError (http://10.10.10.153/moodle/lib/javascript.php/1530059091/lib/requirejs/require.min.js:1)
+  c (http://10.10.10.153/moodle/lib/javascript.php/1530059091/lib/requirejs/require.min.js:1)
+  onScriptError (http://10.10.10.153/moodle/lib/javascript.php/1530059091/lib/requirejs/require.min.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-31T15:09:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:14:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:19:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:24:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:29:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:34:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:39:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:44:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:49:53.138Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-31T15:54:53.139Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
