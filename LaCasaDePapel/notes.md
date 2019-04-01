@@ -145,9 +145,16 @@ Extracting the ssh keys for ```berlin``` doesn't let us login with ssh. This is 
 We can write in ```dali``` home using:
 
 ```
-$myfile = fopen("/home/dali/test.txt", "w") 
+$myfile = fopen("/home/dali/server.js", "w") 
 ```
 
 This can be used to add the key to the ```authorized_keys```. However, when connecting via ssh the shell is just the PsyShell instance
 
 Is there a way to escape?
+
+foreach($f as $filename){
+    echo $filename;
+    echo file_get_contents($filename);
+}
+
+$fileList = glob('/home/dali/.config/*');

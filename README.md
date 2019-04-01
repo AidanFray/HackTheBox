@@ -20,6 +20,8 @@
 |  LaCasaDePapel    | [View](LaCasaDePapel/notes.md)    |
 |  Lame             | [View](Lame/notes.md)             |
 |  Lightweight      | [View](Lightweigh/notes.md)       |
+|  Netmon           | [View](Netmin/notes.md)           |
+|  Poison           | [View](Poison/notes.md)           |
 |   ...             |                                   |
 |  Teacher          | [View](Teacher/notes.md)          |
 
