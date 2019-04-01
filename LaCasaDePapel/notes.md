@@ -136,5 +136,22 @@ This is a base64 encoded file path. In theory this should let us encode our own
 Below is ```../user.txt``` url:
 
 ```
-https://10.10.10.131/file/Li4vdXNlci50eHQK
+../user.txt
+Li4vdXNlci50eHQ=
 ```
+
+This gives us the user.txt. We can repeat this process with the .ssh keys
+
+Note: ```-n``` option is needed with ```echo``` to make sure there is not trailing newline
+
+Extracting the ssh keys for ```berlin``` doesn't let us login with ssh. This is due to the keys not being in the ```authorized_keys``` file
+
+We can write in ```dali``` home using:
+
+```
+$myfile = fopen("/home/dali/test.txt", "w") 
+```
+
+This can be used to add the key to the ```authorized_keys```. However, when connecting via ssh the shell is just the PsyShell instance
+
+Is there a way to escape?
