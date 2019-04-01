@@ -47,13 +47,13 @@ You can create tunneled ssh using -L local_port:address:remote_port
 ssh -L 5801:127.0.0.1:5801 -L 5901:127.0.0.1:5901 charix@10.10.10.84
 ```
 
-# This allows us to connect to the port on our base machine. Running:
+This allows us to connect to the port on our base machine. Running:
 
 ```
 curl 127.0.0.1:5901
 ```
 
-# Then by using the secret we found ealier we can authenticate with the VNC server and gain a shell
+Then by using the secret we found ealier we can authenticate with the VNC server and gain a shell
 
 ```
 vncviewer 127.0.0.1::5901 -passwd secret
