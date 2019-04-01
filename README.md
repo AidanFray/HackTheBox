@@ -6,7 +6,6 @@
 
 ## Boxes
 
-| ----------------- | --------------------------------- |
 |   Name            |         Walkthrough Doc           |
 | ----------------- | --------------------------------- |
 |  Access           | [View](Access/notes.md)           |
@@ -25,7 +24,6 @@
 |  Poison           | [View](Poison/notes.md)           |
 |  Teacher          | [View](Teacher/notes.md)          |
 |  Ypuffy           | [View](Ypuffy/notes.md)           |
-| ----------------- | --------------------------------- |
 
 
 # TODO - Flags
