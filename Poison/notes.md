@@ -1,7 +1,5 @@
 ![logo](./logo.png)
 
-10.10.10.84
-
 # USER
 
 Website hosted on the :80 port allows for shell script testing
