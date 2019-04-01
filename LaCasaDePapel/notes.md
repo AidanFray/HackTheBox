@@ -1,7 +1,3 @@
-# LaCasaDePapel
-
-10.10.10.131
-
 ![logo](./logo.png)
 
 # User
