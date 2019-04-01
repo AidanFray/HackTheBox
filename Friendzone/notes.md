@@ -6,10 +6,10 @@
 
 gobuster
 ```
-	/wordpress
-	/images
-	/upload
-	/timestamp
+/wordpress
+/images
+/upload
+/timestamp
 ```
 
 SMB enumeration
