@@ -1,6 +1,4 @@
-# FRIENDZONE
-
-10.10.10.123
+![](./logo.png)
 
 # USER
 

@@ -1,11 +1,11 @@
-# CHAOS
+![](./logo.png)
 
-10.10.10.120
+# USER
 
 Website does not allow ```Direct IP```?
 By adding the ip to the host file we're able to access the webpage. This is through **virtual host routing**
 
-### GoBuster
+GoBuster
 ```
 10.10.10.120
     /wp

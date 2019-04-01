@@ -1,7 +1,6 @@
-# ACCESS
-10.10.10.98 
+![](./logo.png)
 
-## User
+# USER
 Gobuster wildcard response found:
 
 http://10.10.10.96/a1f3d8cd-3e99-428d-9c15-741636949ce
@@ -48,7 +47,7 @@ security
 On the 10.10.10.98 Telnet server. This provides access to the command line
 
 
-## Root
+# ROOT
 
 CMDKEY shows the saved credenials of a user
 

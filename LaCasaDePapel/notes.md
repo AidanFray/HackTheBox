@@ -1,6 +1,6 @@
 ![logo](./logo.png)
 
-# User
+# USER
 
 After an nmap scan it can be seen that the server is running vsftpd 2.3.4.
 This version has a ```:)``` backdoor.

@@ -1,6 +1,4 @@
-# FORTUNE
-
-10.10.10.127
+![](./logo.png)
 
 # USER
 
