@@ -2,7 +2,7 @@
 
 10.10.10.131
 
-![logo](./logo.pngs)
+![logo](./logo.png)
 
 # User
 
