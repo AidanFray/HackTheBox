@@ -133,6 +133,4 @@ ssh -i pk.key alive1978@10.10.10.107
 
 # ROOT
 
-```
 Using CVE-2018-14665 we can gain root privleges on an OpenBSD System
-```
