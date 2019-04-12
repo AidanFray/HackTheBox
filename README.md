@@ -5,25 +5,31 @@
 
 
 ## Boxes
+<!-- <img width=20 src=./_images/win.png> -->
+<!-- <img width=20 src=./_images/lin.png> -->
+<!-- <img width=20 src=./_images/gear.png> -->
+<!-- <img width=20 src=./_images/bsd.png> -->
 
-|   Name            |         Walkthrough Doc           |
-| ----------------- | --------------------------------- |
-|  Access           | [View](Access/notes.md)           |
-|  Carrier          | [View](Carrier/notes.md)          |
-|  Chaos            | [View](Chaos/notes.md)            |
-|  Curling          | [View](Curling/notes.md)          |
-|  Fortune          | [View](Fortune/notes.md)          |
-|  FriendZone       | [View](Friendzone/notes.md)       |
-|  Frolic           | [View](Frolic/notes.md)           |
-|  Help             | [View](Help/notes.md)             |
-|  Irked            | [View](Irked/notes.md)            |
-|  LaCasaDePapel    | [View](LaCasaDePapel/notes.md)    |
-|  Lame             | [View](Lame/notes.md)             |
-|  Lightweight      | [View](Lightweight/notes.md)      |
-|  Netmon           | [View](Netmon/notes.md)           |
-|  Poison           | [View](Poison/notes.md)           |
-|  Teacher          | [View](Teacher/notes.md)          |
-|  Ypuffy           | [View](Ypuffy/notes.md)           |
+
+|   Name            |      OS                               |         Walkthrough Doc           |
+| ----------------- |---------------------------------------|:---------------------------------:|
+|  Access           | <img width=20 src=./_images/win.png>  | [View](Access/notes.md)           |
+|  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/notes.md)          |
+|  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/notes.md)            |
+|  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/notes.md)          |
+|  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/notes.md)          |
+|  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/notes.md)       |
+|  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/notes.md)           |
+|  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/notes.md)             |
+|  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/notes.md)            |
+|  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/notes.md)    |
+|  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/notes.md)             |
+|  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/notes.md)      |
+|  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/notes.md)           |
+|  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/notes.md)           |
+|  Querier          | <img width=20 src=./_images/win.png>  |                                   |
+|  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/notes.md)          |
+|  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/notes.md)           |
 
 
 # TODO - Flags
