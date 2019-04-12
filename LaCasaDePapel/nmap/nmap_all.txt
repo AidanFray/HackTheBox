@@ -1,0 +1,5 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-05 10:08 UTC
+Stats: 0:01:14 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 1.48% done; ETC: 11:31 (1:21:50 remaining)
+Stats: 0:02:03 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 1.96% done; ETC: 11:53 (1:43:21 remaining)
