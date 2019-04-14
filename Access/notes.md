@@ -1,9 +1,7 @@
 ![](./logo.png)
 
 # USER
-Gobuster wildcard response found:
-
-http://10.10.10.96/a1f3d8cd-3e99-428d-9c15-741636949ce
+By scanning the machine it was evident that a FTP port was open. On it was a zip file.
 
 Unzipping a Password Protected File and Error: unsupported compression method 99
 
