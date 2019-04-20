@@ -90,3 +90,24 @@ class ReverseShell(object):
 We are able to gain a reverse shell on the target. This runs the code because when the `unpickle` method is called it wil always resolve the `__reduce__` method causing our payload to run.
 
 This gives us the ability to `cat` the `user.txt`.
+
+# ROOT
+
+Running lse.sh gives us the presence of a `.git` file in the home directory of roosa. This is interesting because these folders can be a treasure trove of useful information.
+
+Reading through the commit history we see mention of a keys:
+
+```
+commit: add key for feed integration from tnerprise backend
+commit: reverted accidental commit with proper key
+```
+
+This is interesting because incorrect keys can easily be committed. Files can be recovered from .git repos by using GitTools `extractor.sh`
+
+Running:
+
+```
+./extractor.sh <LOCATION OF .git> <OUTPUT DIR>
+```
+
+Outputs the files for the second commit. Inside is a key that when tested is the `root` ssh key.
