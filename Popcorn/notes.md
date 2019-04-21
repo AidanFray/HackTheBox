@@ -60,3 +60,17 @@ This gives us a reverse shell and allows us to view the `user.txt`
 The exploit above has been incorporated into a script called `automated_shell.py`. This will spawn a netcat session automatically. 
 
 # ROOT
+
+Looking in george's home we have a uncommon file `.cache/motd.legal-displayed`
+
+With a bit of research it looks like this is a sign of a vulnerability defined in CVE-2010-0832.
+
+From the research
+
+```
+...
+Exploitation of this PAM MOTD module vulnerability results in the user gaining read and access rights to /etc/shadow
+...
+```
+
+This would allow us to overwrite root

