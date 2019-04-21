@@ -17,7 +17,7 @@
 |  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/notes.md)          |
 |  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/notes.md)            |
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/notes.md)          |
-|  Dev0ops          | <img width=20 src=./_images/lin.png>  |                                   |
+|  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/notes.md)          |
 |  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/notes.md)          |
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/notes.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/notes.md)           |

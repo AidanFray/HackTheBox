@@ -1,0 +1,17 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-20 20:41 IST
+Nmap scan report for 10.10.10.126
+Host is up (0.089s latency).
+Not shown: 65533 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.10.3
+|_http-server-header: nginx/1.10.3
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open  ssl/http nginx 1.10.3
+|_http-server-header: nginx/1.10.3
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=www.nestedflanders.htb/organizationName=Unattended ltd/stateOrProvinceName=IT/countryName=IT
+| Not valid before: 2018-12-19T09:43:58
+|_Not valid after:  2021-09-13T09:43:58
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 228.13 seconds
