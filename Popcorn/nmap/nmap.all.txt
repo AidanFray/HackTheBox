@@ -1,0 +1,39 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-21 13:34 IST
+Stats: 0:10:05 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 87.89% done; ETC: 13:46 (0:01:23 remaining)
+Nmap scan report for 10.10.10.6
+Host is up (0.076s latency).
+Not shown: 65512 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 5.1p1 Debian 6ubuntu2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 3e:c8:1b:15:21:15:50:ec:6e:63:bc:c5:6b:80:7b:38 (DSA)
+|_  2048 aa:1f:79:21:b8:42:f4:8a:38:bd:b8:05:ef:1a:07:4d (RSA)
+80/tcp    open     http          Apache httpd 2.2.12 ((Ubuntu))
+|_http-server-header: Apache/2.2.12 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+3818/tcp  filtered crinis-hb
+4445/tcp  filtered upnotifyp
+7266/tcp  filtered unknown
+8997/tcp  filtered oracle-ms-ens
+10218/tcp filtered unknown
+11458/tcp filtered unknown
+16187/tcp filtered unknown
+21613/tcp filtered unknown
+25789/tcp filtered unknown
+29679/tcp filtered unknown
+29752/tcp filtered unknown
+30986/tcp filtered unknown
+31027/tcp filtered unknown
+34155/tcp filtered unknown
+39686/tcp filtered unknown
+40457/tcp filtered unknown
+46415/tcp filtered unknown
+49311/tcp filtered unknown
+52063/tcp filtered unknown
+55393/tcp filtered unknown
+59306/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 961.64 seconds
