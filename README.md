@@ -23,15 +23,16 @@
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/notes.md)           |
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/notes.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/notes.md)            |
+|  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/notes.md)            |
 |  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/notes.md)    |
 |  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/notes.md)             |
 |  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/notes.md)      |
 |  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/notes.md)           |
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/notes.md)           |
-|  Popcorn          | <img width=20 src=./_images/lin.png>  |                                   |
+|  Popcorn          | <img width=20 src=./_images/lin.png>  | **X**                             |
 |  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/notes.md)          |
 |  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/notes.md)          |
-|  Unattended       | <img width=20 src=./_images/lin.png>  |                                   |
+|  Unattended       | <img width=20 src=./_images/lin.png>  | **X**                             |
 |  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/notes.md)           |
 
 
