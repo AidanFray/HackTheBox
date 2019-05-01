@@ -1,0 +1,817 @@
+############################################################                                                                    
+##     J.A.W.S. (Just Another Windows Enum Script)        ##                                                                    
+##                                                        ##                                                                    
+##           https://github.com/411Hall/JAWS              ##                                                                    
+##                                                        ##                                                                    
+############################################################                                                                    
+                                                                                                                                
+Windows Version:                                                                                                                
+Architecture: AMD64                                                                                                             
+Hostname: BASTION                                                                                                               
+Current User: l4mpje                                                                                                            
+Current Time\Date: 05/01/2019 12:18:08                                                                                          
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Users                                                                                                                          
+-----------------------------------------------------------                                                                     
+----------                                                                                                                      
+Username: Administrator                                                                                                         
+Groups:   Administrators                                                                                                        
+----------                                                                                                                      
+Username: DefaultAccount                                                                                                        
+Groups:   System Managed Accounts Group                                                                                         
+----------                                                                                                                      
+Username: Guest                                                                                                                 
+Groups:   Guests                                                                                                                
+----------                                                                                                                      
+Username: L4mpje                                                                                                                
+Groups:   Users                                                                                                                 
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Network Information                                                                                                            
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+Windows IP Configuration                                                                                                        
+                                                                                                                                
+                                                                                                                                
+Ethernet adapter Ethernet0:                                                                                                     
+                                                                                                                                
+   Connection-specific DNS Suffix  . :                                                                                          
+   IPv6 Address. . . . . . . . . . . : dead:beef::98e3:9d9e:bb6a:8f3f                                                           
+   Link-local IPv6 Address . . . . . : fe80::98e3:9d9e:bb6a:8f3f%4                                                              
+   IPv4 Address. . . . . . . . . . . : 10.10.10.134                                                                             
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                                                                            
+   Default Gateway . . . . . . . . . : fe80::250:56ff:feb9:9297%4                                                               
+                                       10.10.10.2                                                                               
+                                                                                                                                
+Tunnel adapter isatap.{8253841C-588D-4E94-B23A-993BB2E4B4D9}:                                                                   
+                                                                                                                                
+   Media State . . . . . . . . . . . : Media disconnected                                                                       
+   Connection-specific DNS Suffix  . :                                                                                          
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Arp                                                                                                                            
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+Interface: 10.10.10.134 --- 0x4                                                                                                 
+  Internet Address      Physical Address      Type                                                                              
+  10.10.10.2            00-50-56-b9-92-97     dynamic                                                                           
+  10.10.10.255          ff-ff-ff-ff-ff-ff     static                                                                            
+  224.0.0.22            01-00-5e-00-00-16     static                                                                            
+  224.0.0.252           01-00-5e-00-00-fc     static                                                                            
+  239.255.255.250       01-00-5e-7f-ff-fa     static                                                                            
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ NetStat                                                                                                                        
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+Active Connections                                                                                                              
+                                                                                                                                
+  Proto  Local Address          Foreign Address        State           PID                                                      
+  TCP    0.0.0.0:22             0.0.0.0:0              LISTENING       1604                                                     
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       748                                                      
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4                                                        
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4                                                        
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4                                                        
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       468                                                      
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       904                                                      
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       864                                                      
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       1556                                                     
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       1452                                                     
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       604                                                      
+  TCP    0.0.0.0:49670          0.0.0.0:0              LISTENING       596                                                      
+  TCP    10.10.10.134:22        10.10.14.55:57118      ESTABLISHED     1604                                                     
+  TCP    10.10.10.134:139       0.0.0.0:0              LISTENING       4                                                        
+  TCP    [::]:22                [::]:0                 LISTENING       1604                                                     
+  TCP    [::]:135               [::]:0                 LISTENING       748                                                      
+  TCP    [::]:445               [::]:0                 LISTENING       4                                                        
+  TCP    [::]:5985              [::]:0                 LISTENING       4                                                        
+  TCP    [::]:47001             [::]:0                 LISTENING       4                                                        
+  TCP    [::]:49664             [::]:0                 LISTENING       468                                                      
+  TCP    [::]:49665             [::]:0                 LISTENING       904                                                      
+  TCP    [::]:49666             [::]:0                 LISTENING       864                                                      
+  TCP    [::]:49667             [::]:0                 LISTENING       1556                                                     
+  TCP    [::]:49668             [::]:0                 LISTENING       1452                                                     
+  TCP    [::]:49669             [::]:0                 LISTENING       604                                                      
+  TCP    [::]:49670             [::]:0                 LISTENING       596                                                      
+  UDP    0.0.0.0:123            *:*                                    252                                                      
+  UDP    0.0.0.0:500            *:*                                    864                                                      
+  UDP    0.0.0.0:4500           *:*                                    864                                                      
+  UDP    0.0.0.0:5050           *:*                                    252                                                      
+  UDP    0.0.0.0:5353           *:*                                    792                                                      
+  UDP    0.0.0.0:5355           *:*                                    792                                                      
+  UDP    10.10.10.134:137       *:*                                    4                                                        
+  UDP    10.10.10.134:138       *:*                                    4                                                        
+  UDP    127.0.0.1:50515        *:*                                    864                                                      
+  UDP    [::]:123               *:*                                    252                                                      
+  UDP    [::]:500               *:*                                    864                                                      
+  UDP    [::]:4500              *:*                                    864                                                      
+  UDP    [::]:5353              *:*                                    792                                                      
+  UDP    [::]:5355              *:*                                    792                                                      
+                                                                                                                                                                                                                                                             
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Hosts File Content                                                                                                             
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+# Copyright (c) 1993-2009 Microsoft Corp.                                                                                       
+#                                                                                                                               
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.                                                             
+#                                                                                                                               
+# This file contains the mappings of IP addresses to host names. Each                                                           
+# entry should be kept on an individual line. The IP address should                                                             
+# be placed in the first column followed by the corresponding host name.                                                        
+# The IP address and the host name should be separated by at least one                                                          
+# space.                                                                                                                        
+#                                                                                                                               
+# Additionally, comments (such as these) may be inserted on individual                                                          
+# lines or following the machine name denoted by a '#' symbol.                                                                  
+#                                                                                                                               
+# For example:                                                                                                                  
+#                                                                                                                               
+#      102.54.94.97     rhino.acme.com          # source server                                                                 
+#       38.25.63.10     x.acme.com              # x client host                                                                 
+                                                                                                                                
+# localhost name resolution is handled within DNS itself.                                                                       
+#       127.0.0.1       localhost                                                                                               
+#       ::1             localhost                                                                                               
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Processes                                                                                                                      
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Scheduled Tasks                                                                                                                
+-----------------------------------------------------------                                                                     
+Current System Time: 05/01/2019 12:18:15                                                                                        
+                                                                                                                                
+TaskName    : \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 64                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 64 Critical                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 Critical                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (A 
+              utomated)                                                                                                         
+Run As User : Everyone                                                                                                          
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (A 
+              utomated)                                                                                                         
+Run As User : Everyone                                                                                                          
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (M 
+              anual)                                                                                                            
+Run As User : Everyone                                                                                                          
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\AppID\PolicyConverter                                                                          
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\appidpolicyconverter.exe                                                                        
+                                                                                                                                
+TaskName    : \Microsoft\Windows\AppID\SmartScreenSpecific                                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\AppID\VerifiedPublisherCertStoreCheck                                                          
+Run As User : LOCAL SERVICE                                                                                                     
+Task To Run : %windir%\system32\appidcertstorecheck.exe                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\compattelrunner.exe                                                                             
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\compattelrunner.exe                                                                             
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Application Experience\ProgramDataUpdater                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\compattelrunner.exe -maintenance                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Application Experience\StartupAppTask                                                          
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %windir%\system32\rundll32.exe Startupscan.dll,SusRunTask                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ApplicationData\appuriverifierdaily                                                            
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %windir%\system32\AppHostRegistrationVerifier.exe                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ApplicationData\appuriverifierinstall                                                          
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %windir%\system32\AppHostRegistrationVerifier.exe                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ApplicationData\appuriverifierinstall                                                          
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %windir%\system32\AppHostRegistrationVerifier.exe                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ApplicationData\CleanupTemporaryState                                                          
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\rundll32.exe Windows.Storage.ApplicationData.dll,CleanupTemporaryState                          
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ApplicationData\DsSvcCleanup                                                                   
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\dstokenclean.exe                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\AppxDeploymentClient\Pre-staged app cleanup                                                    
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\rundll32.exe %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Autochk\Proxy                                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations                                            
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Bluetooth\UninstallDeviceTask                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : BthUdTask.exe $(Arg0)                                                                                             
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Chkdsk\ProactiveScan                                                                           
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\CloudExperienceHost\CreateObjectTask                                                           
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Customer Experience Improvement Program\Consolidator                                           
+Run As User : SYSTEM                                                                                                            
+Task To Run : %SystemRoot%\System32\wsqmcons.exe                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask                                         
+Run As User : LOCAL SERVICE                                                                                                     
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Customer Experience Improvement Program\UsbCeip                                                
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan                                                        
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan                                                        
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan for Crash Recovery                                     
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Defrag\ScheduledDefrag                                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\defrag.exe -c -h -k -g -$                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Device Information\Device                                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\devicecensus.exe                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Device Information\Device                                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\devicecensus.exe                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Diagnosis\Scheduled                                                                            
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\DiskCleanup\SilentCleanup                                                                      
+Run As User : Users                                                                                                             
+Task To Run : %windir%\system32\cleanmgr.exe /autoclean /d %systemdrive%                                                        
+                                                                                                                                
+TaskName    : \Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector                                   
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\rundll32.exe dfdts.dll,DfdGetDefaultPolicyAndSMART                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticResolver                                        
+Run As User : Users                                                                                                             
+Task To Run : %windir%\system32\DFDWiz.exe                                                                                      
+                                                                                                                                
+TaskName    : \Microsoft\Windows\DiskFootprint\Diagnostics                                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\disksnapshot.exe -z                                                                             
+                                                                                                                                
+TaskName    : \Microsoft\Windows\DiskFootprint\StorageSense                                                                     
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\EDP\EDP App Launch Task                                                                        
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\EDP\EDP Auth Task                                                                              
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ErrorDetails\EnableErrorDetailsUpdate                                                          
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\ErrorDetails\ErrorDetailsUpdate                                                                
+Run As User : NETWORK SERVICE                                                                                                   
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Location\Notifications                                                                         
+Run As User : Authenticated Users                                                                                               
+Task To Run : %windir%\System32\LocationNotificationWindows.exe                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Location\WindowsActionDialog                                                                   
+Run As User : Authenticated Users                                                                                               
+Task To Run : %windir%\System32\WindowsActionDialog.exe                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Maintenance\WinSAT                                                                             
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Maps\MapsToastTask                                                                             
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Maps\MapsUpdateTask                                                                            
+Run As User : NETWORK SERVICE                                                                                                   
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents                                                 
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents                                                 
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents                                                 
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents                                                 
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MemoryDiagnostic\RunFullMemoryDiagnostic                                                       
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Mobile Broadband Accounts\MNO Metadata Parser                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : %SystemRoot%\System32\MbaeParserTask.exe                                                                          
+                                                                                                                                
+TaskName    : \Microsoft\Windows\MUI\LPRemove                                                                                   
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\lpremove.exe                                                                                    
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Multimedia\SystemSoundsService                                                                 
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\NetTrace\GatherNetworkInfo                                                                     
+Run As User : Users                                                                                                             
+Task To Run : %windir%\system32\gatherNetworkInfo.vbs                                                                           
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Offline Files\Background Synchronization                                                       
+Run As User : Authenticated Users                                                                                               
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Offline Files\Logon Synchronization                                                            
+Run As User : Authenticated Users                                                                                               
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\PLA\Server Manager Performance Monitor                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\rundll32.exe %systemroot%\system32\pla.dll,PlaHost Server Manager Performance Monitor" "$(A 
+              rg0)""                                                                                                            
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Plug and Play\Device Install Group Policy                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Plug and Play\Device Install Reboot Required                                                   
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Plug and Play\Plug and Play Cleanup                                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Plug and Play\Sysprep Generalize Drivers                                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %SystemRoot%\System32\drvinst.exe 6                                                                               
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem                                                     
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\RecoveryEnvironment\VerifyWinRE                                                                
+Run As User : Administrators                                                                                                    
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Server Manager\CleanupOldPerfLogs                                                              
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\cscript.exe /B /nologo %systemroot%\system32\calluxxprovider.vbs $(Arg0) $(Arg1) $(Arg2)    
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Server Manager\ServerManager                                                                   
+Run As User : Administrators                                                                                                    
+Task To Run : %windir%\system32\ServerManagerLauncher.exe                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Servicing\StartComponentCleanup                                                                
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SettingSync\BackgroundUploadTask                                                               
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SettingSync\BackupTask                                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SettingSync\NetworkStateChangeTask                                                             
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SettingSync\NetworkStateChangeTask                                                             
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Shell\CreateObjectTask                                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Shell\IndexerAutomaticMaintenance                                                              
+Run As User : LOCAL SERVICE                                                                                                     
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Software Inventory Logging\Collection                                                          
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd publish                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Software Inventory Logging\Configuration                                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd configure                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SpacePort\SpaceAgentTask                                                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\SpaceAgent.exe                                                                                  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SpacePort\SpaceAgentTask                                                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\SpaceAgent.exe                                                                                  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SpacePort\SpaceManagerTask                                                                     
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\spaceman.exe /Work                                                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\SpacePort\SpaceManagerTask                                                                     
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\spaceman.exe /Work                                                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Speech\SpeechModelDownloadTask                                                                 
+Run As User : NETWORK SERVICE                                                                                                   
+Task To Run : %windir%\system32\speech_onecore\common\SpeechModelDownload.exe                                                   
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Storage Tiers Management\Storage Tiers Management Initialization                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Storage Tiers Management\Storage Tiers Optimization                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\defrag.exe -c -h -g -# -m 8 -i 13500                                                            
+                                                                                                                                
+TaskName    : \Microsoft\Windows\TextServicesFramework\MsCtfMonitor                                                             
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Time Synchronization\ForceSynchronizeTime                                                      
+Run As User : LOCAL SERVICE                                                                                                     
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Time Zone\SynchronizeTimeZone                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\tzsync.exe                                                                                      
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Maintenance Install                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartInstall                                                                  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\MusUx_UpdateInterval                                                        
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\MusNotification.exe Display                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Policy Install                                                              
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartInstall                                                                  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Reboot                                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\MusNotification.exe RebootDialog                                                            
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Refresh Settings                                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe RefreshSettings                                                               
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Resume On Boot                                                              
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe ResumeUpdate                                                                  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Retry Scan                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Retry Scan                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Retry Scan                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Retry Scan                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Retry Scan                                                         
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Scan                                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Scan                                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Scan                                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\Schedule Scan                                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\usoclient.exe StartScan                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\USO_UxBroker_Display                                                        
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\MusNotification.exe Display                                                                 
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UpdateOrchestrator\USO_UxBroker_ReadyToReboot                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\system32\MusNotification.exe ReadyToReboot                                                           
+                                                                                                                                
+TaskName    : \Microsoft\Windows\UPnP\UPnPHostConfig                                                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : sc.exe config upnphost start= auto                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1902.2-0\MpCmdRun.exe -IdleTask -TaskName WdCacheMaintena 
+              nce                                                                                                               
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Defender\Windows Defender Cleanup                                                      
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1902.2-0\MpCmdRun.exe -IdleTask -TaskName WdCleanup       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan                                               
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1902.2-0\MpCmdRun.exe Scan -ScheduleJob -ScanTrigger 55   
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Defender\Windows Defender Verification                                                 
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.1902.2-0\MpCmdRun.exe -IdleTask -TaskName WdVerification  
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Error Reporting\QueueReporting                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\wermgr.exe -upload                                                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Error Reporting\QueueReporting                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\wermgr.exe -upload                                                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Error Reporting\QueueReporting                                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\wermgr.exe -upload                                                                              
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Windows Filtering Platform\BfeOnServiceStartTypeChange                                         
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\system32\rundll32.exe bfe.dll,BfeOnServiceStartTypeChange                                                
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsColorSystem\Calibration Loader                                                          
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsColorSystem\Calibration Loader                                                          
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Automatic App Update                                                             
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Automatic App Update                                                             
+Run As User : INTERACTIVE                                                                                                       
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Scheduled Start                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\Windows\system32\sc.exe start wuauserv                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Scheduled Start                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\Windows\system32\sc.exe start wuauserv                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Scheduled Start                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\Windows\system32\sc.exe start wuauserv                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\Scheduled Start                                                                  
+Run As User : SYSTEM                                                                                                            
+Task To Run : C:\Windows\system32\sc.exe start wuauserv                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\sih                                                                              
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\System32\sihclient.exe                                                                               
+                                                                                                                                
+TaskName    : \Microsoft\Windows\WindowsUpdate\sihboot                                                                          
+Run As User : SYSTEM                                                                                                            
+Task To Run : %systemroot%\System32\sihclient.exe /boot                                                                         
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Wininet\CacheTask                                                                              
+Run As User : Users                                                                                                             
+Task To Run : COM handler                                                                                                       
+                                                                                                                                
+TaskName    : \Microsoft\Windows\Workplace Join\Automatic-Device-Join                                                           
+Run As User : SYSTEM                                                                                                            
+Task To Run : %SystemRoot%\System32\dsregcmd.exe                                                                                
+                                                                                                                                
+TaskName    : \Microsoft\XblGameSave\XblGameSaveTask                                                                            
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\System32\XblGameSaveTask.exe standby                                                                     
+                                                                                                                                
+TaskName    : \Microsoft\XblGameSave\XblGameSaveTaskLogon                                                                       
+Run As User : SYSTEM                                                                                                            
+Task To Run : %windir%\System32\XblGameSaveTask.exe logon                                                                       
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Services                                                                                                                       
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Installed Programs                                                                                                             
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Installed Patches                                                                                                              
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Program Folders                                                                                                                
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+C:\Program Files                                                                                                                
+-------------                                                                                                                   
+Common Files                                                                                                                    
+Internet Explorer                                                                                                               
+OpenSSH-Win64                                                                                                                   
+PackageManagement                                                                                                               
+VMware                                                                                                                          
+Windows Defender                                                                                                                
+Windows Mail                                                                                                                    
+Windows Media Player                                                                                                            
+Windows Multimedia Platform                                                                                                     
+Windows NT                                                                                                                      
+Windows Photo Viewer                                                                                                            
+Windows Portable Devices                                                                                                        
+WindowsPowerShell                                                                                                               
+                                                                                                                                
+                                                                                                                                
+C:\Program Files (x86)                                                                                                          
+-------------------                                                                                                             
+Common Files                                                                                                                    
+Internet Explorer                                                                                                               
+Microsoft.NET                                                                                                                   
+mRemoteNG                                                                                                                       
+Windows Defender                                                                                                                
+Windows Mail                                                                                                                    
+Windows Media Player                                                                                                            
+Windows Multimedia Platform                                                                                                     
+Windows NT                                                                                                                      
+Windows Photo Viewer                                                                                                            
+Windows Portable Devices                                                                                                        
+WindowsPowerShell                                                                                                               
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Files with Full Control and Modify Access                                                                                      
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+C:\Backups\note.txt                                                                                                             
+C:\Backups\note.txt                                                                                                             
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+C:\Users\L4mpje\Desktop\j.ps1                                                                                                   
+C:\Users\L4mpje\Desktop\user.txt                                                                                                
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Folders with Full Control and Modify Access                                                                                    
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+C:\Backups\WindowsImageBackup                                                                                                   
+C:\Backups\WindowsImageBackup                                                                                                   
+C:\Backups\WindowsImageBackup\L4mpje-PC                                                                                         
+C:\Backups\WindowsImageBackup\L4mpje-PC                                                                                         
+C:\Backups\WindowsImageBackup\L4mpje-PC\Backup 2019-02-22 124351                                                                
+C:\Backups\WindowsImageBackup\L4mpje-PC\Backup 2019-02-22 124351                                                                
+C:\Backups\WindowsImageBackup\L4mpje-PC\Catalog                                                                                 
+C:\Backups\WindowsImageBackup\L4mpje-PC\Catalog                                                                                 
+C:\Backups\WindowsImageBackup\L4mpje-PC\SPPMetadataCache                                                                        
+C:\Backups\WindowsImageBackup\L4mpje-PC\SPPMetadataCache                                                                        
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+Failed to read more folders                                                                                                     
+                                                                                                                                
+Failed to read more folders                                                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Mapped Drives                                                                                                                  
+-----------------------------------------------------------                                                                     
+-----------------------------------------------------------                                                                     
+ Unquoted Service Paths                                                                                                         
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Recent Documents                                                                                                               
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+AutomaticDestinations                                                                                                           
+CustomDestinations                                                                                                              
+L4mpje.bat.lnk                                                                                                                  
+Startup.lnk                                                                                                                     
+user.txt.lnk                                                                                                                    
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Potentially Interesting Files in Users Directory                                                                               
+-----------------------------------------------------------                                                                     
+C:\Users\L4mpje\Desktop\j.ps1                                                                                                   
+C:\Users\L4mpje\Desktop\user.txt                                                                                                
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ 10 Last Modified Files in C:\User                                                                                              
+-----------------------------------------------------------                                                                     
+C:\Users\L4mpje\Documents                                                                                                       
+C:\Users\L4mpje\Saved Games                                                                                                     
+C:\Users\L4mpje\Links\Downloads.lnk                                                                                             
+C:\Users\L4mpje\Links\Desktop.lnk                                                                                               
+C:\Users\L4mpje\Links                                                                                                           
+C:\Users\L4mpje\Desktop\user.txt                                                                                                
+C:\Users\Administrator                                                                                                          
+C:\Users\L4mpje                                                                                                                 
+C:\Users\L4mpje\Desktop\j.ps1                                                                                                   
+C:\Users\L4mpje\Desktop                                                                                                         
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ MUICache Files                                                                                                                 
+-----------------------------------------------------------                                                                     
+C:\Windows\system32\NOTEPAD.EXE.FriendlyAppName                                                                                 
+C:\Windows\system32\NOTEPAD.EXE.ApplicationCompany                                                                              
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ System Files with Passwords                                                                                                    
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ AlwaysInstalledElevated Registry Key                                                                                           
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Stored Credentials                                                                                                             
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+Currently stored credentials:                                                                                                   
+                                                                                                                                
+* NONE *                                                                                                                        
+                                                                                                                                
+-----------------------------------------------------------                                                                     
+ Checking for AutoAdminLogon                                                                                                    
+-----------------------------------------------------------                                                                     
+                                                                                                                                
+                                                                                                                                
+                               

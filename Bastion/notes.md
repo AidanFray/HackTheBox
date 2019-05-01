@@ -35,3 +35,15 @@ bureaulampje
 
 This lets us login via `ssh` and grab the `user.txt`!
 
+# ROOT
+
+Found a non-standard tool called `mRemoteNG`
+
+
+```
+ModifiablePath    : C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps
+IdentityReference : BASTION\L4mpje
+Permissions       : {WriteOwner, Delete, WriteAttributes, Synchronize...}
+%PATH%            : C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps
+AbuseFunction     : Write-HijackDll -DllPath 'C:\Users\L4mpje\AppData\Local\Microsoft\WindowsApps\wlbsctrl.dll'
+```
