@@ -73,4 +73,11 @@ Exploitation of this PAM MOTD module vulnerability results in the user gaining r
 ...
 ```
 
-This would allow us to overwrite root
+This would allow us to overwrite root password
+
+From the documentation:
+```
+pam_motd (aka the MOTD module) in libpam-modules before 1.1.0-2ubuntu1.1 in PAM on Ubuntu 9.10 and libpam-modules before 1.1.1-2ubuntu5 in PAM on Ubuntu 10.04 LTS allows local users to change the ownership of arbitrary files via a symlink attack on .cache in a user's home directory, related to "user file stamps" and the motd.legal-notice file.
+```
+
+Running the file called `motd_exploit.sh` gives us a root account!

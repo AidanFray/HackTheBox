@@ -11,28 +11,30 @@
 <!-- <img width=20 src=./_images/bsd.png> -->
 
 
-|   Name            |      OS                               |         Walkthrough Doc           |
-| ----------------- |---------------------------------------|:---------------------------------:|
-|  Access           | <img width=20 src=./_images/win.png>  | [View](Access/notes.md)           |
-|  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/notes.md)          |
-|  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/notes.md)            |
-|  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/notes.md)          |
-|  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/notes.md)          |
-|  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/notes.md)          |
-|  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/notes.md)       |
-|  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/notes.md)           |
-|  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/notes.md)             |
-|  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/notes.md)            |
-|  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/notes.md)            |
-|  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/notes.md)    |
-|  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/notes.md)             |
-|  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/notes.md)      |
-|  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/notes.md)           |
-|  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/notes.md)           |
-|  Popcorn          | <img width=20 src=./_images/lin.png>  | **X**                             |
-|  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/notes.md)          |
-|  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/notes.md)          |
-|  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/notes.md)           |
+|   Name            |      OS                               |         Walkthrough Doc            |
+| ----------------- |---------------------------------------|:----------------------------------:|
+|  Access           | <img width=20 src=./_images/win.png>  | [View](Access/README.md)           |
+|  Bastion          | <img width=20 src=./_images/win.png>  | **X** <!--[View](Bastion/README.md)-->           |
+|  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/README.md)          |
+|  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/README.md)            |
+|  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |
+|  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/README.md)          |
+|  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/README.md)          |
+|  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
+|  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
+|  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
+|  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
+|  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
+|  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/README.md)    |
+|  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/README.md)             |
+|  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/README.md)      |
+|  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/README.md)           |
+|  OneTwoSeven      | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Netmon/README.md) -->|
+|  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
+|  Popcorn          | <img width=20 src=./_images/lin.png>  | [View](Popcorn/README.md)          |
+|  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/README.md)          |
+|  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/README.md)          |
+|  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/README.md)           |
 
 
 # TODO - Flags

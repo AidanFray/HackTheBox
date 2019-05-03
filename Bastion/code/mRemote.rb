@@ -1,14 +1,14 @@
-################################################################################
-#																			   #
+# ###############################################################################
+# 																			   #
 # mRemote Offline Password Decrypt											   #
 # Based on Metasploit Module enum_mremote_pwds.rb from David Maloney		   #
 # Autor: Adriano Marcio Monteiro											   #
 # E-mail: adrianomarciomonteiro@gmail.com									   #
 # Blog: adrianomarciomonteiro.blogspot.com.br								   #
-#																			   #
+# 																			   #
 # Usage: ruby mRemoteOffPwdsDecrypt.rb confCons.xml							   #
-#																			   #
-################################################################################
+# 																			   #
+# ###############################################################################
 require 'rexml/document'
 require 'openssl'
 require 'optparse'

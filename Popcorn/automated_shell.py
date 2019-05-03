@@ -11,8 +11,9 @@ import re
 # cookie and can be used multiple times
 # once a captcha code and session id are
 # obtained the script can register a user
-SESSION_ID = "11f30fa6ecfb52b3551c1dd66fb55347"
-CODE = "d12e5"
+# http://10.10.10.6/torrent/users/index.php?mode=register
+SESSION_ID = "4a2f5c7be747e8b63085580b222ad389"
+CODE = "7adbe"
 #############################################
 
 

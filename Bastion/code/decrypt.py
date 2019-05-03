@@ -5,33 +5,19 @@ import re
 
 KEY = b"\xc8\xa3\x9d\xe2\xa5\x47\x66\xa0\xda\x87\x5f\x79\xaa\xf1\xaa\x8c"
 
+enc_pass = "w7nDgMKow73CuCU7XsOkScuGXsKrw51Rwq4="
 
-if len(sys.argv) != 2:
-    print("Usage: python decrypt.py <PASSWORD_STRING>")
-
-confPath = sys.argv[1]
-
-data = None
-with open(confPath, "r") as file:
-    data = file.read()
-
-nodes = re.findall(r"<Node.+/>", data)
-
-
-for node in nodes:
-
-    username = re.findall(r"Username=\".+\" ", node)
-    password = re.findall(r"Password=\".+\" ", node)[0]
-
-    print(username, password)
-
-data = base64.b64decode(sys.argv[1])
+data = base64.b64decode(enc_pass)
 
 iv = data[:16]
-passwordEnc = data[16:]
+password = data[16:]
+
+padding = 16 - (len(password) % 16)
+
+password_padded = password + b"\x00" * padding
 
 aes = AES.new(KEY, AES.MODE_CBC, iv)
 
-passwordDec = aes.decrypt(passwordEnc)
+passwordDec = aes.decrypt(password_padded)
 
 print(passwordDec)
