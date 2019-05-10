@@ -14,7 +14,7 @@
 |   Name            |      OS                               |         Walkthrough Doc            |
 | ----------------- |---------------------------------------|:----------------------------------:|
 |  Access           | <img width=20 src=./_images/win.png>  | [View](Access/README.md)           |
-|  Bastion          | <img width=20 src=./_images/win.png>  | **X** <!--[View](Bastion/README.md)-->           |
+|  Bastion          | <img width=20 src=./_images/win.png>  | [View](Bastion/README.md)          |
 |  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/README.md)          |
 |  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/README.md)            |
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |

