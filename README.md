@@ -19,6 +19,7 @@
 |  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/README.md)            |
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |
 |  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/README.md)          |
+|  Devel            | <img width=20 src=./_images/win.png>  | [View](Devel/README.md)            |
 |  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/README.md)          |
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
