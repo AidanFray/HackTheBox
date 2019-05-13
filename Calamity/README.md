@@ -85,4 +85,6 @@ POSSIBLE INTRUSION BY BLACKLISTED PROCCESS bash       ...PROCESS KILLED AT 2019-
 POSSIBLE INTRUSION BY BLACKLISTED PROCCESS bash       ...PROCESS KILLED AT 2019-05-11 14:50:46.841152
 ```
 
-This is the reason why the nc session was being terminated quickly
+This is the reason why the nc session was being terminated quickly.
+
+This could be using just string checks for processes. I'll attempt to rename bash and try again.
