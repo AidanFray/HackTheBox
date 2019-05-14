@@ -1,0 +1,76 @@
+Scanning http://10.10.10.140/...
+
+                       
+  Magento Information  
+                       
+
++-----------+------------------+
+| Parameter | Value            |
++-----------+------------------+
+| Edition   | Community        |
+| Version   | 1.9.0.0, 1.9.0.1 |
++-----------+------------------+
+
+                     
+  Installed Modules  
+                     
+
+No detectable modules were found
+
+                       
+  Catalog Information  
+                       
+
++------------+---------+
+| Type       | Count   |
++------------+---------+
+| Categories | Unknown |
+| Products   | Unknown |
++------------+---------+
+
+           
+  Patches  
+           
+
++------------+---------+
+| Name       | Status  |
++------------+---------+
+| SUPEE-5344 | Unknown |
+| SUPEE-5994 | Unknown |
+| SUPEE-6285 | Unknown |
+| SUPEE-6482 | Unknown |
+| SUPEE-6788 | Unknown |
+| SUPEE-7405 | Unknown |
+| SUPEE-8788 | Unknown |
++------------+---------+
+
+           
+  Sitemap  
+           
+
+Sitemap is not declared in robots.txt
+Sitemap is not accessible: http://10.10.10.140/sitemap.xml
+
+                     
+  Server Technology  
+                     
+
++--------+------------------------+
+| Key    | Value                  |
++--------+------------------------+
+| Server | Apache/2.4.18 (Ubuntu) |
++--------+------------------------+
+
+                          
+  Unreachable Path Check  
+                          
+
++----------------------------------------------+---------------+--------+
+| Path                                         | Response Code | Status |
++----------------------------------------------+---------------+--------+
+| app/etc/local.xml                            | 200           | Fail   |
+| downloader/index.php                         | 200           | Fail   |
+| index.php/rss/order/NEW/new                  | 200           | Fail   |
+| shell/                                       | 200           | Fail   |
+| var/export/                                  | 200           | Fail   |
++----------------------------------------------+---------------+--------+
