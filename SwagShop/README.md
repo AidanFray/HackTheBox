@@ -26,10 +26,11 @@ We have found possible creds for a database?
 </model>
 ```
 
-We need to become authenticated to run this exploit:
+Script called `exploit.py` runs a SQL Injection attack that creates us a admin user
 
-https://www.exploit-db.com/exploits/37811
+```
+ypwq
+123
+```
 
-Blog post
-
-https://websec.wordpress.com/2014/12/08/magento-1-9-0-1-poi/
+We can now login to the admin console
