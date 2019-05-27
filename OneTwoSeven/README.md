@@ -9,7 +9,6 @@
 <!-- Added localhost admin/20190214 -->
 <li class="nav-item"><a id="adminlink" class="nav-link disabled" href="http://onetwoseven.htb:60080/">Admin</a></li>
 ```
-
 I'm going to add domain to `/etc/hosts` file.
 
 Lots of mention of localhost on the webpage. Like:
