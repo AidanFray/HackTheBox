@@ -29,13 +29,13 @@
 |  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/README.md)    |
 |  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/README.md)             |
 |  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/README.md)      |
-|  Luke             | <img width=20 src=./_images/bsd.png>  | **X** <!--[View](Luke/README.md)-->      |
+|  Luke             | <img width=20 src=./_images/bsd.png>  | [View](Luke/README.md)             |
 |  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/README.md)           |
 |  OneTwoSeven      | <img width=20 src=./_images/lin.png>  | **X** <!--[View](OneTwoSeven/README.md) -->|
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
 |  Popcorn          | <img width=20 src=./_images/lin.png>  | [View](Popcorn/README.md)          |
 |  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/README.md)          |
-|  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)          |
+|  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)         |
 |  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/README.md)          |
 |  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/README.md)           |
 

@@ -1,0 +1,3 @@
+/Derry (Status: 200)
+/derry (Status: 200)
+/admin (Status: 200)
