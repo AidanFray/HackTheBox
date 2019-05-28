@@ -35,5 +35,8 @@ Where data can be sent like:
 curl --header "Content-Type: application/json" --request POST --data '{"password":"password", "username":"admin"}' http://10.10.10.137:3000/login
 ```
 
-
 https://medium.com/dev-bits/a-guide-for-adding-jwt-token-based-authentication-to-your-single-page-nodejs-applications-c403f7cf04f4
+
+I attempted a 'none' attack on JWT
+
+TODO: Try brute forcing the `/login` endpoint for the JWT
