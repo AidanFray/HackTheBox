@@ -1,0 +1,5 @@
+/wp-login.php (Status: 200)
+/readme.html (Status: 200)
+/wp-trackback.php (Status: 200)
+/wp-signup.php (Status: 302)
+/server-status (Status: 403)
