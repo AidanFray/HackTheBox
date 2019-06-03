@@ -1,0 +1,29 @@
+# Nmap 7.70 scan initiated Mon Jun  3 19:22:45 2019 as: nmap -sV -sC -o ./nmap/nmap.txt -vvv 10.10.10.16
+Nmap scan report for 10.10.10.16
+Host is up, received syn-ack (0.081s latency).
+Scanned at 2019-06-03 19:22:45 IST for 17s
+Not shown: 998 filtered ports
+Reason: 998 no-responses
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 79:b1:35:b6:d1:25:12:a3:0c:b5:2e:36:9c:33:26:28 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBANmRR7UDp17vLPWjPYGFFxhFHygkw1gVmWZCAUO+TBY4OPnIWGRwrG+zyo39zVror9IS7wgI8rGUuwSd0Yc0xOYlrnZ9jvE7x/H5+Bm8MLaT4QIOI8PSjoRU4a8dhw2zSYC7oSkndmyf22oTvLCv6I37FrazfIm2KTPh2+GtcA6rAAAAFQD6rlN7SzmW/f8uXdfVU1CjnokgpwAAAIA++cp5Tl4bw7yKZO6Odr1fgs+96yEb0B0pGpuvOXdd970m6Tci3uPlDiUyYLI1mAfBzQ15m4JUgsGyuMcAkI7ScqRt7Ar/O9YKoRG2FUPKQAMyJ1Q2QgmuSuaiQePhVFZBQfeMin77oigq8ftCMvypSSh0xQQ/mQTI46n+rN4K1AAAAIBnU+X2K0HarUrflRS2kY1F0ezirxLPlvbsQSGU3S6ETNXUcrp4YCQBtNRx7vb5WH3GgJ/u3vZcJLPEDEHpLf5dOY9P6dOZaDv1uMQfbfejnzpgej7WqK9f+QZVGh5tG0bZl0TgQfoOeRInCZRPSiuOlhVaRENYD9xKoVvp8arXSg==
+|   2048 16:08:68:51:d1:7b:07:5a:34:66:0d:4c:d0:25:56:f5 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5Txq4c0jb5/pJpdDRWMw6kGit+0TeEKq3yWPLLPifxMillxkW1P4j51ANiLUE9wQjzBticFF4Ql6lplrrVft50grpQb+2qyB6l7Bg8dd3GZykdJkyGjwS7urx//EhODxvOA2Fl5KL9Zr3/ql8VnfYTgXvvNCfuY0QxTUauG/YYbQ5qwvfbzyqX88Ym2l1S8JRft2MKFhZWzcNKBrWCeBraioFFLRZqPPSir4emSWKp5zRFFteU9OS8xlw0dezzwAJM+maTF2fU4cXpeaC5rig/S4FTNV0B5fmDac4pg+HIvejIMFIMcE1Ue7UsUvfiE/+vQW19vyPZFtq14NdeBJb
+|   256 e3:97:a7:92:23:72:bf:1d:09:88:85:b6:6c:17:4e:85 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKWJqXjmPMM11lDdFy512ITtTx1mh4bP6jxTLmGYtSBYkUUlQVJkX+WQen/zcnmWFlRvHzlsj5dflsXKnzgifkk=
+|   256 89:85:90:98:20:bf:03:5d:35:7f:4a:a9:e1:1b:65:31 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA/9PENIoYUITEQDOKLYfiaUxVAgpixE8w//rH53DU7u
+80/tcp open  http    syn-ack Apache httpd 2.4.7 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 1D585CCF71E2EB73F03BCF484CFC2259
+| http-methods: 
+|   Supported Methods: GET HEAD POST PUT PATCH DELETE OPTIONS
+|_  Potentially risky methods: PUT PATCH DELETE
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: October CMS - Vanilla
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun  3 19:23:02 2019 -- 1 IP address (1 host up) scanned in 17.46 seconds

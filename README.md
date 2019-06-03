@@ -16,6 +16,7 @@
 |  Access           | <img width=20 src=./_images/win.png>  | [View](Access/README.md)           |
 |  Apocalyst        | <img width=20 src=./_images/lin.png>  | [View](Apocalyst/README.md)        |
 |  Bastion          | <img width=20 src=./_images/win.png>  | [View](Bastion/README.md)          |
+|  Calamity         | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Calamity/README.md) -->|
 |  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/README.md)          |
 |  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/README.md)            |
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |
@@ -32,6 +33,8 @@
 |  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/README.md)      |
 |  Luke             | <img width=20 src=./_images/bsd.png>  | [View](Luke/README.md)             |
 |  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/README.md)           |
+|  Nineveh          | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Ninveh/README.md) -->|
+|  October          | <img width=20 src=./_images/lin.png>  | **X** <!--[View](October/README.md) -->|
 |  OneTwoSeven      | <img width=20 src=./_images/lin.png>  | **X** <!--[View](OneTwoSeven/README.md) -->|
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
 |  Popcorn          | <img width=20 src=./_images/lin.png>  | [View](Popcorn/README.md)          |
