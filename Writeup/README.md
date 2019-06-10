@@ -40,3 +40,24 @@ Normal page has mention of `DoS` prevention
 ```
 
 This will stop the scanning of endpoints using `gobuster`
+
+Reading around advised I install a tool called `wappalyzer` this gives information on the technologies used on the website.
+
+The CMS used is `CMS Made Simple.`
+
+Using an Unathenticated SQL Injection vulnerability from exploit-db we get the output:
+
+```
+[+] Salt for password found: 5a599ef579066807
+[+] Username found: jkr
+[+] Email found: jkr@writeup.htb
+[+] Password found: 62def4866937f08cc13bab43bb14e6f7
+```
+
+Running the script with the crack options gives us:
+
+```
+[+] Password cracked: raykayjay9
+```
+
+This cannot be used to log onto the CMS but can be used over `ssh` to give us the `user.txt`!
