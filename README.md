@@ -41,6 +41,7 @@
 |  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/README.md)          |
 |  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)         |
 |  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/README.md)          |
+|  Writeup          | <img width=20 src=./_images/lin.png>  |**X** <!--[View](Ypuffy/README.md) -->|
 |  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/README.md)           |
 
 
