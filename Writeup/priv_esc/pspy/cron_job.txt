@@ -1,0 +1,91 @@
+2019/06/11 04:28:01 CMD: UID=0    PID=2089   | /bin/sh -c /root/bin/cleanup.pl >/dev/null 2>&1 
+2019/06/11 04:28:01 FS:               ACCESS | /etc/pam.d/common-session
+2019/06/11 04:28:01 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/pam.d/common-session
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/pam.d/other
+2019/06/11 04:28:01 FS:                 OPEN | /etc/login.defs
+2019/06/11 04:28:01 FS:               ACCESS | /etc/login.defs
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/06/11 04:28:01 FS:                 OPEN | /etc/passwd
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:28:01 FS:                 OPEN | /etc/shadow
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/shadow
+2019/06/11 04:28:01 FS:                 OPEN | /etc/passwd
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:28:01 FS:                 OPEN | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:               ACCESS | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:                 OPEN | /etc/environment
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/environment
+2019/06/11 04:28:01 FS:                 OPEN | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:               ACCESS | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/06/11 04:28:01 FS:                 OPEN | /etc/default/locale
+2019/06/11 04:28:01 FS:               ACCESS | /etc/default/locale
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/default/locale
+2019/06/11 04:28:01 FS:                 OPEN | /etc/login.defs
+2019/06/11 04:28:01 FS:               ACCESS | /etc/login.defs
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/06/11 04:28:01 FS:               MODIFY | /var/log/auth.log
+2019/06/11 04:28:01 FS:                 OPEN | /var/log/auth.log
+2019/06/11 04:28:01 FS:               ACCESS | /var/log/auth.log
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /var/log/auth.log
+2019/06/11 04:28:01 FS:                 OPEN | /etc/passwd
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:28:01 FS:                 OPEN | /etc/security/limits.conf
+2019/06/11 04:28:01 FS:               ACCESS | /etc/security/limits.conf
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/security/limits.conf
+2019/06/11 04:28:01 FS:             OPEN DIR | /etc/security/limits.d
+2019/06/11 04:28:01 FS:             OPEN DIR | /etc/security/limits.d/
+2019/06/11 04:28:01 FS:           ACCESS DIR | /etc/security/limits.d
+2019/06/11 04:28:01 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/06/11 04:28:01 FS:           ACCESS DIR | /etc/security/limits.d
+2019/06/11 04:28:01 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/06/11 04:28:01 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d
+2019/06/11 04:28:01 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d/
+2019/06/11 04:28:01 FS:               MODIFY | /var/log/syslog
+2019/06/11 04:28:01 FS:                 OPEN | /etc/group
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/group
+2019/06/11 04:28:01 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:                 OPEN | /usr/bin/perl
+2019/06/11 04:28:01 FS:               ACCESS | /usr/bin/perl
+2019/06/11 04:28:01 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:28:01 FS:                 OPEN | /usr/lib/locale/locale-archive
+2019/06/11 04:28:01 FS:                 OPEN | /etc/perl/sitecustomize.pl
+2019/06/11 04:28:01 FS:               ACCESS | /etc/perl/sitecustomize.pl
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/perl/sitecustomize.pl
+2019/06/11 04:28:01 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/perl/5.24.1/File/Glob.pm
+2019/06/11 04:28:01 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/perl/5.24.1/File/Glob.pm
+2019/06/11 04:28:01 FS:                 OPEN | /usr/share/perl/5.24.1/strict.pm
+2019/06/11 04:28:01 FS:               ACCESS | /usr/share/perl/5.24.1/strict.pm
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/share/perl/5.24.1/strict.pm
+2019/06/11 04:28:01 FS:                 OPEN | /usr/share/perl/5.24.1/warnings.pm
+2019/06/11 04:28:01 FS:               ACCESS | /usr/share/perl/5.24.1/warnings.pm
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/share/perl/5.24.1/warnings.pm
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/lib/x86_64-linux-gnu/perl/5.24.1/File/Glob.pm
+2019/06/11 04:28:01 FS:                 OPEN | /usr/share/perl/5.24.1/XSLoader.pm
+2019/06/11 04:28:01 FS:               ACCESS | /usr/share/perl/5.24.1/XSLoader.pm
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/share/perl/5.24.1/XSLoader.pm
+2019/06/11 04:28:01 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/perl/5.24.1/auto/File/Glob/Glob.so
+2019/06/11 04:28:01 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/perl/5.24.1/auto/File/Glob/Glob.so
+2019/06/11 04:28:01 FS:             OPEN DIR | /usr/local/sbin
+2019/06/11 04:28:01 FS:           ACCESS DIR | /usr/local/sbin
+2019/06/11 04:28:01 FS:    CLOSE_NOWRITE DIR | /usr/local/sbin
+2019/06/11 04:28:01 FS:             OPEN DIR | /usr/local/bin
+2019/06/11 04:28:01 FS:           ACCESS DIR | /usr/local/bin
+2019/06/11 04:28:01 FS:    CLOSE_NOWRITE DIR | /usr/local/bin
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/bin/perl
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/lib/locale/locale-archive
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /usr/lib/x86_64-linux-gnu/perl/5.24.1/auto/File/Glob/Glob.so
+2019/06/11 04:28:01 FS:          CLOSE_WRITE | /tmp/tmpfxKM7u0
+2019/06/11 04:28:01 FS:                 OPEN | /etc/login.defs
+2019/06/11 04:28:01 FS:               ACCESS | /etc/login.defs
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/06/11 04:28:01 FS:               MODIFY | /var/log/auth.log
+2019/06/11 04:28:01 FS:                 OPEN | /var/log/auth.log
+2019/06/11 04:28:01 FS:               ACCESS | /var/log/auth.log
+2019/06/11 04:28:01 FS:        CLOSE_NOWRITE | /var/log/auth.log
+2019/06/11 04:28:07 FS:                 OPEN | /etc/ld.so.cache

@@ -61,3 +61,11 @@ Running the script with the crack options gives us:
 ```
 
 This cannot be used to log onto the CMS but can be used over `ssh` to give us the `user.txt`!
+
+# ROOT
+
+Possibilities:
+
+>>> There is also a script called `fail2ban-server`
+ 
+>>> /bin/bash /usr/bin/mysqld_safe

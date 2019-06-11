@@ -1,0 +1,111 @@
+2019/06/11 04:29:19 CMD: UID=0    PID=2104   | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new 
+2019/06/11 04:29:19 FS:                 OPEN | /var/log/auth.log
+2019/06/11 04:29:19 FS:               ACCESS | /var/log/auth.log
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /var/log/auth.log
+2019/06/11 04:29:19 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:                 OPEN | /usr/bin/env
+2019/06/11 04:29:19 FS:               ACCESS | /usr/bin/env
+2019/06/11 04:29:19 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:19 CMD: UID=0    PID=2105   | run-parts --lsbsysinit /etc/update-motd.d 
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /usr/bin/env
+2019/06/11 04:29:19 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:             OPEN DIR | /etc/update-motd.d
+2019/06/11 04:29:19 FS:             OPEN DIR | /etc/update-motd.d/
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/update-motd.d
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/update-motd.d/
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/update-motd.d
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/update-motd.d/
+2019/06/11 04:29:19 CMD: UID=0    PID=2106   | /bin/sh /etc/update-motd.d/10-uname 
+2019/06/11 04:29:19 FS:    CLOSE_NOWRITE DIR | /etc/update-motd.d
+2019/06/11 04:29:19 FS:    CLOSE_NOWRITE DIR | /etc/update-motd.d/
+2019/06/11 04:29:19 FS:                 OPEN | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 FS:               ACCESS | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:                 OPEN | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 FS:               ACCESS | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 CMD: UID=0    PID=2107   | sshd: jkr [priv]  
+2019/06/11 04:29:19 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/update-motd.d/10-uname
+2019/06/11 04:29:19 FS:                 OPEN | /etc/motd
+2019/06/11 04:29:19 FS:               ACCESS | /etc/motd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/motd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/security/limits.conf
+2019/06/11 04:29:19 FS:               ACCESS | /etc/security/limits.conf
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/security/limits.conf
+2019/06/11 04:29:19 FS:             OPEN DIR | /etc/security/limits.d
+2019/06/11 04:29:19 FS:             OPEN DIR | /etc/security/limits.d/
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/security/limits.d
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/security/limits.d
+2019/06/11 04:29:19 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/06/11 04:29:19 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d
+2019/06/11 04:29:19 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d/
+2019/06/11 04:29:19 FS:                 OPEN | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:               ACCESS | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:                 OPEN | /etc/environment
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/environment
+2019/06/11 04:29:19 FS:                 OPEN | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:               ACCESS | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/06/11 04:29:19 FS:                 OPEN | /etc/default/locale
+2019/06/11 04:29:19 FS:               ACCESS | /etc/default/locale
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/default/locale
+2019/06/11 04:29:19 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:19 FS:                 OPEN | /etc/group
+2019/06/11 04:29:19 FS:        CLOSE_NOWRITE | /etc/group
+2019/06/11 04:29:20 FS:                 OPEN | /etc/group
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/group
+2019/06/11 04:29:20 CMD: UID=1000 PID=2108   | sshd: jkr@pts/2   
+2019/06/11 04:29:20 FS:                 OPEN | /etc/group
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/group
+2019/06/11 04:29:20 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:20 FS:                 OPEN | /var/log/lastlog
+2019/06/11 04:29:20 FS:               ACCESS | /var/log/lastlog
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /var/log/lastlog
+2019/06/11 04:29:20 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:20 FS:                 OPEN | /var/log/wtmp
+2019/06/11 04:29:20 FS:               MODIFY | /var/log/wtmp
+2019/06/11 04:29:20 FS:          CLOSE_WRITE | /var/log/wtmp
+2019/06/11 04:29:20 FS:                 OPEN | /var/log/lastlog
+2019/06/11 04:29:20 FS:               MODIFY | /var/log/lastlog
+2019/06/11 04:29:20 FS:          CLOSE_WRITE | /var/log/lastlog
+2019/06/11 04:29:20 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:20 FS:                 OPEN | /usr/lib/locale/locale-archive
+2019/06/11 04:29:20 FS:                 OPEN | /etc/locale.alias
+2019/06/11 04:29:20 FS:               ACCESS | /etc/locale.alias
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/locale.alias
+2019/06/11 04:29:20 FS:                 OPEN | /etc/nsswitch.conf
+2019/06/11 04:29:20 FS:               ACCESS | /etc/nsswitch.conf
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/nsswitch.conf
+2019/06/11 04:29:20 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:20 CMD: UID=1000 PID=2109   | -bash 
+2019/06/11 04:29:20 FS:                 OPEN | /etc/ld.so.cache
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/06/11 04:29:20 FS:                 OPEN | /etc/passwd
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/06/11 04:29:20 FS:                 OPEN | /etc/profile
+2019/06/11 04:29:20 FS:               ACCESS | /etc/profile
+2019/06/11 04:29:20 CMD: UID=1000 PID=2110   | -bash 
+2019/06/11 04:29:20 FS:        CLOSE_NOWRITE | /etc/profile
+2019/06/11 04:29:20 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+2019/06/11 04:29:20 FS:                 OPEN | /usr/bin/id

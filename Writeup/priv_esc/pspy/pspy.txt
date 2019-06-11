@@ -1,0 +1,91 @@
+CMD: UID=0    PID=9      | 
+CMD: UID=0    PID=85     | 
+CMD: UID=0    PID=8      | 
+CMD: UID=0    PID=78     | 
+CMD: UID=0    PID=77     | 
+CMD: UID=0    PID=76     | 
+CMD: UID=0    PID=7      | 
+CMD: UID=0    PID=6      | 
+CMD: UID=0    PID=5      | 
+CMD: UID=0    PID=43     | 
+CMD: UID=0    PID=42     | 
+CMD: UID=0    PID=41     | 
+CMD: UID=0    PID=4      | 
+CMD: UID=0    PID=393    | 
+CMD: UID=0    PID=355    | udevd --daemon 
+CMD: UID=0    PID=3      | 
+CMD: UID=0    PID=29     | 
+CMD: UID=0    PID=28     | 
+CMD: UID=0    PID=27     | 
+CMD: UID=0    PID=26     | 
+CMD: UID=0    PID=25     | 
+CMD: UID=0    PID=24     | 
+CMD: UID=0    PID=23     | 
+CMD: UID=0    PID=22     | 
+CMD: UID=0    PID=21     | 
+CMD: UID=0    PID=20     | 
+CMD: UID=0    PID=2      | 
+CMD: UID=1000 PID=1939   | ./pspy64 
+CMD: UID=1000 PID=1926   | -bash 
+CMD: UID=1000 PID=1925   | sshd: jkr@pts/0   
+CMD: UID=0    PID=1919   | sshd: jkr [priv]  
+CMD: UID=0    PID=1916   | 
+CMD: UID=0    PID=19     | 
+CMD: UID=0    PID=1820   | /sbin/getty 38400 tty6 
+CMD: UID=0    PID=1819   | /sbin/getty 38400 tty5 
+CMD: UID=0    PID=1818   | /sbin/getty 38400 tty4 
+CMD: UID=0    PID=1817   | /sbin/getty 38400 tty3 
+CMD: UID=0    PID=1816   | /sbin/getty 38400 tty2 
+CMD: UID=0    PID=1815   | /sbin/getty 38400 tty1 
+CMD: UID=0    PID=18     | 
+CMD: UID=0    PID=1746   | /usr/sbin/sshd 
+CMD: UID=0    PID=1703   | logger -t mysqld -p daemon error 
+CMD: UID=103  PID=1702   | /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/x86_64-linux-gnu/mariadb18/plugin --user=mysql --skip-log-error --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/run/mysqld/mysqld.sock --port=3306 
+CMD: UID=0    PID=17     | 
+CMD: UID=0    PID=162    | 
+CMD: UID=0    PID=161    | 
+CMD: UID=0    PID=16     | 
+CMD: UID=0    PID=155    | 
+CMD: UID=0    PID=1541   | /usr/bin/python3 /usr/bin/fail2ban-server -s /var/run/fail2ban/fail2ban.sock -p /var/run/fail2ban/fail2ban.pid -b 
+CMD: UID=0    PID=1525   | /bin/bash /usr/bin/mysqld_safe 
+CMD: UID=0    PID=15     | 
+CMD: UID=0    PID=1454   | /usr/sbin/elogind -D 
+CMD: UID=101  PID=1406   | /usr/bin/dbus-daemon --system 
+CMD: UID=0    PID=1403   | /usr/sbin/cron 
+CMD: UID=0    PID=14     | 
+CMD: UID=33   PID=1346   | /usr/sbin/apache2 -k start 
+CMD: UID=33   PID=1345   | /usr/sbin/apache2 -k start 
+CMD: UID=33   PID=1344   | /usr/sbin/apache2 -k start 
+CMD: UID=33   PID=1343   | /usr/sbin/apache2 -k start 
+CMD: UID=33   PID=1342   | /usr/sbin/apache2 -k start 
+CMD: UID=0    PID=1339   | /usr/sbin/apache2 -k start 
+CMD: UID=0    PID=130    | 
+CMD: UID=0    PID=13     | 
+CMD: UID=0    PID=1292   | /usr/sbin/rsyslogd 
+CMD: UID=0    PID=128    | 
+CMD: UID=0    PID=12     | 
+CMD: UID=0    PID=117    | 
+CMD: UID=0    PID=116    | 
+CMD: UID=0    PID=114    | 
+CMD: UID=0    PID=111    | 
+CMD: UID=0    PID=11     | 
+CMD: UID=0    PID=109    | 
+CMD: UID=0    PID=108    | 
+CMD: UID=0    PID=107    | 
+CMD: UID=0    PID=106    | 
+CMD: UID=0    PID=105    | 
+CMD: UID=0    PID=10     | 
+CMD: UID=0    PID=1      | init [2]   
+CMD: UID=0    PID=1947   | /usr/sbin/CRON 
+CMD: UID=0    PID=1948   | /usr/sbin/CRON 
+CMD: UID=0    PID=1949   | /bin/sh -c /root/bin/cleanup.pl >/dev/null 2>&1 
+CMD: UID=0    PID=1950   | /usr/sbin/CRON 
+CMD: UID=0    PID=1951   | /usr/sbin/CRON 
+CMD: UID=0    PID=1952   | /bin/sh -c /root/bin/cleanup.pl >/dev/null 2>&1 
+CMD: UID=0    PID=1953   | /usr/sbin/CRON 
+CMD: UID=0    PID=1954   | /usr/sbin/CRON 
+CMD: UID=0    PID=1955   | /bin/sh -c /root/bin/cleanup.pl >/dev/null 2>&1 
+CMD: UID=0    PID=1956   | 
+CMD: UID=0    PID=1957   | /usr/sbin/CRON 
+CMD: UID=0    PID=1958   | /usr/sbin/CRON 
+CMD: UID=0    PID=1959   | /bin/sh -c /root/bin/cleanup.pl >/dev/null 2>&1 
