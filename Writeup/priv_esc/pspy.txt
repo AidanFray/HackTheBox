@@ -1,0 +1,390 @@
+2019/08/17 06:53:05 CMD: UID=0    PID=9      | 
+2019/08/17 06:53:05 CMD: UID=0    PID=85     | 
+2019/08/17 06:53:05 FS:                 OPEN | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:05 CMD: UID=0    PID=8      | 
+2019/08/17 06:53:05 CMD: UID=0    PID=78     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=77     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=76     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=7      | 
+2019/08/17 06:53:05 CMD: UID=1000 PID=5505   | ./pspy64 -f 
+2019/08/17 06:53:05 CMD: UID=0    PID=5467   | 
+2019/08/17 06:53:05 CMD: UID=1000 PID=5455   | -bash 
+2019/08/17 06:53:05 CMD: UID=1000 PID=5454   | sshd: jkr@pts/1   
+2019/08/17 06:53:05 CMD: UID=0    PID=5448   | sshd: jkr [priv]  
+2019/08/17 06:53:05 CMD: UID=1000 PID=5426   | -bash 
+2019/08/17 06:53:05 CMD: UID=1000 PID=5425   | sshd: jkr@pts/0   
+2019/08/17 06:53:05 CMD: UID=0    PID=5419   | sshd: jkr [priv]  
+2019/08/17 06:53:05 CMD: UID=0    PID=5409   | 
+2019/08/17 06:53:05 CMD: UID=0    PID=5341   | sleep 1742 
+2019/08/17 06:53:05 CMD: UID=0    PID=5334   | /bin/sh /etc/cron.daily/apt-compat 
+2019/08/17 06:53:05 CMD: UID=0    PID=5332   | /bin/run-parts --report /etc/cron.daily 
+2019/08/17 06:53:05 CMD: UID=0    PID=5330   | /bin/sh -c test -x /usr/sbin/anacron || ( cd / && /bin/run-parts --report /etc/cron.daily ) 
+2019/08/17 06:53:05 CMD: UID=0    PID=5327   | /usr/sbin/CRON 
+2019/08/17 06:53:05 CMD: UID=0    PID=5      | 
+2019/08/17 06:53:05 CMD: UID=0    PID=43     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=42     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=41     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=389    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=355    | udevd --daemon 
+2019/08/17 06:53:05 CMD: UID=0    PID=3      | 
+2019/08/17 06:53:05 CMD: UID=0    PID=29     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=28     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=27     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=26     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=25     | 
+2019/08/17 06:53:05 CMD: UID=33   PID=2485   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2484   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2483   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2467   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2466   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2465   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2464   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=33   PID=2457   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=0    PID=24     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=23     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=22     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=21     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=2      | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1916   | 
+2019/08/17 06:53:05 CMD: UID=0    PID=19     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1820   | /sbin/getty 38400 tty6 
+2019/08/17 06:53:05 CMD: UID=0    PID=1819   | /sbin/getty 38400 tty5 
+2019/08/17 06:53:05 CMD: UID=0    PID=1818   | /sbin/getty 38400 tty4 
+2019/08/17 06:53:05 CMD: UID=0    PID=1817   | /sbin/getty 38400 tty3 
+2019/08/17 06:53:05 CMD: UID=0    PID=1816   | /sbin/getty 38400 tty2 
+2019/08/17 06:53:05 CMD: UID=0    PID=1815   | /sbin/getty 38400 tty1 
+2019/08/17 06:53:05 CMD: UID=0    PID=18     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1746   | /usr/sbin/sshd 
+2019/08/17 06:53:05 CMD: UID=0    PID=1703   | logger -t mysqld -p daemon error 
+2019/08/17 06:53:05 CMD: UID=103  PID=1702   | /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/x86_64-linux-gnu/mariadb18/plugin --user=mysql --skip-log-error --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/run/mysqld/mysqld.sock --port=3306 
+2019/08/17 06:53:05 CMD: UID=0    PID=17     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=162    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=161    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=16     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=155    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1531   | /usr/bin/python3 /usr/bin/fail2ban-server -s /var/run/fail2ban/fail2ban.sock -p /var/run/fail2ban/fail2ban.pid -b 
+2019/08/17 06:53:05 CMD: UID=0    PID=1525   | /bin/bash /usr/bin/mysqld_safe 
+2019/08/17 06:53:05 CMD: UID=0    PID=15     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1454   | /usr/sbin/elogind -D 
+2019/08/17 06:53:05 CMD: UID=101  PID=1412   | /usr/bin/dbus-daemon --system 
+2019/08/17 06:53:05 CMD: UID=0    PID=14     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1399   | /usr/sbin/cron 
+2019/08/17 06:53:05 CMD: UID=0    PID=1339   | /usr/sbin/apache2 -k start 
+2019/08/17 06:53:05 CMD: UID=0    PID=130    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=13     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1292   | /usr/sbin/rsyslogd 
+2019/08/17 06:53:05 CMD: UID=0    PID=128    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=12     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=116    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=114    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=111    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=11     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=109    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=108    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=107    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=106    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=105    | 
+2019/08/17 06:53:05 CMD: UID=0    PID=10     | 
+2019/08/17 06:53:05 CMD: UID=0    PID=1      | init [2]   
+2019/08/17 06:53:05 FS:               ACCESS | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:05 FS:        CLOSE_NOWRITE | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:11 FS:                 OPEN | /usr/sbin/sshd
+2019/08/17 06:53:11 CMD: UID=0    PID=5513   | sshd: [accepted]
+2019/08/17 06:53:11 FS:               ACCESS | /usr/sbin/sshd
+2019/08/17 06:53:11 FS:               ACCESS | /usr/sbin/sshd
+2019/08/17 06:53:11 FS:               ACCESS | /usr/sbin/sshd
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.2
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.2
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+2019/08/17 06:53:11 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+2019/08/17 06:53:11 FS:               ACCESS | /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssl/openssl.cnf
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssl/openssl.cnf
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssl/openssl.cnf
+2019/08/17 06:53:11 FS:                 OPEN | /etc/gai.conf
+2019/08/17 06:53:11 FS:               ACCESS | /etc/gai.conf
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/gai.conf
+2019/08/17 06:53:11 CMD: UID=0    PID=5514   | sshd: [accepted]  
+2019/08/17 06:53:11 FS:                 OPEN | /etc/nsswitch.conf
+2019/08/17 06:53:11 FS:               ACCESS | /etc/nsswitch.conf
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/nsswitch.conf
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_rsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_rsa_key.pub
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_rsa_key.pub
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_rsa_key.pub
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ecdsa_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ecdsa_key.pub
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ecdsa_key.pub
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ecdsa_key.pub
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ed25519_key
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ssh/ssh_host_ed25519_key.pub
+2019/08/17 06:53:11 FS:               ACCESS | /etc/ssh/ssh_host_ed25519_key.pub
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ssh/ssh_host_ed25519_key.pub
+2019/08/17 06:53:11 FS:                 OPEN | /etc/hosts.allow
+2019/08/17 06:53:11 FS:               ACCESS | /etc/hosts.allow
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/hosts.allow
+2019/08/17 06:53:11 FS:                 OPEN | /etc/hosts.deny
+2019/08/17 06:53:11 FS:               ACCESS | /etc/hosts.deny
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/hosts.deny
+2019/08/17 06:53:11 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/sshd
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/sshd
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/sshd
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/other
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/other
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-auth
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-account
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-password
+2019/08/17 06:53:11 FS:                 OPEN | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:               ACCESS | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/common-session
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/pam.d/other
+2019/08/17 06:53:11 FS:                 OPEN | /etc/group
+2019/08/17 06:53:11 FS:        CLOSE_NOWRITE | /etc/group
+2019/08/17 06:53:13 FS:                 OPEN | /etc/login.defs
+2019/08/17 06:53:13 FS:               ACCESS | /etc/login.defs
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/shadow
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/shadow
+2019/08/17 06:53:13 FS:                 OPEN | /etc/login.defs
+2019/08/17 06:53:13 FS:               ACCESS | /etc/login.defs
+2019/08/17 06:53:13 FS:               ACCESS | /etc/login.defs
+2019/08/17 06:53:13 FS:               ACCESS | /etc/login.defs
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/shadow
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/shadow
+2019/08/17 06:53:13 FS:                 OPEN | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:13 FS:               ACCESS | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/share/zoneinfo/posixrules
+2019/08/17 06:53:13 FS:               MODIFY | /var/log/auth.log
+2019/08/17 06:53:13 FS:                 OPEN | /var/log/auth.log
+2019/08/17 06:53:13 FS:               ACCESS | /var/log/auth.log
+2019/08/17 06:53:13 CMD: UID=0    PID=5515   | sshd: jkr [priv]  
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /var/log/auth.log
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/login.defs
+2019/08/17 06:53:13 FS:               ACCESS | /etc/login.defs
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/login.defs
+2019/08/17 06:53:13 FS:               MODIFY | /var/log/auth.log
+2019/08/17 06:53:13 FS:                 OPEN | /var/log/auth.log
+2019/08/17 06:53:13 FS:               ACCESS | /var/log/auth.log
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /var/log/auth.log
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 CMD: UID=0    PID=5516   | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new 
+2019/08/17 06:53:13 FS:                 OPEN | /usr/bin/env
+2019/08/17 06:53:13 FS:               ACCESS | /usr/bin/env
+2019/08/17 06:53:13 FS:               ACCESS | /usr/bin/env
+2019/08/17 06:53:13 FS:               ACCESS | /usr/bin/env
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/bin/env
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 CMD: UID=0    PID=5517   | run-parts --lsbsysinit /etc/update-motd.d 
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/update-motd.d
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/update-motd.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/update-motd.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/update-motd.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/update-motd.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/update-motd.d/
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/update-motd.d
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/update-motd.d/
+2019/08/17 06:53:13 FS:                 OPEN | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 FS:               ACCESS | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 CMD: UID=0    PID=5518   | /bin/sh /etc/update-motd.d/10-uname 
+2019/08/17 06:53:13 FS:                 OPEN | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 FS:               ACCESS | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/update-motd.d/10-uname
+2019/08/17 06:53:13 CMD: UID=0    PID=5519   | sshd: jkr [priv]  
+2019/08/17 06:53:13 FS:                 OPEN | /etc/motd
+2019/08/17 06:53:13 FS:               ACCESS | /etc/motd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/motd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/security/limits.conf
+2019/08/17 06:53:13 FS:               ACCESS | /etc/security/limits.conf
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/security/limits.conf
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/security/limits.d
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/security/limits.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/security/limits.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/security/limits.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/security/limits.d/
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/security/limits.d/
+2019/08/17 06:53:13 FS:                 OPEN | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:               ACCESS | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:                 OPEN | /etc/environment
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/environment
+2019/08/17 06:53:13 FS:                 OPEN | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:               ACCESS | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/security/pam_env.conf
+2019/08/17 06:53:13 FS:                 OPEN | /etc/default/locale
+2019/08/17 06:53:13 FS:               ACCESS | /etc/default/locale
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/default/locale
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /etc/group
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/group
+2019/08/17 06:53:13 FS:                 OPEN | /etc/group
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/group
+2019/08/17 06:53:13 CMD: UID=1000 PID=5520   | sshd: jkr@pts/2   
+2019/08/17 06:53:13 FS:                 OPEN | /etc/group
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/group
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /var/log/lastlog
+2019/08/17 06:53:13 FS:               ACCESS | /var/log/lastlog
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /var/log/lastlog
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 CMD: UID=1000 PID=5521   | -bash 
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /var/log/wtmp
+2019/08/17 06:53:13 FS:               MODIFY | /var/log/wtmp
+2019/08/17 06:53:13 FS:          CLOSE_WRITE | /var/log/wtmp
+2019/08/17 06:53:13 FS:                 OPEN | /var/log/lastlog
+2019/08/17 06:53:13 FS:               MODIFY | /var/log/lastlog
+2019/08/17 06:53:13 FS:          CLOSE_WRITE | /var/log/lastlog
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 CMD: UID=1000 PID=5522   | -bash 
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:                 OPEN | /usr/lib/locale/locale-archive
+2019/08/17 06:53:13 FS:                 OPEN | /etc/nsswitch.conf
+2019/08/17 06:53:13 FS:               ACCESS | /etc/nsswitch.conf
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/nsswitch.conf
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:                 OPEN | /etc/passwd
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/passwd
+2019/08/17 06:53:13 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+2019/08/17 06:53:13 CMD: UID=1000 PID=5523   | -bash 
+2019/08/17 06:53:13 FS:                 OPEN | /etc/profile
+2019/08/17 06:53:13 FS:               ACCESS | /etc/profile
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/profile
+2019/08/17 06:53:13 FS:                 OPEN | /usr/bin/id
+2019/08/17 06:53:13 FS:               ACCESS | /usr/bin/id
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 CMD: UID=1000 PID=5524   | -bash 
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:                 OPEN | /usr/lib/locale/locale-archive
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/bin/id
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/lib/locale/locale-archive
+2019/08/17 06:53:13 FS:                 OPEN | /etc/bash.bashrc
+2019/08/17 06:53:13 FS:               ACCESS | /etc/bash.bashrc
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/bash.bashrc
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:             OPEN DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:           ACCESS DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/profile.d
+2019/08/17 06:53:13 FS:    CLOSE_NOWRITE DIR | /etc/profile.d/
+2019/08/17 06:53:13 FS:                 OPEN | /home/jkr/.profile
+2019/08/17 06:53:13 FS:               ACCESS | /home/jkr/.profile
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /home/jkr/.profile
+2019/08/17 06:53:13 FS:                 OPEN | /home/jkr/.bashrc
+2019/08/17 06:53:13 FS:               ACCESS | /home/jkr/.bashrc
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /home/jkr/.bashrc
+2019/08/17 06:53:13 FS:                 OPEN | /usr/bin/dircolors
+2019/08/17 06:53:13 FS:               ACCESS | /usr/bin/dircolors
+2019/08/17 06:53:13 FS:                 OPEN | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/ld.so.cache
+2019/08/17 06:53:13 FS:                 OPEN | /usr/lib/locale/locale-archive
+2019/08/17 06:53:13 FS:                 OPEN | /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/bin/dircolors
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/lib/locale/locale-archive
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+2019/08/17 06:53:13 FS:                 OPEN | /usr/share/terminfo/r/rxvt-unicode-256color
+2019/08/17 06:53:13 FS:               ACCESS | /usr/share/terminfo/r/rxvt-unicode-256color
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /usr/share/terminfo/r/rxvt-unicode-256color
+2019/08/17 06:53:13 FS:                 OPEN | /etc/inputrc
+2019/08/17 06:53:13 FS:               ACCESS | /etc/inputrc
+2019/08/17 06:53:13 FS:        CLOSE_NOWRITE | /etc/inputrc

