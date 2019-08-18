@@ -1,1 +1,0 @@
-gdb myapp ; r <<< $(python -c "print('\x41' * 1000, end='')")
