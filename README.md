@@ -25,6 +25,7 @@
 |  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/README.md)          |
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
+|  Haystack         | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Haystack/README.md) -->|
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
 |  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
@@ -39,9 +40,10 @@
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
 |  Popcorn          | <img width=20 src=./_images/lin.png>  | [View](Popcorn/README.md)          |
 |  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/README.md)          |
+|  Safe             | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Safe/README.md) --> |
 |  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)         |
 |  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/README.md)          |
-|  Writeup          | <img width=20 src=./_images/lin.png>  |**X** <!--[View](Ypuffy/README.md) -->|
+|  Writeup          | <img width=20 src=./_images/lin.png>  | [View](Ypuffy/README.md)           |
 |  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/README.md)           |
 
 
