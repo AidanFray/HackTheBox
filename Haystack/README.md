@@ -83,3 +83,16 @@ Payload:
 ```
 
 Look at `logstash`?
+
+
+/etc/logstash/conf.d
+
+
+```
+input {
+    exec {
+        command => "touch /tmp/TEST_123.txt"
+        interval => 5 
+    }   
+}
+```

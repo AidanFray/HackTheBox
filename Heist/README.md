@@ -21,3 +21,26 @@ admin:Q4)sJu\Y8qz*A3?d
 ```
 
 This is due to a trivially reverseable algorithm being used to 'encrypt' the passwords
+
+
+```
+enable secret 5 $1$pdQG$o8nrSzsGXeaduXrjlvKc91
+```
+
+Cracking the level 5 password involves running it through rockyou. The command below was used:
+
+```
+openssl passwd -1 -salt <SALT> -table -in <rockyou.txt> | grep <hash_substring>
+```
+
+The cracking of this password gives:
+
+```
+stealth1agent	$1$pdQG$o8nrSzsGXeaduXrjlvKc91
+```
+
+This can be used with the username `hazard` to log into the SMB share.
+
+
+# LINKS
+https://github.com/Hackplayers/evil-winrm

