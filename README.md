@@ -26,6 +26,7 @@
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
 |  Haystack         | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Haystack/README.md) -->|
+|  Heist            | <img width=20 src=./_images/win.png>  | **X** <!--[View](Heist/README.md) -->|
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
 |  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
@@ -35,6 +36,7 @@
 |  Luke             | <img width=20 src=./_images/bsd.png>  | [View](Luke/README.md)             |
 |  Netmon           | <img width=20 src=./_images/win.png>  | [View](Netmon/README.md)           |
 |  Nineveh          | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Ninveh/README.md) -->|
+|  Networked        | <img width=20 src=./_images/lin.png>  | [View](Networked/README.md)        |
 |  October          | <img width=20 src=./_images/lin.png>  | **X** <!--[View](October/README.md) -->|
 |  OneTwoSeven      | <img width=20 src=./_images/lin.png>  | **X** <!--[View](OneTwoSeven/README.md) -->|
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
