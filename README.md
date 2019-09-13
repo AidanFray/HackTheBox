@@ -25,7 +25,7 @@
 |  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/README.md)          |
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
-|  Haystack         | <img width=20 src=./_images/lin.png>  | **X** <!--[View](Haystack/README.md) -->|
+|  Haystack         | <img width=20 src=./_images/lin.png>  | [View](Haystack/README.md)
 |  Heist            | <img width=20 src=./_images/win.png>  | **X** <!--[View](Heist/README.md) -->|
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
