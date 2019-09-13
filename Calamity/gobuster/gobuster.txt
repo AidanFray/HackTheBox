@@ -1,3 +1,0 @@
-/index.html (Status: 200)
-/uploads (Status: 301)
-/admin.php (Status: 200)

@@ -1,4 +1,0 @@
-/index.html (Status: 200)
-/db (Status: 301)
-/server-status (Status: 403)
-/secure_notes (Status: 301)

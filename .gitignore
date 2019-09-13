@@ -2,3 +2,5 @@
 temp.pkl
 *~
 ZAP.session.data
+peda-session-*
+.gdb_history
