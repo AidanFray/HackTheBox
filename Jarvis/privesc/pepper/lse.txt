@@ -1,0 +1,422 @@
+---
+If you know the current user password, write it here for better results: 
+---
+
+        User: pepper
+     User ID: 1000
+    Password: none
+        Home: /home/pepper
+        Path: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+       umask: 0022
+
+    Hostname: jarvis
+       Linux: 4.9.0-8-amd64
+Distribution: Debian GNU/Linux 9.8 (stretch)
+Architecture: x86_64
+
+==================================================================( users )=====
+[i] usr000 Current user groups............................................. yes!
+[*] usr010 Is current user in an administrative group?..................... nope
+[*] usr020 Are there other users in an administrative groups?.............. nope
+[*] usr030 Other users with shell.......................................... yes!
+---
+root:x:0:0:root:/root:/bin/bash
+pepper:x:1000:1000:,,,:/home/pepper:/bin/bash
+---
+[i] usr040 Environment information......................................... skip
+[i] usr050 Groups for other users.......................................... skip
+[i] usr060 Other users..................................................... skip
+===================================================================( sudo )=====
+[!] sud000 Can we sudo without a password?................................. nope
+[!] sud010 Can we list sudo commands without a password?................... nope
+[*] sud040 Can we read /etc/sudoers?....................................... nope
+[*] sud050 Do we know if any other users used sudo?........................ nope
+============================================================( file system )=====
+[*] fst000 Writable files outside user's home.............................. yes!
+---
+/home/pepper
+/var/lib/php/sessions
+/var/www/Admin-Utilities
+/var/www/Admin-Utilities/simpler.py
+/var/www/html
+/var/www/html/sass
+/var/www/html/sass/bootstrap
+/var/www/html/sass/bootstrap/_type.scss
+/var/www/html/sass/bootstrap/_button-groups.scss
+/var/www/html/sass/bootstrap/_alerts.scss
+/var/www/html/sass/bootstrap/_panels.scss
+/var/www/html/sass/bootstrap/_component-animations.scss
+/var/www/html/sass/bootstrap/_pagination.scss
+/var/www/html/sass/bootstrap/_input-groups.scss
+/var/www/html/sass/bootstrap/_variables.scss
+/var/www/html/sass/bootstrap/_modals.scss
+/var/www/html/sass/bootstrap/_buttons.scss
+/var/www/html/sass/bootstrap/_popovers.scss
+/var/www/html/sass/bootstrap/_tooltip.scss
+/var/www/html/sass/bootstrap/_theme.scss
+/var/www/html/sass/bootstrap/_list-group.scss
+/var/www/html/sass/bootstrap/_thumbnails.scss
+/var/www/html/sass/bootstrap/_pager.scss
+/var/www/html/sass/bootstrap/_media.scss
+/var/www/html/sass/bootstrap/_labels.scss
+/var/www/html/sass/bootstrap/mixins
+/var/www/html/sass/bootstrap/mixins/_alerts.scss
+/var/www/html/sass/bootstrap/mixins/_center-block.scss
+/var/www/html/sass/bootstrap/mixins/_panels.scss
+/var/www/html/sass/bootstrap/mixins/_border-radius.scss
+/var/www/html/sass/bootstrap/mixins/_pagination.scss
+/var/www/html/sass/bootstrap/mixins/_buttons.scss
+/var/www/html/sass/bootstrap/mixins/_table-row.scss
+/var/www/html/sass/bootstrap/mixins/_vendor-prefixes.scss
+/var/www/html/sass/bootstrap/mixins/_nav-vertical-align.scss
+/var/www/html/sass/bootstrap/mixins/_tab-focus.scss
+/var/www/html/sass/bootstrap/mixins/_text-overflow.scss
+/var/www/html/sass/bootstrap/mixins/_nav-divider.scss
+/var/www/html/sass/bootstrap/mixins/_list-group.scss
+/var/www/html/sass/bootstrap/mixins/_image.scss
+/var/www/html/sass/bootstrap/mixins/_progress-bar.scss
+/var/www/html/sass/bootstrap/mixins/_reset-filter.scss
+/var/www/html/sass/bootstrap/mixins/_gradients.scss
+/var/www/html/sass/bootstrap/mixins/_labels.scss
+/var/www/html/sass/bootstrap/mixins/_resize.scss
+/var/www/html/sass/bootstrap/mixins/_text-emphasis.scss
+/var/www/html/sass/bootstrap/mixins/_hide-text.scss
+/var/www/html/sass/bootstrap/mixins/_responsive-visibility.scss
+/var/www/html/sass/bootstrap/mixins/_grid-framework.scss
+/var/www/html/sass/bootstrap/mixins/_grid.scss
+/var/www/html/sass/bootstrap/mixins/_opacity.scss
+/var/www/html/sass/bootstrap/mixins/_forms.scss
+/var/www/html/sass/bootstrap/mixins/_size.scss
+/var/www/html/sass/bootstrap/mixins/_clearfix.scss
+/var/www/html/sass/bootstrap/mixins/_reset-text.scss
+/var/www/html/sass/bootstrap/mixins/_background-variant.scss
+/var/www/html/sass/bootstrap/.DS_Store
+/var/www/html/sass/bootstrap/_mixins.scss
+/var/www/html/sass/bootstrap/_scaffolding.scss
+/var/www/html/sass/bootstrap/_progress-bars.scss
+/var/www/html/sass/bootstrap/_badges.scss
+/var/www/html/sass/bootstrap/_carousel.scss
+/var/www/html/sass/bootstrap/_breadcrumbs.scss
+/var/www/html/sass/bootstrap/_navbar.scss
+/var/www/html/sass/bootstrap/_navs.scss
+/var/www/html/sass/bootstrap/_normalize.scss
+/var/www/html/sass/bootstrap/_grid.scss
+/var/www/html/sass/bootstrap/_utilities.scss
+/var/www/html/sass/bootstrap/_wells.scss
+/var/www/html/sass/bootstrap/_print.scss
+/var/www/html/sass/bootstrap/_dropdowns.scss
+/var/www/html/sass/bootstrap/_forms.scss
+/var/www/html/sass/bootstrap/_jumbotron.scss
+/var/www/html/sass/bootstrap/_responsive-utilities.scss
+/var/www/html/sass/bootstrap/_glyphicons.scss
+/var/www/html/sass/bootstrap/_responsive-embed.scss
+/var/www/html/sass/bootstrap/_close.scss
+/var/www/html/sass/bootstrap/_code.scss
+/var/www/html/sass/bootstrap/_tables.scss
+/var/www/html/sass/style.scss
+/var/www/html/sass/.DS_Store
+/var/www/html/sass/_bootstrap-mincer.scss
+/var/www/html/sass/_bootstrap-sprockets.scss
+/var/www/html/sass/bootstrap.scss
+/var/www/html/sass/_bootstrap-compass.scss
+/var/www/html/room.php
+/var/www/html/images
+/var/www/html/images/menu-8.jpg
+/var/www/html/images/menu-5.jpg
+/var/www/html/images/img_bg_2.jpg
+/var/www/html/images/menu-4.jpg
+/var/www/html/images/menu-7.jpg
+/var/www/html/images/room-5.jpg
+/var/www/html/images/blog-3.jpg
+/var/www/html/images/room-1.jpg
+/var/www/html/images/menu-2.jpg
+/var/www/html/images/img_bg_1.jpg
+/var/www/html/images/person1.jpg
+/var/www/html/images/amenities-3.jpg
+/var/www/html/images/cover_img_1.jpg
+/var/www/html/images/person2.jpg
+/var/www/html/images/person3.jpg
+/var/www/html/images/menu-6.jpg
+/var/www/html/images/menu-1.jpg
+/var/www/html/images/.DS_Store
+/var/www/html/images/img_bg_4.jpg
+/var/www/html/images/amenities-1.jpg
+/var/www/html/images/room-2.jpg
+/var/www/html/images/blog-2.jpg
+/var/www/html/images/menu-9.jpg
+/var/www/html/images/amenities-2.jpg
+/var/www/html/images/menu-3.jpg
+/var/www/html/images/room-3.jpg
+/var/www/html/images/blog-1.jpg
+/var/www/html/images/img_bg_3.jpg
+/var/www/html/images/room-6.jpg
+/var/www/html/images/room-4.jpg
+/var/www/html/images/loader.gif
+/var/www/html/images/img_bg_5.jpg
+/var/www/html/images/loc.png
+/var/www/html/fonts
+/var/www/html/fonts/flaticon
+/var/www/html/fonts/flaticon/font
+/var/www/html/fonts/flaticon/font/Flaticon.eot
+/var/www/html/fonts/flaticon/font/Flaticon.woff
+/var/www/html/fonts/flaticon/font/_flaticon.scss
+/var/www/html/fonts/flaticon/font/flaticon.html
+/var/www/html/fonts/flaticon/font/Flaticon.ttf
+/var/www/html/fonts/flaticon/font/flaticon.css
+/var/www/html/fonts/flaticon/font/Flaticon.svg
+/var/www/html/fonts/flaticon/.DS_Store
+/var/www/html/fonts/flaticon/backup.txt
+/var/www/html/fonts/flaticon/license
+/var/www/html/fonts/flaticon/license/license.pdf
+/var/www/html/fonts/bootstrap
+/var/www/html/fonts/bootstrap/glyphicons-halflings-regular.woff2
+/var/www/html/fonts/bootstrap/glyphicons-halflings-regular.eot
+/var/www/html/fonts/bootstrap/glyphicons-halflings-regular.svg
+/var/www/html/fonts/bootstrap/glyphicons-halflings-regular.woff
+/var/www/html/fonts/bootstrap/glyphicons-halflings-regular.ttf
+/var/www/html/fonts/bootstrap/.DS_Store
+/var/www/html/fonts/icomoon
+/var/www/html/fonts/icomoon/icomoon.eot
+/var/www/html/fonts/icomoon/icomoon.svg
+/var/www/html/fonts/icomoon/.DS_Store
+/var/www/html/fonts/icomoon/icomoon.ttf
+/var/www/html/fonts/icomoon/icomoon.woff
+/var/www/html/fonts/.DS_Store
+/var/www/html/backdoor.php
+/var/www/html/ayax
+/var/www/html/ayax/getfileayax.js
+/var/www/html/rooms-suites.php
+/var/www/html/connection.php
+/var/www/html/getfileayax.php
+/var/www/html/footer.php
+/var/www/html/js
+/var/www/html/js/google_map.js
+/var/www/html/js/bootstrap.min.js
+/var/www/html/js/bootstrap-datepicker.js
+/var/www/html/js/respond.min.js
+/var/www/html/js/magnific-popup-options.js
+/var/www/html/js/jquery.flexslider-min.js
+/var/www/html/js/owl.carousel.min.js
+/var/www/html/js/jquery.easing.1.3.js
+/var/www/html/js/.DS_Store
+/var/www/html/js/modernizr-2.6.2.min.js
+/var/www/html/js/main.js
+/var/www/html/js/jquery.min.js
+/var/www/html/js/jquery.waypoints.min.js
+/var/www/html/js/jquery.magnific-popup.min.js
+/var/www/html/roomobj.php
+/var/www/html/nav.php
+/var/www/html/dining-bar.php
+/var/www/html/css
+/var/www/html/css/style.css.map
+/var/www/html/css/icomoon.css
+/var/www/html/css/owl.carousel.min.css
+/var/www/html/css/bootstrap.css
+/var/www/html/css/bootstrap.css.map
+/var/www/html/css/style.css
+/var/www/html/css/animate.css
+/var/www/html/css/.DS_Store
+/var/www/html/css/flexslider.css
+/var/www/html/css/owl.theme.default.min.css
+/var/www/html/css/bootstrap-datepicker.css
+/var/www/html/css/magnific-popup.css
+/var/tmp
+/tmp
+/tmp/pspy64
+/tmp/lse.sh
+---
+[*] fst010 Binaries with setuid bit........................................ yes!
+---
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/systemctl
+/bin/umount
+/bin/su
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/gpasswd
+/usr/bin/chsh
+/usr/bin/sudo
+/usr/bin/chfn
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+---
+[!] fst020 Uncommon setuid binaries........................................ yes!
+---
+/bin/systemctl
+---
+[!] fst030 Can we write to any setuid binary?.............................. nope
+[*] fst040 Binaries with setgid bit........................................ skip
+[!] fst050 Uncommon setgid binaries........................................ skip
+[!] fst060 Can we write to any setgid binary?.............................. skip
+[*] fst070 Can we read /root?.............................................. nope
+[*] fst080 Can we read subdirectories under /home?......................... nope
+[*] fst090 SSH files in home directories................................... nope
+[*] fst100 Useful binaries................................................. yes!
+---
+/usr/bin/curl
+/usr/bin/gcc
+/bin/nc
+/bin/netcat
+/usr/bin/socat
+/usr/bin/wget
+---
+[*] fst110 Other interesting files in home directories..................... nope
+[!] fst120 Are there any credentials in fstab/mtab?........................ nope
+[*] fst130 Does 'pepper' have mail?........................................ nope
+[!] fst140 Can we access other users mail?................................. nope
+[*] fst150 Looking for GIT/SVN repositories................................ nope
+[i] fst500 Files owned by user 'pepper'.................................... skip
+[i] fst510 SSH files anywhere.............................................. skip
+[i] fst520 Check hosts.equiv file and its contents......................... skip
+[i] fst530 List NFS server shares.......................................... skip
+[i] fst540 Dump fstab file................................................. skip
+=================================================================( system )=====
+[i] sys000 Who is logged in................................................ skip
+[i] sys010 Last logged in users............................................ skip
+[!] sys020 Does the /etc/passwd have hashes?............................... nope
+[!] sys030 Can we read /etc/shadow file?................................... nope
+[!] sys030 Can we read /etc/shadow- file?.................................. nope
+[!] sys030 Can we read /etc/shadow~ file?.................................. nope
+[!] sys030 Can we read /etc/master.passwd file?............................ nope
+[*] sys040 Check for other superuser accounts.............................. nope
+[*] sys050 Can root user log in via SSH?................................... nope
+[i] sys060 List available shells........................................... skip
+[i] sys070 System umask in /etc/login.defs................................. skip
+[i] sys080 System password policies in /etc/login.defs..................... skip
+===============================================================( security )=====
+[*] sec000 Is SELinux present?............................................. nope
+[*] sec010 List files with capabilities.................................... nope
+[!] sec020 Can we write to a binary with caps?............................. nope
+[!] sec030 Do we have all caps in any binary?.............................. nope
+[*] sec040 Users with associated capabilities.............................. nope
+[!] sec050 Does current user have capabilities?............................ skip
+========================================================( recurrent tasks )=====
+[*] ret000 User crontab.................................................... nope
+[!] ret010 Cron tasks writable by user..................................... nope
+[*] ret020 Cron jobs....................................................... yes!
+---
+/etc/crontab:SHELL=/bin/sh
+/etc/crontab:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/crontab:17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+/etc/crontab:25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/etc/crontab:47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+/etc/crontab:52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+/etc/cron.d/php:09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
+---
+[*] ret030 Can we read user crontabs....................................... nope
+[*] ret040 Can we list other user cron tasks?.............................. nope
+[!] ret050 Can we write to executable paths present in cron jobs........... nope
+[*] ret060 Can we write to any paths present in cron jobs.................. nope
+[i] ret400 Cron files...................................................... skip
+[*] ret500 User systemd timers............................................. nope
+[!] ret510 Can we write in any system timer?............................... nope
+[i] ret900 Systemd timers.................................................. skip
+================================================================( network )=====
+[*] net000 Services listening only on localhost............................ yes!
+---
+tcp    LISTEN     0      80     127.0.0.1:3306                  *:*                  
+---
+[!] net010 Can we sniff traffic with tcpdump?.............................. nope
+[i] net500 NIC and IP information.......................................... skip
+[i] net510 Routing table................................................... skip
+[i] net520 ARP table....................................................... skip
+[i] net530 Namerservers.................................................... skip
+[i] net540 Systemd Nameservers............................................. skip
+[i] net550 Listening TCP................................................... skip
+[i] net560 Listening UDP................................................... skip
+===============================================================( services )=====
+[!] srv000 Can we write in service files?.................................. nope
+[!] srv010 Can we write in binaries executed by services?.................. nope
+[*] srv020 Files in /etc/init.d/ not belonging to root..................... nope
+[*] srv030 Files in /etc/rc.d/init.d not belonging to root................. nope
+[*] srv040 Upstart files not belonging to root............................. nope
+[*] srv050 Files in /usr/local/etc/rc.d not belonging to root.............. nope
+[i] srv400 Contents of /etc/inetd.conf..................................... skip
+[i] srv410 Contents of /etc/xinetd.conf.................................... skip
+[i] srv420 List /etc/xinetd.d if used...................................... skip
+[i] srv430 List /etc/init.d/ permissions................................... skip
+[i] srv440 List /etc/rc.d/init.d permissions............................... skip
+[i] srv450 List /usr/local/etc/rc.d permissions............................ skip
+[i] srv460 List /etc/init/ permissions..................................... skip
+[!] srv500 Can we write in systemd service files?.......................... nope
+[!] srv510 Can we write in binaries executed by systemd services?.......... nope
+[*] srv520 Systemd files not belonging to root............................. nope
+[i] srv900 Systemd config files permissions................................ skip
+==============================================================( processes )=====
+[!] pro000 Can we write in any process binary?............................. nope
+[*] pro010 Processes running with root permissions......................... yes!
+---
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 08:01 ?        00:00:00 /sbin/init
+root        186      1  0 08:01 ?        00:00:02 /usr/bin/vmtoolsd
+root        191      1  0 08:01 ?        00:00:00 /lib/systemd/systemd-journald
+root        217      1  0 08:01 ?        00:00:00 /lib/systemd/systemd-udevd
+root        348      1  0 08:01 ?        00:00:00 /usr/bin/VGAuthService
+root        349      1  0 08:01 ?        00:00:00 /usr/sbin/cron -f
+root        360      1  0 08:01 ?        00:00:00 /lib/systemd/systemd-logind
+root        361      1  0 08:01 ?        00:00:00 /usr/sbin/rsyslogd -n
+root        367      1  0 08:01 ?        00:00:00 php-fpm: master process (/etc/php/7.0/fpm/php-fpm.conf)
+root        376      1  0 08:01 ?        00:00:22 python3 /root/sqli_defender.py
+root        382      1  0 08:01 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root        537      1  0 08:01 ?        00:00:00 /usr/sbin/sshd -D
+root        573      1  0 08:01 ?        00:00:00 /usr/sbin/apache2 -k start
+root       1221    781  0 08:56 pts/0    00:00:00 sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
+---
+[i] pro500 Running processes............................................... skip
+[i] pro510 Running process binaries and permissions........................ skip
+===============================================================( software )=====
+[!] sof000 Can we connect to MySQL with root/root credentials?............. nope
+[!] sof010 Can we connect to MySQL as root without password?............... nope
+[!] sof020 Can we connect to PostgreSQL template0 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template1 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template0 as psql and no pass?..... nope
+[!] sof020 Can we connect to PostgreSQL template1 as psql and no pass?..... nope
+[*] sof030 Installed apache modules........................................ yes!
+---
+Loaded Modules:
+ core_module (static)
+ so_module (static)
+ watchdog_module (static)
+ http_module (static)
+ log_config_module (static)
+ logio_module (static)
+ version_module (static)
+ unixd_module (static)
+ access_compat_module (shared)
+ alias_module (shared)
+ auth_basic_module (shared)
+ authn_core_module (shared)
+ authn_file_module (shared)
+ authz_core_module (shared)
+ authz_host_module (shared)
+ authz_user_module (shared)
+ autoindex_module (shared)
+ deflate_module (shared)
+ dir_module (shared)
+ env_module (shared)
+ filter_module (shared)
+ headers_module (shared)
+ mime_module (shared)
+ mpm_prefork_module (shared)
+ negotiation_module (shared)
+ php7_module (shared)
+ reqtimeout_module (shared)
+ setenvif_module (shared)
+ status_module (shared)
+---
+[!] sof040 Found any .htpasswd files?...................................... nope
+[i] sof500 Sudo version.................................................... skip
+[i] sof510 MySQL version................................................... skip
+[i] sof520 Postgres version................................................ skip
+[i] sof530 Apache version.................................................. skip
+=============================================================( containers )=====
+[*] ctn000 Are we in a docker container?................................... nope
+[*] ctn010 Is docker available?............................................ nope
+[!] ctn020 Is the user a member of the 'docker' group?..................... nope
+[*] ctn200 Are we in a lxc container?...................................... nope
+[!] ctn210 Is the user a member of any lxc/lxd group?...................... nope
+
+==================================( FINISHED )==================================
