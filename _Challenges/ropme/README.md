@@ -1,6 +1,6 @@
 # ropme
 
->>> Can you pwn the service and get the flag? 
+> Can you pwn the service and get the flag? 
 
 Starting off with the classic `checksec` shows us:
 
