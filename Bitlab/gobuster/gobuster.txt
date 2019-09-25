@@ -1,0 +1,7 @@
+/help (Status: 301)
+/search (Status: 200)
+/profile (Status: 301)
+/public (Status: 200)
+/root (Status: 200)
+/explore (Status: 200)
+/ci (Status: 301)
