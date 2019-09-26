@@ -82,3 +82,13 @@ We are now able to cat the `user.txt` and get the flag!
 # ROOT
 
 Present on the box it a `RemoteConnection.exe`.
+
+When stepping through the binary, it can be found that the string:
+
+```
+ssh root@gitlab.htb -pw "Qf7]8YSV.wDNF*[7d?j&eD4^"
+```
+
+Is present in memory, this can therefore be used as the password to `ssh` as `root`!
+
+This was achieved by using `ida64` with the debugging mode on windows

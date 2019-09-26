@@ -1,0 +1,483 @@
+---
+If you know the current user password, write it here for better results: c3NoLXN0cjBuZy1wQHNz==
+---
+
+        User: clave
+     User ID: 1000
+    Password: ******
+        Home: /home/clave
+        Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+       umask: 0002
+
+    Hostname: bitlab
+       Linux: 4.15.0-29-generic
+Distribution: Ubuntu 18.04.2 LTS
+Architecture: x86_64
+
+==================================================================( users )=====
+[i] usr000 Current user groups............................................. yes!
+[*] usr010 Is current user in an administrative group?..................... nope
+[*] usr020 Are there other users in an administrative groups?.............. yes!
+---
+adm:x:4:syslog
+---
+[*] usr030 Other users with shell.......................................... yes!
+---
+root:x:0:0:root:/root:/bin/bash
+clave:x:1000:1000::/home/clave:/bin/bash
+---
+[i] usr040 Environment information......................................... skip
+[i] usr050 Groups for other users.......................................... skip
+[i] usr060 Other users..................................................... skip
+===================================================================( sudo )=====
+[!] sud000 Can we sudo without a password?................................. nope
+[!] sud010 Can we list sudo commands without a password?................... nope
+[!] sud020 Can we sudo with a password?.................................... nope
+[!] sud030 Can we list sudo commands with a password?...................... nope
+[*] sud040 Can we read /etc/sudoers?....................................... nope
+[*] sud050 Do we know if any other users used sudo?........................ nope
+============================================================( file system )=====
+[*] fst000 Writable files outside user's home.............................. yes!
+---
+/srv/docker/gitlab/gitlab
+/srv/docker/gitlab/gitlab/.ssh
+/srv/docker/gitlab/gitlab/.ssh/authorized_keys
+/srv/docker/gitlab/gitlab/.ssh/authorized_keys.lock
+/srv/docker/gitlab/gitlab/repositories
+/srv/docker/gitlab/gitlab/repositories/clave
+/srv/docker/gitlab/gitlab/repositories/root
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/config
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/hooks.old.1546562536
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/hooks.old.1546562536/README.sample
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/HEAD
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/description
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/info
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/info/exclude
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/55
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/3a
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/73
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/cc
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/89
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/fc
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/83
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/23
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/79
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/pack
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/7f
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/e3
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/c0
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/26
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/d9
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/2a
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/info
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/b6
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/9f
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/objects/01
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/keep-around
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/keep-around/e3650d900f550e6d348d55003f93a6f7caa29381
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/keep-around/796d03f8b1fa1b4b6367b48794b340118cb125dd
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/heads
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/heads/master
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/refs/tags
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/config
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/HEAD
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/description
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/info
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/info/exclude
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/hooks.old.1546562537
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/hooks.old.1546562537/README.sample
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/objects
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/objects/pack
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/objects/info
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/refs
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/refs/heads
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/refs/tags
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/config
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/hooks.old.1546560492
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/hooks.old.1546560492/README.sample
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/HEAD
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/description
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/info
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/info/exclude
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/objects
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/objects/pack
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/objects/info
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/refs
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/refs/heads
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/refs/tags
+/srv/docker/gitlab/gitlab/repositories/root/profile.git
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/config
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/HEAD
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/hooks.old.1546560490
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/hooks.old.1546560490/README.sample
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/description
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/info
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/info/exclude
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/info/refs
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/4f
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/eb
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/af
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/43
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/c3
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/73
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/ef
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/pack
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/68
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/28
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/3d
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/f6
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/e9
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/d9
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/f0
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/info
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/info/packs
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/1a
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/21
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/objects/6c
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/8
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/8/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/2
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/2/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/5
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/5/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/3
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/3/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/7
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/7/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/6
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/6/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/1
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/1/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/4
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/merge-requests/4/head
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/tmp
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/90f326223d01dbea6104d06c76a71976645fff25
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/6415730bb73dfbc1bb2bbd581539b87b9b9d96cf
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/a43bbaa942a139f798593ecf75e312743a9eb3b0
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/2aedc7e07b7ff875238026b251d3e36bdcab53b5
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/4359d3b6d27b5e6956cec2e1ceaedfa98dd9bf70
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/2035da2ac3f68bb9d182bb08036bd8f9d82e61b7
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/28030f87240921219f6de44acd30d808e809f4c0
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/ef57bb89ceaaf727385f2ba9d5d6a0a13b280444
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/ddc9fa3865eb9bac6d1d58bf1cf50a28285cf2a1
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/eb84994d4ded4e010bfa9c1cb0ddd86fe6d348b2
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/3db4b16234bb30f17d5f26da556d93657b892bcf
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/c8a170e32cd7c2e4118cad4bcdc8fadb800092fa
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/d9a2aca8143995c9348c5d8a257d6196f2c42a4f
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/21302456ff10e5475393e4640a4a48cccf39ceb0
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/67570604e5da011f7c5c257179679bf3bca83059
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/f01d1cdcb193f06363105a77f348d14b31d7b997
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/a7d58b57a76959ff974e9b24247ddf54b2aabd60
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/d305ca2d9a11e09f8ab6221deba8da8cc3153b2e
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/keep-around/f69cce29efd8951f7856f337250548747e841d71
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/heads
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/heads/test-deploy
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/heads/master
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/heads/patch-1
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/heads/patch-2
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/refs/tags
+/srv/docker/gitlab/gitlab/shared
+/srv/docker/gitlab/gitlab/shared/artifacts
+/srv/docker/gitlab/gitlab/shared/lfs-objects
+/srv/docker/gitlab/gitlab/shared/pages
+/srv/docker/gitlab/gitlab/uploads
+/srv/docker/gitlab/gitlab/uploads/clave
+/srv/docker/gitlab/gitlab/uploads/clave/hack
+/srv/docker/gitlab/gitlab/uploads/clave/hack/tmp
+/srv/docker/gitlab/gitlab/uploads/clave/hack/tmp/cache
+/srv/docker/gitlab/gitlab/uploads/clave/hack/tmp/work
+/srv/docker/gitlab/gitlab/uploads/-
+/srv/docker/gitlab/gitlab/uploads/-/system
+/srv/docker/gitlab/gitlab/uploads/-/system/project
+/srv/docker/gitlab/gitlab/uploads/-/system/project/avatar
+/srv/docker/gitlab/gitlab/uploads/-/system/project/avatar/2
+/srv/docker/gitlab/gitlab/uploads/-/system/project/avatar/2/profile.png
+/srv/docker/gitlab/gitlab/uploads/-/system/project/avatar/3
+/srv/docker/gitlab/gitlab/uploads/-/system/project/avatar/3/deployer.png
+/srv/docker/gitlab/gitlab/uploads/-/system/user
+/srv/docker/gitlab/gitlab/uploads/-/system/user/avatar
+/srv/docker/gitlab/gitlab/uploads/-/system/user/avatar/2
+/srv/docker/gitlab/gitlab/uploads/-/system/user/avatar/2/developer.jpg
+/srv/docker/gitlab/gitlab/uploads/-/system/user/avatar/1
+/srv/docker/gitlab/gitlab/uploads/-/system/user/avatar/1/administrator.jpg
+/srv/docker/gitlab/gitlab/uploads/-/system/tmp
+/srv/docker/gitlab/gitlab/uploads/-/system/tmp/cache
+/srv/docker/gitlab/gitlab/uploads/-/system/tmp/work
+/srv/docker/gitlab/gitlab/uploads/tmp
+/srv/docker/gitlab/gitlab/uploads/tmp/uploads
+/srv/docker/gitlab/gitlab/builds
+/srv/docker/gitlab/gitlab/tmp/downloads
+/srv/docker/gitlab/gitlab/backups
+/tmp
+/tmp/.Test-unix
+/tmp/.X11-unix
+/tmp/lse.sh
+/tmp/.font-unix
+/tmp/.XIM-unix
+/tmp/.ICE-unix
+/var/crash
+/var/log/apache2
+/var/log/apache2/error.log.3.gz
+/var/log/apache2/access.log
+/var/tmp
+/var/lib/lxcfs/proc
+/var/lib/lxcfs/cgroup
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/cgroup.clone_children
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/cgroup.procs
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/cgroup.clone_children
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/notify_on_release
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/cgroup.procs
+/var/lib/php/sessions
+/home/clave
+/srv/docker/gitlab/gitlab/repositories/root/deployer.git/hooks
+/srv/docker/gitlab/gitlab/repositories/root/deployer.wiki.git/hooks
+/srv/docker/gitlab/gitlab/repositories/root/profile.wiki.git/hooks
+/srv/docker/gitlab/gitlab/repositories/root/profile.git/hooks
+---
+[*] fst010 Binaries with setuid bit........................................ yes!
+---
+/sbin/mount.nfs
+/sbin/mount.cifs
+/usr/lib/snapd/snap-confine
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/bin/at
+/usr/bin/newuidmap
+/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/newgidmap
+/usr/bin/passwd
+/usr/bin/traceroute6.iputils
+/usr/bin/sudo
+/usr/bin/pkexec
+/usr/bin/newgrp
+/usr/bin/chsh
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/fusermount
+/bin/su
+---
+[!] fst020 Uncommon setuid binaries........................................ yes!
+---
+/sbin/mount.cifs
+---
+[!] fst030 Can we write to any setuid binary?.............................. nope
+[*] fst040 Binaries with setgid bit........................................ skip
+[!] fst050 Uncommon setgid binaries........................................ skip
+[!] fst060 Can we write to any setgid binary?.............................. skip
+[*] fst070 Can we read /root?.............................................. nope
+[*] fst080 Can we read subdirectories under /home?......................... nope
+[*] fst090 SSH files in home directories................................... nope
+[*] fst100 Useful binaries................................................. yes!
+---
+/usr/bin/curl
+/usr/bin/dig
+/usr/bin/gcc
+/bin/nc.openbsd
+/bin/nc
+/bin/netcat
+/usr/bin/nmap
+/usr/bin/wget
+---
+[*] fst110 Other interesting files in home directories..................... nope
+[!] fst120 Are there any credentials in fstab/mtab?........................ nope
+[*] fst130 Does 'clave' have mail?......................................... nope
+[!] fst140 Can we access other users mail?................................. nope
+[*] fst150 Looking for GIT/SVN repositories................................ yes!
+---
+/srv/apps/profile/.git
+/var/www/html/profile/.git
+/var/www/html/deployer/.git
+---
+[i] fst500 Files owned by user 'clave'..................................... skip
+[i] fst510 SSH files anywhere.............................................. skip
+[i] fst520 Check hosts.equiv file and its contents......................... skip
+[i] fst530 List NFS server shares.......................................... skip
+[i] fst540 Dump fstab file................................................. skip
+=================================================================( system )=====
+[i] sys000 Who is logged in................................................ skip
+[i] sys010 Last logged in users............................................ skip
+[!] sys020 Does the /etc/passwd have hashes?............................... nope
+[!] sys030 Can we read /etc/shadow file?................................... nope
+[!] sys030 Can we read /etc/shadow- file?.................................. nope
+[!] sys030 Can we read /etc/shadow~ file?.................................. nope
+[!] sys030 Can we read /etc/master.passwd file?............................ nope
+[*] sys040 Check for other superuser accounts.............................. nope
+[*] sys050 Can root user log in via SSH?................................... yes!
+---
+PermitRootLogin yes
+---
+[i] sys060 List available shells........................................... skip
+[i] sys070 System umask in /etc/login.defs................................. skip
+[i] sys080 System password policies in /etc/login.defs..................... skip
+===============================================================( security )=====
+[*] sec000 Is SELinux present?............................................. nope
+[*] sec010 List files with capabilities.................................... yes!
+---
+/usr/bin/mtr-packet = cap_net_raw+ep
+---
+[!] sec020 Can we write to a binary with caps?............................. nope
+[!] sec030 Do we have all caps in any binary?.............................. nope
+[*] sec040 Users with associated capabilities.............................. nope
+[!] sec050 Does current user have capabilities?............................ skip
+========================================================( recurrent tasks )=====
+[*] ret000 User crontab.................................................... nope
+[!] ret010 Cron tasks writable by user..................................... nope
+[*] ret020 Cron jobs....................................................... yes!
+---
+/etc/crontab:SHELL=/bin/sh
+/etc/crontab:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/crontab:17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+/etc/crontab:25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/etc/crontab:47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+/etc/crontab:52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+/etc/cron.d/mdadm:57 0 * * 0 root if [ -x /usr/share/mdadm/checkarray ] && [ $(date +\%d) -le 7 ]; then /usr/share/mdadm/checkarray --cron --all --idle --quiet; fi
+/etc/cron.d/php:09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
+---
+[*] ret030 Can we read user crontabs....................................... nope
+[*] ret040 Can we list other user cron tasks?.............................. nope
+[!] ret050 Can we write to executable paths present in cron jobs........... nope
+[*] ret060 Can we write to any paths present in cron jobs.................. nope
+[i] ret400 Cron files...................................................... skip
+[*] ret500 User systemd timers............................................. nope
+[!] ret510 Can we write in any system timer?............................... nope
+[i] ret900 Systemd timers.................................................. skip
+================================================================( network )=====
+[*] net000 Services listening only on localhost............................ yes!
+---
+tcp    LISTEN   0        128             127.0.0.1:3022          0.0.0.0:*      
+tcp    LISTEN   0        128             127.0.0.1:5432          0.0.0.0:*      
+---
+[!] net010 Can we sniff traffic with tcpdump?.............................. nope
+[i] net500 NIC and IP information.......................................... skip
+[i] net510 Routing table................................................... skip
+[i] net520 ARP table....................................................... skip
+[i] net530 Namerservers.................................................... skip
+[i] net540 Systemd Nameservers............................................. skip
+[i] net550 Listening TCP................................................... skip
+[i] net560 Listening UDP................................................... skip
+===============================================================( services )=====
+[!] srv000 Can we write in service files?.................................. nope
+[!] srv010 Can we write in binaries executed by services?.................. nope
+[*] srv020 Files in /etc/init.d/ not belonging to root..................... nope
+[*] srv030 Files in /etc/rc.d/init.d not belonging to root................. nope
+[*] srv040 Upstart files not belonging to root............................. nope
+[*] srv050 Files in /usr/local/etc/rc.d not belonging to root.............. nope
+[i] srv400 Contents of /etc/inetd.conf..................................... skip
+[i] srv410 Contents of /etc/xinetd.conf.................................... skip
+[i] srv420 List /etc/xinetd.d if used...................................... skip
+[i] srv430 List /etc/init.d/ permissions................................... skip
+[i] srv440 List /etc/rc.d/init.d permissions............................... skip
+[i] srv450 List /usr/local/etc/rc.d permissions............................ skip
+[i] srv460 List /etc/init/ permissions..................................... skip
+[!] srv500 Can we write in systemd service files?.......................... nope
+[!] srv510 Can we write in binaries executed by systemd services?.......... nope
+[*] srv520 Systemd files not belonging to root............................. nope
+[i] srv900 Systemd config files permissions................................ skip
+==============================================================( processes )=====
+[!] pro000 Can we write in any process binary?............................. nope
+[*] pro010 Processes running with root permissions......................... yes!
+---
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Sep25 ?        00:00:03 /sbin/init
+root       498     1  0 Sep25 ?        00:00:01 /lib/systemd/systemd-journald
+root       525     1  0 Sep25 ?        00:00:00 /sbin/lvmetad -f
+root       528     1  0 Sep25 ?        00:00:01 /lib/systemd/systemd-udevd
+root       625     1  0 Sep25 ?        00:00:00 /usr/bin/VGAuthService
+root       698     1  0 Sep25 ?        00:02:24 /usr/bin/vmtoolsd
+root       871     1  0 Sep25 ?        00:00:00 /lib/systemd/systemd-logind
+root       873     1  0 Sep25 ?        00:00:01 /usr/lib/accountsservice/accounts-daemon
+root       874     1  0 Sep25 ?        00:00:09 /usr/bin/lxcfs /var/lib/lxcfs/
+root       875     1  0 Sep25 ?        00:00:00 /usr/sbin/cron -f
+root       877     1  0 Sep25 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+daemon     897     1  0 Sep25 ?        00:00:00 /usr/sbin/atd -f
+root       908     1  0 Sep25 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root      1001     1  0 Sep25 ?        00:00:12 /usr/bin/containerd
+root      1002     1  0 Sep25 ?        00:00:39 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root      1009     1  0 Sep25 ?        00:00:00 /usr/sbin/sshd -D
+root      1016     1  0 Sep25 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root      1158     1  0 Sep25 ?        00:00:04 /usr/sbin/apache2 -k start
+root      1535  1002  0 Sep25 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 80 -container-ip 172.19.0.2 -container-port 80
+root      1536  1001  0 Sep25 ?        00:00:04 containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/30a30dd26e1a78dfab687334bd7b40c80c8f447e023cd31ab153ad82316a326f -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+root      1558  1002  0 Sep25 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 127.0.0.1 -host-port 5432 -container-ip 172.19.0.4 -container-port 5432
+root      1574  1002  0 Sep25 ?        00:00:44 /usr/bin/docker-proxy -proto tcp -host-ip 172.17.0.1 -host-port 3000 -container-ip 172.19.0.5 -container-port 80
+root      1586  1002  0 Sep25 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 127.0.0.1 -host-port 3022 -container-ip 172.19.0.5 -container-port 22
+root      1593  1001  0 Sep25 ?        00:00:03 containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/c851f502752e7b9e32aa79a97ddb4e02dc75b181142683b77ea428c8671c1da7 -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+root      1633  1001  0 Sep25 ?        00:00:03 containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/d7c134ae256fc07b0c8302babf079d0e8a37a6aac8d90e650a528d261ae5ac44 -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+root      1634  1001  0 Sep25 ?        00:00:03 containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/9d5b91477bb2aaac5d875bed9449e4003daf0383e2c853ff6006a0c85e0fdaff -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+root      1675  1593  0 Sep25 ?        00:00:05 haproxy -W -db -f /usr/local/etc/haproxy/haproxy.cfg
+root      1722  1634  0 Sep25 ?        00:02:00 /usr/bin/python /usr/bin/supervisord -nc /etc/supervisor/supervisord.conf
+root      2146  1675  0 Sep25 ?        00:18:22 haproxy -W -db -f /usr/local/etc/haproxy/haproxy.cfg
+root      5545  1722  0 Sep25 ?        00:00:00 /usr/sbin/cron -f
+root      5546  1722  0 Sep25 ?        00:00:00 nginx: master process /usr/sbin/nginx -g daemon off;
+root      5547  1722  0 Sep25 ?        00:00:00 /usr/sbin/sshd -D -E /var/log/gitlab/supervisor/sshd.log
+root      6226  6188  0 Sep25 pts/0    00:00:00 sudo -u root git pull -p help config
+root     12841 11556  0 Sep25 pts/2    00:00:00 su root
+root     12843     1  0 Sep25 ?        00:00:00 /lib/systemd/systemd --user
+root     12844 12843  0 Sep25 ?        00:00:00 (sd-pam)
+root     12854 12841  0 Sep25 pts/2    00:00:00 bash
+root     12918 12854  0 Sep25 pts/2    00:00:08 python -m SimpleHTTPServer 8888
+---
+[i] pro500 Running processes............................................... skip
+[i] pro510 Running process binaries and permissions........................ skip
+===============================================================( software )=====
+[!] sof000 Can we connect to MySQL with root/root credentials?............. nope
+[!] sof010 Can we connect to MySQL as root without password?............... nope
+[!] sof020 Can we connect to PostgreSQL template0 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template1 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template0 as psql and no pass?..... nope
+[!] sof020 Can we connect to PostgreSQL template1 as psql and no pass?..... nope
+[*] sof030 Installed apache modules........................................ yes!
+---
+Loaded Modules:
+ core_module (static)
+ so_module (static)
+ watchdog_module (static)
+ http_module (static)
+ log_config_module (static)
+ logio_module (static)
+ version_module (static)
+ unixd_module (static)
+ alias_module (shared)
+ authz_core_module (shared)
+ autoindex_module (shared)
+ dir_module (shared)
+ mime_module (shared)
+ mpm_prefork_module (shared)
+ php7_module (shared)
+ rewrite_module (shared)
+ setenvif_module (shared)
+---
+[!] sof040 Found any .htpasswd files?...................................... nope
+[i] sof500 Sudo version.................................................... skip
+[i] sof510 MySQL version................................................... skip
+[i] sof520 Postgres version................................................ skip
+[i] sof530 Apache version.................................................. skip
+=============================================================( containers )=====
+[*] ctn000 Are we in a docker container?................................... nope
+[*] ctn010 Is docker available?............................................ yes!
+---
+Docker version 19.03.1, build 74b1e89
+---
+[!] ctn020 Is the user a member of the 'docker' group?..................... nope
+[*] ctn200 Are we in a lxc container?...................................... nope
+[!] ctn210 Is the user a member of any lxc/lxd group?...................... nope
+
+==================================( FINISHED )==================================
