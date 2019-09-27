@@ -31,7 +31,7 @@
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
 |  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
-|  Jarvis            | <img width=20 src=./_images/win.png> | [View](Jarvis/README.md)           |
+|  Jarvis           | <img width=20 src=./_images/win.png>  | [View](Jarvis/README.md)           |
 |  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/README.md)    |
 |  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/README.md)             |
 |  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/README.md)      |
