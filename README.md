@@ -19,6 +19,7 @@
 |  Bitlab           | <img width=20 src=./_images/lin.png>  | [View](Bitlab/README.md)           |
 |  Carrier          | <img width=20 src=./_images/lin.png>  | [View](Carrier/README.md)          |
 |  Chaos            | <img width=20 src=./_images/lin.png>  | [View](Chaos/README.md)            |
+|  Craft            | <img width=20 src=./_images/lin.png>  | [View](Craft/README.md)            |
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |
 |  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/README.md)          |
 |  Devel            | <img width=20 src=./_images/win.png>  | [View](Devel/README.md)            |

