@@ -1,0 +1,5 @@
+/index.html (Status: 200)
+/aa.php (Status: 200)
+/monitoring (Status: 401)
+/panel.php (Status: 200)
+/server-status (Status: 403)
