@@ -1,7 +1,7 @@
 ![](./logo.png)
 
 
-Deobucated javascript implies adding a Bearer header to a GET request to `/api/account`
+Deobucated javascript implies adding a `Bearer` header to a GET request to `/api/account`
 
 ```xml
 <Error>
@@ -22,3 +22,5 @@ Deobucated javascript implies adding a Bearer header to a GET request to `/api/a
 ```
 
 Researching online has provided linked to Json.NET desearalise vulns 
+
+https://github.com/pwntester/ysoserial.net
