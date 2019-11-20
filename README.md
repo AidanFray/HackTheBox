@@ -48,6 +48,7 @@
 |  Safe             | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Safe/README.md) --> |
 |  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)         |
 |  Teacher          | <img width=20 src=./_images/lin.png>  | [View](Teacher/README.md)          |
+|  Traverxec        | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Traverxec/README.md) --> |
 |  Wall             | <img width=20 src=./_images/lin.png>  | [View](Wall/README.md)             |
 |  Writeup          | <img width=20 src=./_images/lin.png>  | [View](Ypuffy/README.md)           |
 |  Ypuffy           | <img width=20 src=./_images/gear.png> | [View](Ypuffy/README.md)           |

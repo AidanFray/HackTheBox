@@ -1,0 +1,5 @@
+/img (Status: 200)
+/icons (Status: 200)
+/css (Status: 200)
+/lib (Status: 200)
+/js (Status: 200)
