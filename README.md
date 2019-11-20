@@ -23,6 +23,7 @@
 |  Curling          | <img width=20 src=./_images/lin.png>  | [View](Curling/README.md)          |
 |  Dev0ops          | <img width=20 src=./_images/lin.png>  | [View](Dev0ops/README.md)          |
 |  Devel            | <img width=20 src=./_images/win.png>  | [View](Devel/README.md)            |
+|  Ellingson        | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Ellingson/README.md) --> |
 |  Fortune          | <img width=20 src=./_images/gear.png> | [View](Fortune/README.md)          |
 |  FriendZone       | <img width=20 src=./_images/lin.png>  | [View](Friendzone/README.md)       |
 |  Frolic           | <img width=20 src=./_images/lin.png>  | [View](Frolic/README.md)           |
@@ -30,8 +31,9 @@
 |  Heist            | <img width=20 src=./_images/win.png>  | [View](Heist/README.md)            |
 |  Help             | <img width=20 src=./_images/lin.png>  | [View](Help/README.md)             |
 |  Irked            | <img width=20 src=./_images/lin.png>  | [View](Irked/README.md)            |
-|  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
 |  Jarvis           | <img width=20 src=./_images/win.png>  | [View](Jarvis/README.md)           |
+|  Jerry            | <img width=20 src=./_images/win.png>  | [View](Jerry/README.md)            |
+|  Json             | <img width=20 src=./_images/win.png>  | [View](Json/README.md)             |
 |  LaCasaDePapel    | <img width=20 src=./_images/lin.png>  | [View](LaCasaDePapel/README.md)    |
 |  Lame             | <img width=20 src=./_images/lin.png>  | [View](Lame/README.md)             |
 |  Lightweight      | <img width=20 src=./_images/lin.png>  | [View](Lightweight/README.md)      |
@@ -41,6 +43,7 @@
 |  October          | <img width=20 src=./_images/lin.png>  | [View](October/README.md)          |
 |  Poison           | <img width=20 src=./_images/bsd.png>  | [View](Poison/README.md)           |
 |  Popcorn          | <img width=20 src=./_images/lin.png>  | [View](Popcorn/README.md)          |
+|  Postman          | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Postman/README.md) --> |
 |  Querier          | <img width=20 src=./_images/win.png>  | [View](Querier/README.md)          |
 |  Safe             | <img width=20 src=./_images/lin.png>  | **X** <!-- [View](Safe/README.md) --> |
 |  SwagShop         | <img width=20 src=./_images/lin.png>  | [View](SwagShop/README.md)         |
