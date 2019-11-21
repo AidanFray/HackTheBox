@@ -9,7 +9,7 @@
 
 |  |   Name            |      OS                               |         Walkthrough            |
 |--| ----------------- |---------------------------------------|:----------------------------------:|
-|<img align="right" height=60 src="Apocalyst/logo.png"/>  |  Apocalyst        | <img width=20 src=../_images/lin.png>  | [View](Apocalyst/README.md)        |
+|<img align="right" height=40 src="_images/Apocalyst.png"/> |  Apocalyst        | <img width=20 src=../_images/lin.png>  | [View](Apocalyst/README.md)        |
 |  |  Bitlab           | <img width=20 src=../_images/lin.png>  | [View](Bitlab/README.md)           |
 |  |  Carrier          | <img width=20 src=../_images/lin.png>  | [View](Carrier/README.md)          |
 |  |  Chaos            | <img width=20 src=../_images/lin.png>  | [View](Chaos/README.md)            |
