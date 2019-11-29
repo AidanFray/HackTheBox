@@ -7,8 +7,9 @@
 <!-- <img width=20 src=../_images/gear.png> -->
 <!-- <img width=20 src=../_images/bsd.png> -->
 
-|                                                              |   Name            |      OS                                |           Walkthrough              |
-|--------------------------------------------------------------| ----------------- |----------------------------------------|:----------------------------------:|
+|                                                               |   Name            |      OS                                |           Walkthrough              |
+|-------------------------------------------------------------- | ----------------- |----------------------------------------|:----------------------------------:|
+| <img align="center" height=40 src="_images/AI.png"/>          |  AI               | <img width=20 src=../_images/lin.png>  | [View](AI/README.md)        |
 | <img align="center" height=40 src="_images/Apocalyst.png"/>   |  Apocalyst        | <img width=20 src=../_images/lin.png>  | [View](Apocalyst/README.md)        |
 | <img align="center" height=40 src="_images/Bitlab.png"/>      |  Bitlab           | <img width=20 src=../_images/lin.png>  | [View](Bitlab/README.md)           |
 | <img align="center" height=40 src="_images/Carrier.png"/>     |  Carrier          | <img width=20 src=../_images/lin.png>  | [View](Carrier/README.md)          |
