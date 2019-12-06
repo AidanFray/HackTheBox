@@ -90,3 +90,57 @@ io = gdb.debug('./myapp', 'b *main+77') # ret of main()
 Loads the program into `gdb` allows for debugging the `pwn-tools` exploit.
 
 This lets us spawn a shell on the box and grab the `user.txt`!
+
+# ROOT
+
+The root directory contains a Keypass (`kdbx`) and six images.
+
+Using `keypass2john` from the Jumbo version of John The Ripper we can convert the database to a hash that can be cracked.
+
+After trying for a small amount of time with a basic hash (With no key file) I began trying to use the images as key files. Key files work as an extra layer of security and can be any file. In this case the key file is one of the images.
+
+The hash files were generated with the batch file below:
+
+```sh
+files=(
+	"IMG_0545.JPG"  
+	"IMG_0546.JPG"  
+	"IMG_0547.JPG"  
+	"IMG_0548.JPG"  
+	"IMG_0552.JPG"  
+	"IMG_0553.JPG"
+      )
+
+for i in ${files[@]}; do
+	keepass2john -k $i ./MyPasswords.kdbx > ./hash/$i-hash.txt
+done
+```
+
+With some trial and error it was found that `IMG_0547.JPG` is the key file. This can be used to create a hash with `keypass2john`.
+
+```
+MyPasswords:$keepass$*2*60000*0*a9d7b3ab261d3d2bc18056e5052938006b72632366167bcb0b3b0ab7f272ab07*9a700a89b1eb5058134262b2481b571c8afccff1d63d80b409fa5b2568de4817*36079dc6106afe013411361e5022c4cb*f4e75e393490397f9a928a3b2d928771a09d9e6a750abd9ae4ab69f85f896858*78ad27a0ed11cddf7b3577714b2ee62cfa94e21677587f3204a2401fddce7a96*1*64*e949722c426b3604b5f2c9c2068c46540a5a2a1c557e66766bab5881f36d93c7
+```
+
+This when cracked gives us the password `bullshit`.
+
+```
+Using default input encoding: UTF-8
+Loaded 1 password hash (KeePass [SHA256 AES 32/64])
+Cost 1 (iteration count) is 60000 for all loaded hashes
+Cost 2 (version) is 2 for all loaded hashes
+Cost 3 (algorithm [0=AES, 1=TwoFish, 2=ChaCha]) is 0 for all loaded hashes
+Will run 6 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+
+bullshit         (MyPasswords)
+1g 0:00:00:02 DONE (2019-12-06 11:27) 0.3448g/s 355.8p/s 355.8c/s 355.8C/s mariel..samson
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+```
+
+This can be used within `Keypass` to grab the root password:
+
+```
+root:u3v2249dl9ptv465cogl3cnpo3fyhk
+```
