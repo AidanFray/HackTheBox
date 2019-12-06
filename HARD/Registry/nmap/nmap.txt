@@ -1,0 +1,56 @@
+# Nmap 7.60 scan initiated Fri Dec  6 13:47:17 2019 as: nmap -sV -sC -o nmap.txt -vvv 10.10.10.159
+Nmap scan report for 10.10.10.159
+Host is up, received syn-ack (0.015s latency).
+Scanned at 2019-12-06 13:47:18 GMT for 14s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT    STATE SERVICE  REASON  VERSION
+22/tcp  open  ssh      syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 72:d4:8d:da:ff:9b:94:2a:ee:55:0c:04:30:71:88:93 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCZtxPox0F/6ZQbPbgwP9t13ZX+DegufV+sVoqTGWfuE2/jQwVLR+TCLJM4EDg4UJol4OHl0ATQBkPM7CSi1DS3oZgNlaASXQoZFzHUN4KF1/B6uShfMcszORHOBSRZAMe5nuesre2oJtrqhyO1VS2TMOitFLmKEaDImHy7EXe8qnaK8CrVFAxdUOG8iQFEiZUt8JZJ6CPgfIu00t4JpIl9l4aOFEZT6H7xf7K74ov2KNyP6WCoOtdDf7Rhfwcfo6dogHxssH6O/d+FgN6KJ8q2gJjUZVYYjZHTfGCPRukmSDYQNglQkvzuOy3umUTwNt5NdjYBT+vemcOIaDPm0SX
+|   256 c7:40:d0:0e:e4:97:4a:4f:f9:fb:b2:0b:33:99:48:6d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDFZI3tSfqp1WJF1TjoPa3J6j94yzXZMtFj92P8HcBUXCosmhsTsRa5rBvt20Es/qTp2otqYz3R3jf9O0OGC/tc=
+|   256 78:34:80:14:a1:3d:56:12:b4:0a:98:1f:e6:b4:e8:93 (EdDSA)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINNAMP4YFJGAx3ip1MPEsDuXUhgHXOIxrVTUCOxqJeRr
+80/tcp  open  http     syn-ack nginx 1.14.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+443/tcp open  ssl/http syn-ack nginx 1.14.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+| ssl-cert: Subject: commonName=docker.registry.htb
+| Issuer: commonName=Registry
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-05-06T21:14:35
+| Not valid after:  2029-05-03T21:14:35
+| MD5:   0d6f 504f 1cb5 de50 2f4e 5f67 9db6 a3a9
+| SHA-1: 7da0 1245 1d62 d69b a87e 8667 083c 39a6 9eb2 b2b5
+| -----BEGIN CERTIFICATE-----
+| MIICrTCCAZUCCQDjC7Es6pyC3TANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhS
+| ZWdpc3RyeTAeFw0xOTA1MDYyMTE0MzVaFw0yOTA1MDMyMTE0MzVaMB4xHDAaBgNV
+| BAMME2RvY2tlci5yZWdpc3RyeS5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+| ggEKAoIBAQDAQd6mLhCheVIu0IOf2QIXH4UZGnzIrcQgDfTelpc3E4QxH0nq+KPg
+| 7gsPuMz/WMnmZUh3dLKLXb7hqJ2Wk8vQM6tt+PbKna/D6WKXqGM3JnSLKW1YOkIu
+| AuQenMOxJxh41IA0+3FqdlEdtaOV8sP+bgFB/uG2NDfPOLciJMop+d5pwpcxro8l
+| egZASYNM3AbZjWAotmMqHwjGwZwqqxXxn61DixNDN2GWLQHO7QPUVUjF+Npso3zN
+| ZLUJ1vkAtl6kFlmLTJgjlTUuE78udKD5r/NLqHNxxxObaSFXrmm2maDDoAkhobOt
+| ljpa/U/fCv8g03KToaXVZYb6BfFEP5FBAgMBAAEwDQYJKoZIhvcNAQELBQADggEB
+| AF3zSdj6GB3UYb431GRyTe32Th3QgpbXsQXA2qaLjI0n3qOF5PYnADgKsDzTxtDU
+| z4e5vLz0Y3NhMKobft+vzBt2GbJIzo8DbmDBD3z1WQU+GLTnXyUAPF9J6fhtUgKm
+| hoq1S8YsKRt/NMJwZMk3GiIw1c7KEN3/9XqJ9lfIyeXqVc6XBvuiZ+ssjDId0RZO
+| 7eWWELxItMHPVScwWpOA7B4INPM6USKGy7hUTFcPJZB7+ElTFO2h0c4MwFQcSqKW
+| BUG+oUPpMOoO99ZRnX8D5/H3dvbuBsuqKgRrPmQnMehoWs7pNRUDudUnnLfGEJHh
+| PEyspHOCbg1C6a0gI1xo0c0=
+|_-----END CERTIFICATE-----
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  6 13:47:32 2019 -- 1 IP address (1 host up) scanned in 15.03 seconds

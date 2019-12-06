@@ -1,0 +1,8 @@
+/files (Status: 301)
+/tests (Status: 301)
+/src (Status: 301)
+/app (Status: 301)
+/theme (Status: 301)
+/vendor (Status: 301)
+/extensions (Status: 301)
+/bolt (Status: 302)
