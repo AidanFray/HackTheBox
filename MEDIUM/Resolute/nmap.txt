@@ -1,0 +1,52 @@
+# Nmap 7.60 scan initiated Tue Dec 10 16:09:19 2019 as: nmap -sV -sC -o nmap.txt -vvv 10.10.10.169
+Nmap scan report for 10.10.10.169
+Host is up, received conn-refused (0.017s latency).
+Scanned at 2019-12-10 16:09:20 GMT for 133s
+Not shown: 989 closed ports
+Reason: 989 conn-refused
+PORT     STATE SERVICE      REASON  VERSION
+53/tcp   open  domain?      syn-ack
+88/tcp   open  kerberos-sec syn-ack Microsoft Windows Kerberos (server time: 2019-12-10 16:16:27Z)
+135/tcp  open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+389/tcp  open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds syn-ack Windows Server 2016 Standard 14393 microsoft-ds (workgroup: MEGABANK)
+464/tcp  open  kpasswd5?    syn-ack
+593/tcp  open  ncacn_http   syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped   syn-ack
+3268/tcp open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped   syn-ack
+Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 6m59s, deviation: 0s, median: 6m59s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 50729/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 52471/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 55070/udp): CLEAN (Timeout)
+|   Check 4 (port 30435/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Resolute
+|   NetBIOS computer name: RESOLUTE\x00
+|   Domain name: megabank.local
+|   Forest name: megabank.local
+|   FQDN: Resolute.megabank.local
+|_  System time: 2019-12-10T08:17:04-08:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2019-12-10 16:17:02
+|_  start_date: 2019-12-10 14:40:29
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 10 16:11:33 2019 -- 1 IP address (1 host up) scanned in 133.31 seconds
