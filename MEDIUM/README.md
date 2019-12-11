@@ -24,6 +24,7 @@
 | <img align="center" height=40 src="_images/Poison.png"/>      |  Poison           | <img width=20 src=../_images/bsd.png>  | [View](Poison/README.md)           |
 | <img align="center" height=40 src="_images/Popcorn.png"/>     |  Popcorn          | <img width=20 src=../_images/lin.png>  | [View](Popcorn/README.md)          |
 | <img align="center" height=40 src="_images/Querier.png"/>     |  Querier          | <img width=20 src=../_images/win.png>  | [View](Querier/README.md)          |
+| <img align="center" height=40 src="_images/Resolute.png"/>    |  Resolute         | <img width=20 src=../_images/win.png>  | **X** <!-- [View](Resolute/README.md) -->         |
 | <img align="center" height=40 src="_images/Teacher.png"/>     |  Teacher          | <img width=20 src=../_images/lin.png>  | [View](Teacher/README.md)          |
 | <img align="center" height=40 src="_images/Wall.png"/>        |  Wall             | <img width=20 src=../_images/lin.png>  | [View](Wall/README.md)             |
 | <img align="center" height=40 src="_images/Ypuffy.png"/>      |  Ypuffy           | <img width=20 src=../_images/gear.png> | [View](Ypuffy/README.md)           |
