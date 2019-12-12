@@ -8,4 +8,4 @@
 |                                                              |   Name            |      OS                                |         Walkthrough                |
 |--------------------------------------------------------------| ----------------- |--------------------------------------- |:----------------------------------:|
 |  <img align="center" height=40 src="_images/Ellingson.png"/> |  Ellingson        | <img width=20 src=../_images/lin.png>  | **X** <!-- [View](Ellingson/README.md) --> |
-|  <img align="center" height=40 src="_images/Registry.png"/>  |  Registry         | <img width=20 src=../_images/lin.png>  | **X** <!-- [View](Registry/README.md) --> |
+|  <img align="center" height=40 src="_images/Registry.png"/>  |  Registry         | <img width=20 src=../_images/lin.png>  | [View](Registry/README.md)         |
