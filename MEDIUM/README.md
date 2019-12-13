@@ -14,7 +14,7 @@
 | <img align="center" height=40 src="_images/Chaos.png"/>       |  Chaos            | <img width=20 src=../_images/lin.png>  | [View](Chaos/README.md)            |
 | <img align="center" height=40 src="_images/Craft.png"/>       |  Craft            | <img width=20 src=../_images/lin.png>  | [View](Craft/README.md)            |
 | <img align="center" height=40 src="_images/Dev0ops.png"/>     |  Dev0ops          | <img width=20 src=../_images/lin.png>  | [View](Dev0ops/README.md)          |
-| <img align="center" height=40 src="_images/Jarvis.png"/>      |  Jarvis           | <img width=20 src=../_images/win.png>  | [View](Jarvis/README.md)           |
+| <img align="center" height=40 src="_images/Jarvis.png"/>      |  Jarvis           | <img width=20 src=../_images/lin.png>  | [View](Jarvis/README.md)           |
 | <img align="center" height=40 src="_images/Json.png"/>        |  Json             | <img width=20 src=../_images/win.png>  | [View](Json/README.md)             |
 | <img align="center" height=40 src="_images/Lightweight.png"/> |  Lightweight      | <img width=20 src=../_images/lin.png>  | [View](Lightweight/README.md)      |
 | <img align="center" height=40 src="_images/Luke.png"/>        |  Luke             | <img width=20 src=../_images/bsd.png>  | [View](Luke/README.md)             |
