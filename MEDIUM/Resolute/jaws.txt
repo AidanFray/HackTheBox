@@ -1,0 +1,397 @@
+############################################################
+##     J.A.W.S. (Just Another Windows Enum Script)        ##
+##                                                        ##
+##           https://github.com/411Hall/JAWS              ##
+##                                                        ##
+############################################################
+
+Windows Version: 
+Architecture: AMD64
+Hostname: RESOLUTE
+Current User: melanie
+Current Time\Date: 12/13/2019 02:27:31
+
+-----------------------------------------------------------
+ Users
+-----------------------------------------------------------
+----------
+Username: abigail
+Groups:   Domain Users
+----------
+Username: Administrator
+Groups:   Group Policy Creator Owners Domain Admins Domain Users Schema Admins Enterprise Admins Administrators
+----------
+Username: angela
+Groups:   Domain Users
+----------
+Username: annette
+Groups:   Domain Users
+----------
+Username: annika
+Groups:   Domain Users
+----------
+Username: claire
+Groups:   Domain Users
+----------
+Username: claude
+Groups:   Domain Users
+----------
+Username: DefaultAccount
+Groups:   Domain Users System Managed Accounts Group
+----------
+Username: felicia
+Groups:   Domain Users
+----------
+Username: fred
+Groups:   Domain Users
+----------
+Username: Guest
+Groups:   Domain Guests Guests
+----------
+Username: gustavo
+Groups:   Domain Users
+----------
+Username: krbtgt
+Groups:   Domain Users Denied RODC Password Replication Group
+----------
+Username: marcus
+Groups:   Domain Users
+----------
+Username: marko
+Groups:   Domain Users
+----------
+Username: melanie
+Groups:   Domain Users Remote Management Users
+----------
+Username: naoki
+Groups:   Domain Users
+----------
+Username: paulo
+Groups:   Domain Users
+----------
+Username: per
+Groups:   Domain Users
+----------
+Username: ryan
+Groups:   Domain Users Contractors
+----------
+Username: sally
+Groups:   Domain Users
+----------
+Username: simon
+Groups:   Domain Users
+----------
+Username: steve
+Groups:   Domain Users
+----------
+Username: stevie
+Groups:   Domain Users
+----------
+Username: sunita
+Groups:   Domain Users
+----------
+Username: ulf
+Groups:   Domain Users
+----------
+Username: zach
+Groups:   Domain Users
+
+-----------------------------------------------------------
+ Network Information
+-----------------------------------------------------------
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : 
+   IPv4 Address. . . . . . . . . . . : 10.10.10.169
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.10.10.2
+
+Tunnel adapter isatap.{A20A4417-3DC7-47B7-8F00-87CC59D9F43F}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+-----------------------------------------------------------
+ Arp
+-----------------------------------------------------------
+
+Interface: 10.10.10.169 --- 0x2
+  Internet Address      Physical Address      Type
+  10.10.10.2            00-50-56-b9-c6-5d     dynamic   
+  10.10.10.255          ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.252           01-00-5e-00-00-fc     static 
+
+  -----------------------------------------------------------
+ Firewall Status
+-----------------------------------------------------------
+
+Firewall is Disabled
+
+-----------------------------------------------------------
+ FireWall Rules
+-----------------------------------------------------------
+
+Name                                                                         LocalPorts ApplicationName                                          
+----                                                                         ---------- ---------------                                          
+Active Directory Domain Controller -  Echo Request (ICMPv4-In)                                                                                   
+Active Directory Domain Controller -  Echo Request (ICMPv6-In)                                                                                   
+Core Networking - Packet Too Big (ICMPv6-In)                                                                                                     
+File and Printer Sharing (Echo Request - ICMPv4-In)                                                                                              
+File and Printer Sharing (Echo Request - ICMPv6-In)                                                                                              
+File and Printer Sharing (Spooler Service - RPC-EPMAP)                       RPC-EPMap,                                                          
+Active Directory Web Services (TCP-In)                                       9389       C:\Windows\ADWS\Microsoft.ActiveDirectory.WebServices.exe
+DFS Management (TCP-In)                                                      RPC,       C:\Windows\system32\dfsfrsHost.exe                       
+DFS Replication (RPC-In)                                                     RPC,       C:\Windows\system32\dfsrs.exe                            
+DNS (TCP, Incoming)                                                          53         C:\Windows\System32\dns.exe                              
+DNS (UDP, Incoming)                                                          53         C:\Windows\System32\dns.exe                              
+RPC (TCP, Incoming)                                                          RPC,       C:\Windows\System32\dns.exe                              
+Active Directory Domain Controller - LDAP (TCP-In)                           389        C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller - LDAP (UDP-In)                           389        C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller - LDAP for Global Catalog (TCP-In)        3268       C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller - Secure LDAP (TCP-In)                    636        C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller - Secure LDAP for Global Catalog (TCP-In) 3269       C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller (RPC)                                     RPC,       C:\Windows\System32\lsass.exe                            
+Kerberos Key Distribution Center - PCR (TCP-In)                              464        C:\Windows\System32\lsass.exe                            
+Kerberos Key Distribution Center - PCR (UDP-In)                              464        C:\Windows\System32\lsass.exe                            
+Kerberos Key Distribution Center (TCP-In)                                    88         C:\Windows\System32\lsass.exe                            
+Kerberos Key Distribution Center (UDP-In)                                    88         C:\Windows\System32\lsass.exe                            
+Microsoft Key Distribution Service                                           RPC,       C:\Windows\system32\lsass.exe                            
+Microsoft Key Distribution Service                                           RPC-EPMap, C:\Windows\system32\lsass.exe                            
+File Replication (RPC)                                                       RPC,       C:\Windows\system32\NTFRS.exe                            
+File and Printer Sharing (Spooler Service - RPC)                             RPC,       C:\Windows\system32\spoolsv.exe                          
+Active Directory Domain Controller - W32Time (NTP-UDP-In)                    123        C:\Windows\System32\svchost.exe                          
+Active Directory Domain Controller (RPC-EPMAP)                               RPC-EPMap, C:\Windows\system32\svchost.exe                          
+AllJoyn Router (TCP-In)                                                      9955       C:\Windows\system32\svchost.exe                          
+AllJoyn Router (UDP-In)                                                      *          C:\Windows\system32\svchost.exe                          
+Core Networking - Dynamic Host Configuration Protocol (DHCP-In)              68         C:\Windows\system32\svchost.exe                          
+Core Networking - Dynamic Host Configuration Protocol for IPv6(DHCPV6-In)    546        C:\Windows\system32\svchost.exe                          
+Core Networking - Teredo (UDP-In)                                            Teredo,    C:\Windows\system32\svchost.exe                          
+DFS Management (DCOM-In)                                                     135        C:\Windows\system32\svchost.exe                          
+DFS Management (WMI-In)                                                      RPC,       C:\Windows\system32\svchost.exe                          
+DFS Replication (RPC-EPMAP)                                                  RPC-EPMap, C:\Windows\system32\svchost.exe                          
+File and Printer Sharing (LLMNR-UDP-In)                                      5355       C:\Windows\system32\svchost.exe                          
+File Replication (RPC-EPMAP)                                                 RPC-EPMap, C:\Windows\system32\svchost.exe                          
+File Server Remote Management (DCOM-In)                                      135        C:\Windows\system32\svchost.exe                          
+File Server Remote Management (WMI-In)                                       RPC,       C:\Windows\system32\svchost.exe                          
+mDNS (UDP-In)                                                                mDNS,      C:\Windows\system32\svchost.exe                          
+RPC Endpoint Mapper (TCP, Incoming)                                          RPC-EPMap, C:\Windows\system32\svchost.exe                          
+Windows Management Instrumentation (DCOM-In)                                 135        C:\Windows\system32\svchost.exe                          
+Windows Management Instrumentation (WMI-In)                                  *          C:\Windows\system32\svchost.exe                          
+Windows Management Instrumentation (ASync-In)                                *          C:\Windows\system32\wbem\unsecapp.exe                    
+Active Directory Domain Controller - NetBIOS name resolution (UDP-In)        138        System                                                   
+Active Directory Domain Controller - SAM/LSA (NP-TCP-In)                     445        System                                                   
+Active Directory Domain Controller - SAM/LSA (NP-UDP-In)                     445        System                                                   
+Core Networking - Destination Unreachable (ICMPv6-In)                                   System                                                   
+Core Networking - Destination Unreachable Fragmentation Needed (ICMPv4-In)              System                                                   
+Core Networking - Internet Group Management Protocol (IGMP-In)                          System                                                   
+Core Networking - IPHTTPS (TCP-In)                                           IPHTTPS,   System                                                   
+Core Networking - IPv6 (IPv6-In)                                                        System                                                   
+Core Networking - Multicast Listener Done (ICMPv6-In)                                   System                                                   
+Core Networking - Multicast Listener Query (ICMPv6-In)                                  System                                                   
+Core Networking - Multicast Listener Report (ICMPv6-In)                                 System                                                   
+Core Networking - Multicast Listener Report v2 (ICMPv6-In)                              System                                                   
+Core Networking - Neighbor Discovery Advertisement (ICMPv6-In)                          System                                                   
+Core Networking - Neighbor Discovery Solicitation (ICMPv6-In)                           System                                                   
+Core Networking - Parameter Problem (ICMPv6-In)                                         System                                                   
+Core Networking - Router Advertisement (ICMPv6-In)                                      System                                                   
+Core Networking - Router Solicitation (ICMPv6-In)                                       System                                                   
+Core Networking - Time Exceeded (ICMPv6-In)                                             System                                                   
+DFS Management (SMB-In)                                                      445        System                                                   
+File and Printer Sharing (NB-Datagram-In)                                    138        System                                                   
+File and Printer Sharing (NB-Name-In)                                        137        System                                                   
+File and Printer Sharing (NB-Session-In)                                     139        System                                                   
+File and Printer Sharing (SMB-In)                                            445        System                                                   
+File Server Remote Management (SMB-In)                                       445        System                                                   
+Windows Remote Management (HTTP-In)                                          5985       System                                                   
+Windows Remote Management (HTTP-In)                                          5985       System                                                   
+Active Directory Domain Controller -  Echo Request (ICMPv4-Out)                                                                                  
+Active Directory Domain Controller -  Echo Request (ICMPv6-Out)                                                                                  
+Connected User Experiences and Telemetry                                     *                                                                   
+Core Networking - Multicast Listener Done (ICMPv6-Out)                                                                                           
+Core Networking - Multicast Listener Query (ICMPv6-Out)                                                                                          
+Core Networking - Multicast Listener Report (ICMPv6-Out)                                                                                         
+Core Networking - Multicast Listener Report v2 (ICMPv6-Out)                                                                                      
+Core Networking - Neighbor Discovery Advertisement (ICMPv6-Out)                                                                                  
+Core Networking - Neighbor Discovery Solicitation (ICMPv6-Out)                                                                                   
+Core Networking - Packet Too Big (ICMPv6-Out)                                                                                                    
+Core Networking - Parameter Problem (ICMPv6-Out)                                                                                                 
+Core Networking - Router Advertisement (ICMPv6-Out)                                                                                              
+Core Networking - Router Solicitation (ICMPv6-Out)                                                                                               
+Core Networking - Time Exceeded (ICMPv6-Out)                                                                                                     
+File and Printer Sharing (Echo Request - ICMPv4-Out)                                                                                             
+File and Printer Sharing (Echo Request - ICMPv6-Out)                                                                                             
+Active Directory Web Services (TCP-Out)                                      *          C:\Windows\ADWS\Microsoft.ActiveDirectory.WebServices.exe
+All Outgoing (TCP)                                                           *          C:\Windows\System32\dns.exe                              
+All Outgoing (UDP)                                                           *          C:\Windows\System32\dns.exe                              
+Active Directory Domain Controller (TCP-Out)                                 *          C:\Windows\System32\lsass.exe                            
+Active Directory Domain Controller (UDP-Out)                                 *          C:\Windows\System32\lsass.exe                            
+Core Networking - Group Policy (LSASS-Out)                                   *          C:\Windows\system32\lsass.exe                            
+AllJoyn Router (TCP-Out)                                                     *          C:\Windows\system32\svchost.exe                          
+AllJoyn Router (UDP-Out)                                                     *          C:\Windows\system32\svchost.exe                          
+Core Networking - DNS (UDP-Out)                                              *          C:\Windows\system32\svchost.exe                          
+Core Networking - Dynamic Host Configuration Protocol (DHCP-Out)             68         C:\Windows\system32\svchost.exe                          
+Core Networking - Dynamic Host Configuration Protocol for IPv6(DHCPV6-Out)   546        C:\Windows\system32\svchost.exe                          
+Core Networking - Group Policy (TCP-Out)                                     *          C:\Windows\system32\svchost.exe                          
+Core Networking - IPHTTPS (TCP-Out)                                          *          C:\Windows\system32\svchost.exe                          
+Core Networking - Teredo (UDP-Out)                                           *          C:\Windows\system32\svchost.exe                          
+File and Printer Sharing (LLMNR-UDP-Out)                                     *          C:\Windows\system32\svchost.exe                          
+mDNS (UDP-Out)                                                               5353       C:\Windows\system32\svchost.exe                          
+Windows Management Instrumentation (WMI-Out)                                 *          C:\Windows\system32\svchost.exe                          
+Core Networking - Group Policy (NP-Out)                                      *          System                                                   
+Core Networking - Internet Group Management Protocol (IGMP-Out)                         System                                                   
+Core Networking - IPv6 (IPv6-Out)                                                       System                                                   
+File and Printer Sharing (NB-Datagram-Out)                                   *          System                                                   
+File and Printer Sharing (NB-Name-Out)                                       *          System                                                   
+File and Printer Sharing (NB-Session-Out)                                    *          System                                                   
+File and Printer Sharing (SMB-Out)                                           *          System                                                   
+
+
+-----------------------------------------------------------
+ Hosts File Content
+-----------------------------------------------------------
+
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+
+-----------------------------------------------------------
+ Processes
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Scheduled Tasks
+-----------------------------------------------------------
+Current System Time: 12/13/2019 02:27:39
+-----------------------------------------------------------
+ Services
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ Installed Programs
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Installed Patches
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Program Folders
+-----------------------------------------------------------
+
+C:\Program Files
+-------------
+Common Files     
+internet explorer
+PackageManagement
+VMware           
+Windows Defender 
+WindowsPowerShell
+
+
+C:\Program Files (x86)
+-------------------
+Common Files     
+internet explorer
+Microsoft.NET    
+Windows Defender 
+WindowsPowerShell
+
+
+
+-----------------------------------------------------------
+ Files with Full Control and Modify Access
+-----------------------------------------------------------
+
+C:\Users\melanie\Desktop\user.txt
+
+
+-----------------------------------------------------------
+ Folders with Full Control and Modify Access
+-----------------------------------------------------------
+
+Failed to read more folders
+
+Failed to read more folders
+
+-----------------------------------------------------------
+ Mapped Drives
+-----------------------------------------------------------
+-----------------------------------------------------------
+ Unquoted Service Paths
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Recent Documents
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Potentially Interesting Files in Users Directory 
+-----------------------------------------------------------
+C:\Users\melanie\Desktop\user.txt
+
+-----------------------------------------------------------
+ 10 Last Modified Files in C:\User
+-----------------------------------------------------------
+C:\Users\melanie\Videos
+C:\Users\melanie\Downloads
+C:\Users\melanie\Saved Games
+C:\Users\Public
+C:\Users\Administrator
+C:\Users\ryan
+C:\Users\melanie\Desktop\user.txt
+C:\Users\melanie\Documents
+C:\Users\melanie
+C:\Users\melanie\Desktop
+
+-----------------------------------------------------------
+ MUICache Files
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+ System Files with Passwords
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ AlwaysInstalledElevated Registry Key
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+ Stored Credentials
+-----------------------------------------------------------
+
+Currently stored credentials:
+
+* NONE *
+
+-----------------------------------------------------------
+ Checking for AutoAdminLogon 
+-----------------------------------------------------------
+The default username is Administrator 
+The default password is  
+The default domainname is MEGABANK 

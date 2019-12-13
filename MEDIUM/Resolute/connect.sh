@@ -1,0 +1,1 @@
+ruby evil-winrm.rb -i 10.10.10.169 -u melanie -p Welcome123!

