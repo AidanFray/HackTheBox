@@ -18,8 +18,8 @@
 | <img align="center" height=40 src="_images/Json.png"/>        |  Json             | <img width=20 src=../_images/win.png>  | [View](Json/README.md)             |
 | <img align="center" height=40 src="_images/Lightweight.png"/> |  Lightweight      | <img width=20 src=../_images/lin.png>  | [View](Lightweight/README.md)      |
 | <img align="center" height=40 src="_images/Luke.png"/>        |  Luke             | <img width=20 src=../_images/bsd.png>  | [View](Luke/README.md)             |
-| <img align="center" height=40 src="_images/Mango.png"/>       |  Mango            | <img width=20 src=../_images/lin.png>  | **X** <!-- [View](Mango/README.md)-->         |
-| <img align="center" height=40 src="_images/Obscurity.png"/>   |  Obscurity        | <img width=20 src=../_images/lin.png>  | [View](Obscurity/README.md)          |
+| <img align="center" height=40 src="_images/Mango.png"/>       |  Mango            | <img width=20 src=../_images/lin.png>  | [View](Mango/README.md)            |
+| <img align="center" height=40 src="_images/Obscurity.png"/>   |  Obscurity        | <img width=20 src=../_images/lin.png>  | [View](Obscurity/README.md)        |
 | <img align="center" height=40 src="_images/October.png"/>     |  October          | <img width=20 src=../_images/lin.png>  | [View](October/README.md)          |
 | <img align="center" height=40 src="_images/Poison.png"/>      |  Poison           | <img width=20 src=../_images/bsd.png>  | [View](Poison/README.md)           |
 | <img align="center" height=40 src="_images/Popcorn.png"/>     |  Popcorn          | <img width=20 src=../_images/lin.png>  | [View](Popcorn/README.md)          |

@@ -1,0 +1,1 @@
+sshpass -p "h3mXK8RhU~f{]f5H" ssh mango@10.10.10.162
