@@ -1,0 +1,329 @@
+--
+If you know the current user password, write it here for better results: n1nj4W4rri0R!
+---
+
+        User: jimmy
+     User ID: 1000
+    Password: ******
+        Home: /home/jimmy
+        Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+       umask: 0002
+
+    Hostname: openadmin
+       Linux: 4.15.0-70-generic
+Distribution: Ubuntu 18.04.3 LTS
+Architecture: x86_64
+
+==================================================================( users )=====
+[i] usr000 Current user groups............................................. yes!
+[*] usr010 Is current user in an administrative group?..................... nope
+[*] usr020 Are there other users in an administrative groups?.............. yes!
+---
+adm:x:4:syslog
+---
+[*] usr030 Other users with shell.......................................... yes!
+---
+root:x:0:0:root:/root:/bin/bash
+jimmy:x:1000:1000:jimmy:/home/jimmy:/bin/bash
+joanna:x:1001:1001:,,,:/home/joanna:/bin/bash
+---
+[i] usr040 Environment information......................................... skip
+[i] usr050 Groups for other users.......................................... skip
+[i] usr060 Other users..................................................... skip
+===================================================================( sudo )=====
+[!] sud000 Can we sudo without a password?................................. nope
+[!] sud010 Can we list sudo commands without a password?................... nope
+[!] sud020 Can we sudo with a password?.................................... nope
+[!] sud030 Can we list sudo commands with a password?...................... nope
+[*] sud040 Can we read /etc/sudoers?....................................... nope
+[*] sud050 Do we know if any other users used sudo?........................ nope
+============================================================( file system )=====
+[*] fst000 Writable files outside user's home.............................. yes!
+---
+/tmp
+/tmp/lse.sh
+/tmp/.font-unix
+/tmp/.Test-unix
+/tmp/.X11-unix
+/tmp/.XIM-unix
+/tmp/.ICE-unix
+/var/tmp
+/var/crash
+/var/lib/php/sessions
+/var/lib/lxcfs/proc
+/var/lib/lxcfs/cgroup
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/cgroup.procs
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/cgroup.clone_children
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/cgroup.procs
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/notify_on_release
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1000.slice/user@1000.service/init.scope/cgroup.clone_children
+/var/www/internal
+/var/www/internal/main.php
+/var/www/internal/logout.php
+/var/www/internal/index.php
+/home/jimmy
+/snap/core/7270/dev/full
+/snap/core/7270/dev/null
+/snap/core/7270/dev/random
+/snap/core/7270/dev/tty
+/snap/core/7270/dev/urandom
+/snap/core/7270/dev/zero
+/snap/core/8039/dev/full
+/snap/core/8039/dev/null
+/snap/core/8039/dev/random
+/snap/core/8039/dev/tty
+/snap/core/8039/dev/urandom
+/snap/core/8039/dev/zero
+---
+[*] fst010 Binaries with setuid bit........................................ yes!
+---
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/snapd/snap-confine
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/newgidmap
+/usr/bin/sudo
+/usr/bin/passwd
+/usr/bin/newuidmap
+/usr/bin/chsh
+/usr/bin/traceroute6.iputils
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/at
+/bin/ping
+/bin/umount
+/bin/su
+/bin/mount
+/bin/fusermount
+/snap/core/7270/bin/mount
+/snap/core/7270/bin/ping
+/snap/core/7270/bin/ping6
+/snap/core/7270/bin/su
+/snap/core/7270/bin/umount
+/snap/core/7270/usr/bin/chfn
+/snap/core/7270/usr/bin/chsh
+/snap/core/7270/usr/bin/gpasswd
+/snap/core/7270/usr/bin/newgrp
+/snap/core/7270/usr/bin/passwd
+/snap/core/7270/usr/bin/sudo
+/snap/core/7270/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/7270/usr/lib/openssh/ssh-keysign
+/snap/core/7270/usr/lib/snapd/snap-confine
+/snap/core/7270/usr/sbin/pppd
+/snap/core/8039/bin/mount
+/snap/core/8039/bin/ping
+/snap/core/8039/bin/ping6
+/snap/core/8039/bin/su
+/snap/core/8039/bin/umount
+/snap/core/8039/usr/bin/chfn
+/snap/core/8039/usr/bin/chsh
+/snap/core/8039/usr/bin/gpasswd
+/snap/core/8039/usr/bin/newgrp
+/snap/core/8039/usr/bin/passwd
+/snap/core/8039/usr/bin/sudo
+/snap/core/8039/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8039/usr/lib/openssh/ssh-keysign
+/snap/core/8039/usr/lib/snapd/snap-confine
+/snap/core/8039/usr/sbin/pppd
+---
+[!] fst020 Uncommon setuid binaries........................................ nope
+[!] fst030 Can we write to any setuid binary?.............................. nope
+[*] fst040 Binaries with setgid bit........................................ skip
+[!] fst050 Uncommon setgid binaries........................................ skip
+[!] fst060 Can we write to any setgid binary?.............................. skip
+[*] fst070 Can we read /root?.............................................. nope
+[*] fst080 Can we read subdirectories under /home?......................... nope
+[*] fst090 SSH files in home directories................................... nope
+[*] fst100 Useful binaries................................................. yes!
+---
+/usr/bin/curl
+/usr/bin/dig
+/bin/nc.openbsd
+/bin/nc
+/bin/netcat
+/usr/bin/wget
+---
+[*] fst110 Other interesting files in home directories..................... nope
+[!] fst120 Are there any credentials in fstab/mtab?........................ nope
+[*] fst130 Does 'jimmy' have mail?......................................... nope
+[!] fst140 Can we access other users mail?................................. nope
+[*] fst150 Looking for GIT/SVN repositories................................  yes!
+---
+/var/www/html/marga/.git
+---
+[i] fst500 Files owned by user 'jimmy'..................................... skip
+[i] fst510 SSH files anywhere.............................................. skip
+[i] fst520 Check hosts.equiv file and its contents......................... skip
+[i] fst530 List NFS server shares.......................................... skip
+[i] fst540 Dump fstab file................................................. skip
+=================================================================( system )=====
+[i] sys000 Who is logged in................................................ skip
+[i] sys010 Last logged in users............................................ skip
+[!] sys020 Does the /etc/passwd have hashes?............................... nope
+[!] sys030 Can we read /etc/shadow file?................................... nope
+[!] sys030 Can we read /etc/shadow- file?.................................. nope
+[!] sys030 Can we read /etc/shadow~ file?.................................. nope
+[!] sys030 Can we read /etc/master.passwd file?............................ nope
+[*] sys040 Check for other superuser accounts.............................. nope
+[*] sys050 Can root user log in via SSH?................................... nope
+[i] sys060 List available shells........................................... skip
+[i] sys070 System umask in /etc/login.defs................................. skip
+[i] sys080 System password policies in /etc/login.defs..................... skip
+===============================================================( security )=====
+[*] sec000 Is SELinux present?............................................. nope
+[*] sec010 List files with capabilities.................................... yes!
+---
+/usr/bin/mtr-packet = cap_net_raw+ep
+---
+[!] sec020 Can we write to a binary with caps?............................. nope
+[!] sec030 Do we have all caps in any binary?.............................. nope
+[*] sec040 Users with associated capabilities.............................. nope
+[!] sec050 Does current user have capabilities?............................ skip
+========================================================( recurrent tasks )=====
+[*] ret000 User crontab.................................................... nope
+[!] ret010 Cron tasks writable by user..................................... nope
+[*] ret020 Cron jobs....................................................... yes!
+---
+/etc/crontab:SHELL=/bin/sh
+/etc/crontab:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/crontab:17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+/etc/crontab:25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/etc/crontab:47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+/etc/crontab:52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+/etc/cron.d/popularity-contest:SHELL=/bin/sh
+/etc/cron.d/popularity-contest:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/cron.d/popularity-contest:33 19 * * *   root    test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond
+/etc/cron.d/mdadm:57 0 * * 0 root if [ -x /usr/share/mdadm/checkarray ] && [ $(date +\%d) -le 7 ]; then /usr/share/mdadm/checkarray --cron --all --idle --quiet; fi
+/etc/cron.d/php:09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
+---
+[*] ret030 Can we read user crontabs....................................... nope
+[*] ret040 Can we list other user cron tasks?.............................. nope
+[!] ret050 Can we write to executable paths present in cron jobs........... nope
+[*] ret060 Can we write to any paths present in cron jobs.................. nope
+[i] ret400 Cron files...................................................... skip
+[*] ret500 User systemd timers............................................. nope
+[!] ret510 Can we write in any system timer?............................... nope
+[i] ret900 Systemd timers.................................................. skip
+================================================================( network )=====
+[*] net000 Services listening only on localhost............................ yes!
+---
+tcp    LISTEN   0        80              127.0.0.1:3306           0.0.0.0:*     
+tcp    LISTEN   0        128             127.0.0.1:52846          0.0.0.0:*     
+---
+[!] net010 Can we sniff traffic with tcpdump?.............................. nope
+[i] net500 NIC and IP information.......................................... skip
+[i] net510 Routing table................................................... skip
+[i] net520 ARP table....................................................... skip
+[i] net530 Namerservers.................................................... skip
+[i] net540 Systemd Nameservers............................................. skip
+[i] net550 Listening TCP................................................... skip
+[i] net560 Listening UDP................................................... skip
+===============================================================( services )=====
+[!] srv000 Can we write in service files?.................................. nope
+[!] srv010 Can we write in binaries executed by services?.................. nope
+[*] srv020 Files in /etc/init.d/ not belonging to root..................... nope
+[*] srv030 Files in /etc/rc.d/init.d not belonging to root................. nope
+[*] srv040 Upstart files not belonging to root............................. nope
+[*] srv050 Files in /usr/local/etc/rc.d not belonging to root.............. nope
+[i] srv400 Contents of /etc/inetd.conf..................................... skip
+[i] srv410 Contents of /etc/xinetd.conf.................................... skip
+[i] srv420 List /etc/xinetd.d if used...................................... skip
+[i] srv430 List /etc/init.d/ permissions................................... skip
+[i] srv440 List /etc/rc.d/init.d permissions............................... skip
+[i] srv450 List /usr/local/etc/rc.d permissions............................ skip
+[i] srv460 List /etc/init/ permissions..................................... skip
+[!] srv500 Can we write in systemd service files?.......................... nope
+[!] srv510 Can we write in binaries executed by systemd services?.......... nope
+[*] srv520 Systemd files not belonging to root............................. nope
+[i] srv900 Systemd config files permissions................................ skip
+==============================================================( processes )=====
+[!] pro000 Can we write in any process binary?............................. nope
+[*] pro010 Processes running with root permissions......................... yes!
+---
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  3 10:34 ?        00:00:03 /sbin/init auto automatic-ubiquity noprompt
+root       393     1  0 10:34 ?        00:00:00 /lib/systemd/systemd-journald
+root       405     1  0 10:34 ?        00:00:00 /sbin/lvmetad -f
+root       414     1  2 10:34 ?        00:00:02 /lib/systemd/systemd-udevd
+root       473     1  0 10:34 ?        00:00:00 /usr/bin/VGAuthService
+root       542     1  0 10:34 ?        00:00:00 /usr/bin/vmtoolsd
+root       571     1  2 10:34 ?        00:00:02 /usr/bin/lxcfs /var/lib/lxcfs/
+daemon     572     1  0 10:34 ?        00:00:00 /usr/sbin/atd -f
+root       598     1  0 10:34 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       601     1  0 10:34 ?        00:00:00 /usr/sbin/cron -f
+root       603     1  0 10:34 ?        00:00:00 /lib/systemd/systemd-logind
+root       605     1  1 10:34 ?        00:00:01 /usr/lib/snapd/snapd
+root       606     1  0 10:34 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root       607     1  0 10:34 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       661     1  0 10:34 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       916     1  0 10:34 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root       959     1  0 10:34 ?        00:00:00 /usr/sbin/sshd -D
+root       974     1  0 10:34 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root      1013     1  0 10:34 ?        00:00:00 /usr/sbin/apache2 -k start
+root      1387     1  0 10:36 ?        00:00:00 /bin/sh /usr/lib/apt/apt.systemd.daily install
+root      1402  1387  0 10:36 ?        00:00:00 /bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held install
+root      1442  1402 13 10:36 ?        00:00:03 /usr/bin/python3 /usr/bin/unattended-upgrade
+---
+[i] pro500 Running processes............................................... skip
+[i] pro510 Running process binaries and permissions........................ skip
+===============================================================( software )=====
+[!] sof000 Can we connect to MySQL with root/root credentials?............. nope
+[!] sof010 Can we connect to MySQL as root without password?............... nope
+[!] sof020 Can we connect to PostgreSQL template0 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template1 as postgres and no pass?. nope
+[!] sof020 Can we connect to PostgreSQL template0 as psql and no pass?..... nope
+[!] sof020 Can we connect to PostgreSQL template1 as psql and no pass?..... nope
+[*] sof030 Installed apache modules........................................ yes!
+---
+Loaded Modules:
+ core_module (static)
+ so_module (static)
+ watchdog_module (static)
+ http_module (static)
+ log_config_module (static)
+ logio_module (static)
+ version_module (static)
+ unixd_module (static)
+ access_compat_module (shared)
+ alias_module (shared)
+ auth_basic_module (shared)
+ authn_core_module (shared)
+ authn_file_module (shared)
+ authz_core_module (shared)
+ authz_host_module (shared)
+ authz_user_module (shared)
+ autoindex_module (shared)
+ deflate_module (shared)
+ dir_module (shared)
+ env_module (shared)
+ filter_module (shared)
+ mime_module (shared)
+ mpm_itk_module (shared)
+ mpm_prefork_module (shared)
+ negotiation_module (shared)
+ php7_module (shared)
+ reqtimeout_module (shared)
+ setenvif_module (shared)
+ status_module (shared)
+---
+[!] sof040 Found any .htpasswd files?...................................... nope
+[i] sof500 Sudo version.................................................... skip
+[i] sof510 MySQL version................................................... skip
+[i] sof520 Postgres version................................................ skip
+[i] sof530 Apache version.................................................. skip
+=============================================================( containers )=====
+[*] ctn000 Are we in a docker container?................................... nope
+[*] ctn010 Is docker available?............................................ nope
+[!] ctn020 Is the user a member of the 'docker' group?..................... nope
+[*] ctn200 Are we in a lxc container?...................................... nope
+[!] ctn210 Is the user a member of any lxc/lxd group?...................... nope
+
+==================================( FINISHED )==================================
